@@ -1,0 +1,128 @@
+/******************************************************************************/
+/* Liferay                                                                    */
+/******************************************************************************/
+
+/* Global */
+
+SELECT { border-color: #CCCCCC; border-style: solid; border-width: 1px; }
+
+.form-button { border-color: #6699CC; border-style: solid; border-width: 1px; font-family: Arial; font-size: 10px; }
+
+.form-button-hover { border-bottom: solid 1px #6699CC; border-left: solid 1px #FFFFFF; border-right: solid 1px #6699CC; border-top: solid 1px #FFFFFF; font-family: Arial; font-size: 10px; }
+
+.form-text { border-color: #CCCCCC; border-style: solid; border-width: 1px; font-family: Arial; font-size: 80%; }
+
+/* Alpha */
+
+A.alpha { color: #000000; text-decoration: none; }
+
+A.alpha:hover { color: #000000; text-decoration: underline; }
+
+TR.alpha { background-color: #6699CC; }
+
+TD.alpha { background-color: #6699CC; }
+
+TD.alpha-gradient { filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#B6CBEB, endColorStr=#6699CC); }
+
+FONT.alpha { color: #000000; font-family: Tahoma, Arial; }
+
+.alpha-neg-alert { color: #FF0000; }
+
+.alpha-pos-alert { color: #007F00; }
+
+/* Beta */
+
+A.beta { color: #000000; text-decoration: none; }
+
+A.beta:hover { color: #000000; text-decoration: underline; }
+
+TR.beta { background-color: #B6CBEB; }
+
+TD.beta { background-color: #B6CBEB; }
+
+TD.beta-gradient { filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#FFFFFF, endColorStr=#B6CBEB); }
+
+FONT.beta { color: #000000; font-family: Tahoma, Arial; }
+
+.beta-neg-alert { color: #FF0000; }
+
+.beta-pos-alert { color: #007F00; }
+
+/* Gamma */
+
+A.gamma { color: #000000; text-decoration: none; }
+
+A.gamma:hover { color: #000000; text-decoration: underline; }
+
+TR.gamma { background-color: #EEEEEE; }
+
+TD.gamma { background-color: #EEEEEE; }
+
+TD.gamma-gradient { filter: progid:DXImageTransform.Microsoft.Gradient(gradientType=0, startColorStr=#FFFFFF, endColorStr=#EEEEEE); }
+
+FONT.gamma { color: #000000; font-family: Tahoma, Arial; }
+
+.gamma-neg-alert { color: #FF0000; }
+
+.gamma-pos-alert { color: #007F00; }
+
+/* Bg */
+
+A.bg { color: #000000; text-decoration: none; }
+
+A.bg:hover { color: #000000; text-decoration: underline; }
+
+TR.bg { background-color: #FFFFFF; }
+
+TD.bg { background-color: #FFFFFF; }
+
+FONT.bg { color: #000000; font-family: Tahoma, Arial; }
+
+.bg-neg-alert { color: #FF0000; }
+
+.bg-pos-alert { color: #007F00; }
+
+/******************************************************************************/
+/* Portlet CSS                                                                */
+/******************************************************************************/
+
+/* Fonts */
+
+.portlet-font { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-font-dim { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+
+/* Messages */
+
+.portlet-msg-status { color: #000000; font-family: Tahoma, Arial; font-size: medium; font-style: italic; }
+.portlet-msg-info { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-msg-error { color: #FF0000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-msg-alert { color: #000000; font-family: Tahoma, Arial; font-size: medium; font-style: italic; }
+.portlet-msg-success { color: #007F00; font-family: Tahoma, Arial; font-size: medium; }
+
+/* Sections */
+
+.portlet-section-header { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-section-body { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-section-alternate { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-section-selected { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-section-subheader { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-section-footer { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-section-text { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+
+/* Forms */
+
+.portlet-form-label { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-form-input-field { border-color: #CCCCCC; border-style: solid; border-width: 1px; font-family: Arial; font-size: 80%; }
+.portlet-form-button { border-color: #6699CC; border-style: solid; border-width: 1px; font-family: Arial; font-size: 10px; }
+.portlet-icon-label { color: #000000; font-family: Tahoma, Arial; font-size: small; }
+.portlet-dlg-icon-label { color: #000000; font-family: Tahoma, Arial; font-size: small; }
+.portlet-form-field-label { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+.portlet-form-field { color: #000000; font-family: Tahoma, Arial; font-size: medium; }
+
+/******************************************************************************/
+/* Display Tag Library                                                        */
+/******************************************************************************/
+
+TR.even { background-color: #B6CBEB; color: #000000; font-family: Tahoma, Arial; }
+
+TR.odd { background-color: #EEEEEE; color: #000000; font-family: Tahoma, Arial; }

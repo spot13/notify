@@ -1,0 +1,132 @@
+/* General use classes */
+
+.additionalInfo {
+	display: none;
+}
+.clear {
+	clear: both;
+	height: 0px;
+    width: 0px;
+    font-size: 0.01em;	
+	line-height: 1em;	
+}
+
+
+/* Layout */
+
+body {
+	font-size: 12pt;
+	background: white;
+	font-family: arial, sans-serif;
+}
+
+a:link, a:visited {
+	color: #520;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#butterfly {
+	display:none;
+}
+
+#container {
+	width: 100%;
+	background: transparent;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+#bodyContent {
+	width: 100%;
+	background: transparent;	
+}
+
+#wrapper #bodyContent {
+	width: 100%;
+}
+
+#primaryNav #utilityLinks, #primaryNav #livingCityLinks,  #primaryNav #categoryLinks{
+	display:none;
+}
+
+#primaryNav #logoLink {
+	display: none;	
+}
+
+#secondaryNav {
+	display:none;
+}
+
+#secondaryContent {
+	width: 100%;
+}
+
+#bodyContent .search-pagination{
+	display:none;
+}
+
+#bodyContent #homepageSlideshow{
+	display:none;
+}
+#bodyContent #mapControls {
+	display:none;
+}
+#bodyContent #clearDirectionsBtn {
+	display: none;
+}
+
+#calendarSearch, .viewBox, a.rss_btn, #monthControls {
+	display:none;
+}
+#footer #footerNav .footerLivingCityLinks{
+	display:none;
+}
+#footer .vcard {
+	border-top:1px solid #000000;
+	margin-top:15px;
+	padding:10px 0;
+	font-size:11pt;
+}
+
+#footer #footerNav #associates{
+	display:none;
+}
+#footer #dynamicSitemap{
+	display:none;
+}
+
+#footer #searchBar{
+	display:none;
+}
+
+#translateFooter {
+	display: none;
+}
+
+/* ui dialog */
+.ui-widget-overlay {
+	background-color: #FFFFFF !important;
+	opacity:1 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+.ui-dialog-titlebar {
+	display: none !important;
+}
+.ui-dialog {
+	top: 0px !important;
+	left: 0px !important;	
+	background-color: #FFFFFF !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+#bodyContent #printReview{
+display:none;
+}
+#bodyContent #backBtn{
+display:none;
+}

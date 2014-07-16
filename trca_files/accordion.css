@@ -1,0 +1,228 @@
+.accordion {
+        position: relative;
+        width: 100%;
+        
+    }
+.accordion .accordion-content  {
+	padding:0 7px;
+	background-color:transparent;
+	overflow:hidden;
+	/*height:400px; uncomment this line for fixed height*/
+	border-left:1px solid #cccccc;
+	border-right:1px solid #cccccc;
+    }
+    .accordion .fixed300 {
+    	height: 300px;
+    }
+.accordion a{
+        color:#666666;
+        text-decoration:none;
+        font-style:normal;
+        font-variant:normal;
+        font-weight:normal;
+    }
+.accordion-content ul, .accordion-content li, .accordion-content p, .accordion-content h2, .accordion-content h3, .accordion-content h1,.accordion-content ol{
+	margin:0 0;
+    }
+    .accordion .boxcap {
+        height:5px;
+        left:0px;
+        position:absolute;
+        width:100%;
+        z-index:100;
+        background:transparent url(/global/images/accordion/accordion-boxcap-bottom_shaddow.png) repeat-x top;
+        /* margin-top:-5px; */
+        bottom:0;
+	font-size:0.01em;
+	line-height:1px;
+    }   
+.accordion .boxcap .boxcap-bottom_left{
+        height:5px;
+        left:0px;
+        width:5px;
+        background:transparent url(/global/images/accordion/accordion-boxcap-bottom_left.png) no-repeat bottom;
+    }
+.accordion .boxcap .boxcap-bottom_right{
+        height:5px;
+	float:right;
+        right:0px;
+	margin-top:-5px;
+        width:5px;
+        background:transparent url(/global/images/accordion/accordion-boxcap-bottom_right.png) no-repeat bottom;
+    }
+.accordion .boxcap-top_left{
+	background:transparent url(/global/images/accordion/accordion-boxcap-top_left.png) no-repeat scroll 0 0;
+	bottom:auto;
+	float:left;
+	font-size:0.01em;
+	height:4px;
+	line-height:1px;
+	margin:0 0;
+	left:0;
+	top:0;
+	width:4px;
+    }
+    .accordion .boxcap-top_right{
+	background:transparent url(/global/images/accordion/accordion-boxcap-top_right.png) no-repeat scroll 0 0;
+	bottom:auto;
+	float:right;
+	font-size:0.01em;
+	height:4px;
+	line-height:1px;
+	margin:0 0;
+	right:0;
+	top:0;
+	width:4px;
+    }
+.accordion .boxcap-top {
+	bottom:auto;
+	font-size:0.01em;
+	height:4px;
+	line-height:1px;
+	margin:0 0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:1;
+    }
+
+.accordionMemberships .accordion-handle {
+  cursor: auto;
+  background:#939393 url(/global/images/accordion/accordion-handle_open.png) repeat-x scroll 0 0;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+}
+
+.accordion .accordion-handle, #bodyContent .accordion .accordion-handle,#bodyContent h2.accordion .accordion-handle  {
+        background:#939393 url(/global/images/accordion/accordion-handle.png) repeat-x;
+        position:relative;
+        color:#333333;
+        cursor:pointer;
+        font-family:tahoma,sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	height:34px;
+	line-height:34px;
+        margin:0 0;
+	padding:0;
+        text-indent:15px;
+        width:100%;		
+    }
+.accordion .accordion-handle.open, #bodyContent .accordion .accordion-handle.open,#bodyContent h2.accordion .accordion-handle.open {
+        background:#939393 url(/global/images/accordion/accordion-handle_open.png) repeat-x;
+	color:#FFFFFF;
+	margin:0 0;
+	padding:0;
+    }
+    
+    .accordion .accordion-handle:hover, #bodyContent .accordion .accordion-handle:hover, #bodyContent h2.accordion .accordion-handle:hover, .accordionMemberships .accordionMembershipHandle {
+	background:#939393 url(/global/images/accordion/accordion-handle_open.png) repeat-x scroll 0 0;
+	color:#FFFFFF;
+	margin:0;
+	padding:0;
+}
+
+.accordionMemberships .accordion-content {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #CCCCCC;
+  padding: 0;
+}
+
+.accordionMemberships .membership-error {
+  background-color:#FFEDED;
+  border-bottom:1px solid #FFD4D4;
+  color:#D16D6D;
+  padding:10px 0 10px 25px;
+  width:100%;
+}
+
+.accordionMemberships .membershipNote {
+  background-color:#F5F5F5;
+  border-bottom:1px solid #CCC;
+  color:#848484;
+  padding:10px 0 10px 25px;
+  width:100%;
+}
+
+.accordionMemberships input.submit {
+  	background: url(/global/images/misc/add_cart_membership.png) transparent no-repeat 0 0;
+  	border: none;
+  	height: 43px;
+  	width: 200px;
+  	color: #FFFFFF !important;
+  	font-weight: bold;
+  	font-size: 1.0em;
+}
+
+.accordionMemberships .accordionMembershipHandle {
+  padding: 15px 20px;
+  margin: 0;
+  background: url(/global/images/accordion/accordian_back.gif) transparent repeat;
+  color: #FFFFFF !important;
+}
+
+#bodyContent .accordionMemberships h3.accordionMembershipHandle {
+  margin-bottom: 0px !important;
+  font-size: 1.1em !important;
+}
+
+.accordionMemberships input.submit:hover {
+  	background: url(/global/images/misc/add_cart_membership.png) transparent no-repeat 0px -43px;
+}
+
+.membership-sidenotes {
+  color: #848484;
+  margin-top: 30px;
+}
+
+.membershipPrice {
+  font-size: 2.6em;
+  color: #73AA28;
+  margin: 8px 20px;
+  padding: 2px 0 10px;
+  display: block;
+}
+
+.individualPrice {
+  margin: 10px 0;
+  border-bottom: 1px solid #CCC;
+}
+
+.membershipSubmitDiv {
+  float: right;
+  text-align: center;
+  width: 200px;
+  margin: 42px 25px 0px 0px;
+}
+
+.membershipSubmitDiv input.submit {
+  float: none !important;
+  margin: 10px 0 !important;
+}
+
+.accordionMemberships .familyDescription {
+  width: 360px;
+  margin: 10px 25px;
+  background-color: #EBF3F7;
+  border-bottom: 1px solid #C0D5DF;
+  border-top: 1px solid #C0D5DF;
+  padding: 10px 30px !important;
+  color: #46809C !important;
+  float: left;
+}
+
+.accordionMemberships label {
+  margin-left: 10px;
+}
+
+.accordionMemberships .fullColumn, .accordionMemberships .leftColumn {
+  width: 175px !important;
+  margin-left: 25px;
+  padding: 0 !important;
+}
+
+.accordionMemberships .benefits {
+  margin: 10px 25px;
+  width: auto !important;
+}

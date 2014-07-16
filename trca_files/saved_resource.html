@@ -1,0 +1,219 @@
+
+<!-- saved from url=(0064)http://trca.on.ca/?leftMenu=true&livePage=0&language=1&host_id=1 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    	<link rel="STYLESHEET" type="text/css" href="leftPreview.css">
+	<link rel="STYLESHEET" type="text/css" href="en_US.css">
+	
+	<script type="text/javascript" src="prototype.js"></script> 
+	<script src="engine.js" type="text/javascript"></script>
+	<script src="util.js" type="text/javascript"></script>
+	<script src="ContentletAjax.js" type="text/javascript"></script>
+	<script src="StructureAjax.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+	function protoUpdateWrapper(element,code){
+		element.innerHTML='';
+		element.innerHTML=code;
+			}
+	
+	function protoInsertionBottomWrapper(element,code){
+		Insertion.Bottom(element,code);
+	}
+
+    function backToCMS(){
+        window.top.location  = "/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Fbrowser%2Fview_browser";
+    }
+	
+    function livePage(){
+        window.top.location  = "/home/index.dot?livePage=1&host_id=1";
+    }
+
+    function changeLanguage(lang){
+                    window.top.location  = "/home/index.dot?com.dotmarketing.htmlpage.language="+lang+"&previewPage=1&host_id=1";
+            }
+
+    function previewPage(){
+        window.top.location  = "/home/index.dot?previewPage=2&host_id=1";
+    }
+    
+    function editingPage(){
+        window.top.location  = "/home/index.dot?previewPage=1&host_id=1";
+    }
+
+
+    function popBrowser(x){
+        document.getElementById('container').value=x;
+        document.getElementById('cmd').value="addChild";
+        newwin = window.open('/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Ffolders%2Fview_folders&view=%28working%3D1+and+deleted%3D0and+language_id+%3D+1%29&content=contentlets&popup=contentlet&child=true#treeTop', 'newwin', 'scrollbars=yes,width=700,height=400,scrollbars=yes,resizable=yes');
+    }
+
+    function submitParent(){
+        if(newwin) newwin.close();
+        document.getElementById('submitParent').submit();
+
+    }
+
+    function addPage(){
+        document.getElementById('htmlPage').value='0';
+        document.getElementById('cmd').value="newHTMLPage";
+        document.getElementById('submitParent').submit();
+    }
+
+    function editPage(){
+        document.getElementById('htmlPage').value='56';
+        document.getElementById('cmd').value="editHTMLPage";
+        document.getElementById('submitParent').submit();
+    }
+
+    function viewStatistics(){
+        document.getElementById('htmlPage').value='56';
+        document.getElementById('cmd').value="viewStatistics";
+        document.getElementById('submitParent').submit();
+    }
+
+    function viewTask(id){
+        document.getElementById('taskInode').value=id;
+        document.getElementById('cmd').value="viewWorkflow";
+        document.getElementById('submitParent').submit();
+    }
+
+    function addTask(){
+        document.getElementById('htmlPage').value='56';
+        document.getElementById('cmd').value="addWorkflow";
+        document.getElementById('submitParent').submit();
+    }
+    
+    function publishAll(){
+        if(confirm("Are you sure you would like to publish this page?")){
+            document.getElementById('htmlPage').value='56';
+            document.getElementById('cmd').value="publishHTMLPage";
+            document.getElementById('submitParent').submit();
+        }
+    }
+
+    function editTemplate(){
+            document.getElementById('htmlPage').value='56';
+            document.getElementById('cmd').value="editTemplate";
+            document.getElementById('submitParent').submit();
+    }
+
+    function makeHomePage(){
+            document.getElementById('htmlPage').value='56';
+            document.getElementById('cmd').value="makeHomePage";
+            document.getElementById('submitParent').submit();
+    }
+
+    function submitMenu() {
+        form = document.getElementById("form_menu");
+        formsubmitParent = document.getElementById("submitParent");
+        form.referer.value = formsubmitParent.referer.value;
+        form.submit();
+    }
+	
+	var is_collapsed = false;
+	
+	function ToggleCollapse() {
+	    if (is_collapsed) { 
+	        parent.document.getElementsByTagName("frameset")[0].cols = "210, *";
+	        document.getElementById("main_window").style.display = 'block';
+	        document.getElementById("max_bar").style.display = "block";
+	        document.getElementById("max_bar").style.backgroundColor = "#E6E9EE";
+	        document.getElementById("min_bar").style.display = 'none';
+	        document.getElementById("min_bar").style.backgroundColor = "#E6E9EE";
+	        document.getElementsByTagName("html")[0].style.overflow = "";
+	        parent.document.getElementsByTagName("frame")[0].noResize = true;
+	        parent.document.getElementsByTagName("frame")[0].scrolling = "no";
+	        is_collapsed = false;
+	    } else {
+	        document.getElementById("main_window").style.display = 'none';
+	        document.getElementById("max_bar").style.display = "none";
+	        document.getElementById("max_bar").style.backgroundColor = "#E6E9EE";
+	        document.getElementById("min_bar").style.backgroundColor = "#E6E9EE";
+	        document.getElementById("min_bar").style.display = 'block';
+	        document.getElementsByTagName("html")[0].style.overflow = "hidden";
+	        parent.document.getElementsByTagName("frameset")[0].cols = "11, *";
+	        parent.document.getElementsByTagName("frame")[0].noResize = true;
+	        parent.document.getElementsByTagName("frame")[0].scrolling = "no";
+	        is_collapsed = true;
+	    }
+	}
+</script>
+
+
+</head>
+<body>
+
+<div class="maxmin" id="min_bar" style="z-index:1000" onmouseover="this.style.backgroundColor=&#39;#cbe1f2&#39;" onmouseout="this.style.backgroundColor=&#39;#E6E9EE&#39;" onclick="ToggleCollapse()" title="Expand pane">
+</div>
+<div class="maxmin" id="max_bar" style="z-index:1000" onmouseover="this.style.backgroundColor=&#39;#cbe1f2&#39;" onmouseout="this.style.backgroundColor=&#39;#E6E9EE&#39;" title="Collapse pane" onclick="ToggleCollapse()">
+</div>
+
+<div id="main_window" class="sideMenu">
+
+	<div class="tabs">	
+																<span class="active">Edit</span>
+					<a href="javascript: previewPage();">Preview</a>
+					<a href="javascript: livePage();">Live</a>
+											<div class="clear"></div>
+	</div>
+	<div class="pageTools">
+					<a href="javascript: editPage();"><img src="btn_preview.png" width="18" height="21" align="absmiddle" border="0" alt="Edit Page Properties">Page Properties</a>
+				
+		<a href="javascript: viewStatistics();"><img src="btn_satistics.png" width="18" height="21" align="absmiddle" border="0" alt="Page Statistics">Page Statistics</a>
+	
+	    	              	                  <a href="javascript: publishAll();"><img src="btn_publish.png" width="18" height="21" align="absmiddle" border="0" alt="Publish this Page">Publish Page</a>
+	              	         			
+									<a href="javascript: editTemplate();"><img src="btn_template.png" width="18" height="21" align="absmiddle" border="0" alt="Edit this Template">Edit Template</a>
+						</div>
+	
+	<div class="button">
+		<a href="javascript:addPage();"><img src="btn_newPage.png" width="28" height="28" align="absmiddle" border="0" alt="Add New Webpage">Create New Page</a>
+	</div>
+	<div class="button">
+		<a href="javascript:backToCMS();"><img src="btn_backCMS.png" width="28" height="28" align="absmiddle" border="0" alt="Go to the CMS System">Close Edit Mode</a>
+	</div>
+	
+	
+		
+	<div class="clear">&nbsp;</div>
+	
+	<div id="taskBar">
+		<b>Workflow Tasks</b><br>
+		<div class="todo">
+							<p>You currently have no tasks</p><p>
+					</p></div>
+		<div class="buttonwrapper"><a href="javascript: addTask();" class="dotGreenBtn"><span>Create a Task</span></a></div>      
+	</div>
+</div>
+
+
+<div style="display:none">
+<form action="http://trca.on.ca/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Fdirector%2Fdirect" id="submitParent" method="post" target="_top">
+    <input type="hidden" name="referer" id="referer" value="/c/portal/layout?p_l_id=24.1&amp;p_p_id=EXT_BROWSER&amp;p_p_action=1&amp;p_p_state=maximized&amp;_EXT_BROWSER_struts_action=%2Fext%2Fhtmlpages%2Fpreview_htmlpage&amp;inode=56&amp;language=1&amp;host_id=1"><br>
+    <input type="hidden" name="taskInode" id="taskInode" value=""><br>
+    <input type="hidden" name="cmd" id="cmd" value="addChild"><br>
+    <input type="hidden" name="container" id="container" value=""><br>
+    <input type="hidden" name="htmlPage" id="htmlPage" value="56"><br>
+    <input type="hidden" name="contentlet" id="contentlet" value=""><br>
+    <input type="hidden" name="selectedcontentlet" id="selectedcontentlet" value=""><br>
+    <input type="hidden" name="menuItem" id="menuItem" value=""><br>
+    <input type="hidden" name="level" id="level" value=""><br>
+    <input type="hidden" name="static" id="static" value=""><br>
+    <input type="hidden" name="course" id="course" value=""><br>
+    <input type="hidden" name="department" id="department" value=""><br>
+    <input type="hidden" name="package" id="package" value=""><br>
+    <input type="hidden" name="category" id="category" value=""><br>
+    <input type="hidden" name="parentFolder" id="parentFolder" value=""><br>
+</form>
+</div>
+
+
+
+
+
+
+
+
+</body></html>

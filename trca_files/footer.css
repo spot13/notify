@@ -1,0 +1,151 @@
+#footer {
+	padding-top: 20px;
+}
+
+/*#footer #searchBar {
+	margin-bottom: 3px;
+	background:#FFFFFF url(/global/images/misc/container_bg.png) repeat-x scroll left bottom;
+}
+
+#footer #searchBar form {
+	margin: 0px;
+}
+
+#footer #searchBar fieldset {
+	text-align: right;
+	border-top: 1px solid #247aa9;
+	background-color: #318bbc;
+	padding: 7px 20px 20px 0px;
+	outline: none;
+	margin: 0px;
+	border: none;
+}
+
+#footer #searchBar form #more {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	padding:0 0 0px 15px;
+	text-decoration: none;
+	display: none;
+	outline:none;
+	float: left;
+	color: #ffffff;
+}
+#footer #searchBar form #more.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+
+
+#footer #search_query {
+	border: none;
+	width: 224px;
+	margin-right: 6px;	
+}
+*/
+
+#footer #footerNav {
+	color:#4c4c4c;
+	padding:0px 10px 0 20px;
+	margin:10px 0px 0px;
+	width:280px;
+	float:left;
+	font-size:1.071em;
+	line-height: 1.333em;
+}
+
+#footer #footerNav .label {
+	font-size:0.867em;
+	line-height: 1em;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+#footer a {
+	color:#318BBC;
+	text-decoration:none;
+}
+
+#footer a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+#footer .vcard {
+	color:#4c4c4c;
+	padding:10px 0px 10px 0px;
+	width:280px;
+	font-size:1em;
+	line-height: 1.167em;
+}
+
+#footer .vcard .strong {
+	font-weight: bold;
+}
+
+
+#footer #associates a img {
+	border: none;
+	padding: 10px;
+}
+
+#footer #dynamicSitemap {
+	color:#4C4C4C;
+	float:right;
+	padding:0 20px 10px 10px;
+	margin:10px 0px 0px;
+	width:640px;
+}
+
+#footer #dynamicSitemap ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+#footer #dynamicSitemap ul li {
+	float: right;
+	font-weight: bold;
+	font-size:0.857em;
+	line-height: 1em;
+	padding-left: 20px;
+	clear:left;
+}
+#footer #dynamicSitemap ul li ul {
+	padding-top: 20px;
+	width:170px;
+}
+#footer #dynamicSitemap ul li ul li {
+	float: left;
+	font-size:0.833em;
+	line-height: 1.2em;
+	padding-left: 0px;
+	width:160px;
+}
+#footer #dynamicSitemap ul li ul li.active a {
+	color: #000000;
+}
+
+
+
+#branding {
+	background:transparent url(/global/images/footer/translate_grx.png) no-repeat scroll;
+	height:23px;
+	width:163px;
+}
+#translateFooter{
+	display:inline;
+	width:350px;
+}
+
+#translateFooter #branding{
+	margin:0 5px 10px 20px;
+	float:left;
+	padding-bottom:10px;
+	background:transparent url(/global/images/footer/translate_gpx.png) no-repeat scroll;
+	height:23px;
+	width:99px;
+}
+
+
+#trcaBug {float:right;}
+#lcfBug {float:right;}

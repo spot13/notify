@@ -1,0 +1,85 @@
+/* CSS Document */
+
+*{margin:0px; padding:0px; 	font-family:'Myriad Pro'; color:#4e5169; font-size:14px;}
+
+body
+{
+	background-color:#9a9db5;
+}
+
+.wrapper
+{
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	width:300px;
+	height:300px;
+	background-color:#FFF;	
+}
+
+.wrapper .header
+{
+	-moz-border-top-lef-radiust: 15px;
+	border-top-left-radius: 15px;
+	-moz-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+	margin-left:auto;
+	margin-right:auto;
+	width:300px;
+	height:50px;
+	background-color:#4e5169;
+	text-align:center;
+	font-size:24px;
+	
+}
+
+.wrapper .header div
+{
+
+	margin-left:auto;
+	margin-right:auto;
+	color:#ffffff;
+	height:20px;
+	width:300px;
+	font-size:24px;
+	display:block;
+	padding-top:10px;
+	
+}
+
+.wrapper input
+{
+	margin-left:70px;
+	display:block;
+	width:150px;
+	height:20px;	
+	
+}
+
+.wrapper label
+{
+	margin-top:20px;
+	display:block;
+	width:150px;
+	height:30px;	
+	margin-left:70px;
+	
+}
+
+.wrapper #subm
+{
+
+	width:75px;
+	height:30px;
+	background-color:#4e5169;
+	color:#f1e5d3;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+	-moz-box-shadow: 0 0 5px #aaa;
+-webkit-box-shadow: 0 0 5px#aaa;
+box-shadow: 0 0 5px #aaa;
+	
+}

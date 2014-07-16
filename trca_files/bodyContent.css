@@ -1,0 +1,7019 @@
+
+/*
+ * GENERAL DETAIL PAGE STYLES
+ */
+#bodyContent h1 {
+	color:#069fd1;
+	font-size:1.714em;
+	line-height:1em;
+	padding: 5px 0;
+	margin: 0px;
+}
+
+#bodyContent h2 {
+	color:#069fd1;
+	font-size:1.286em;
+}
+/* * GENERAL DETAIL PAGE STYLES*/
+ 
+#bodyContent h1 {
+	color:#069fd1;
+	font-size:1.714em;
+	line-height:1em;
+	padding: 5px 0;
+	margin: 0px;
+}
+
+#bodyContent h2 {
+	color:#069fd1;
+	font-size:1.286em;/*
+ * GENERAL DETAIL PAGE STYLES
+ */
+}
+#bodyContent h1 {
+	color:#069fd1;
+	font-size:1.714em;
+	line-height:1em;
+	padding: 5px 0;
+	margin: 0px;
+}
+
+#bodyContent h2 {
+	color:#069fd1;
+	font-size:1.286em;
+	line-height: 1em;
+	margin:5px 0;
+}
+
+#bodyContent h3 {
+	color: #069fd1;
+	font-size:1em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#bodyContent h4 {
+	color: #069fd1;
+	font-size:0.88em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+
+#bodyContent p {
+	padding-bottom: 10px;
+	margin:5px 0;
+}
+
+#bodyContent a{
+	color:#318BBC;
+	outline:none;
+	text-decoration: none;
+}
+
+#bodyContent a:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+#bodyContent .help {
+color:#777777;
+font-size:0.88em;
+line-height:1.167em;
+padding:0;
+}
+#bodyContent a.help{
+text-decoration:none;
+}
+
+#bodyContent p.borderBottom {
+	padding-bottom: 10px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 1px dotted #e3e3e3;
+}
+
+#bodyContent p.teaser {
+	border-top: 1px dotted #e3e3e3;
+	font-size:1.286em;
+	line-height: 1.222em;
+	font-family: georgia, serif;
+	color: #5c901c;
+	border-bottom: none;
+	padding: 10px 0px 25px 0px;
+	margin-bottom: 15px;
+	background: transparent url('/global/images/bodyContent/teaser_divider.png') bottom center no-repeat;
+}
+
+#bodyContent ul {
+line-height:1.3em;
+list-style-type:none;
+list-style-image:none;
+padding:0px 0px 0px 0px;
+}
+#bodyContent ul li{
+background-image:url(/global/images/misc/content-bullet.png);
+background-position:5px 5px;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+}
+
+#bodyContent a img {
+	border: none;
+}
+
+#bodyContent .activitiesIconWrapper{
+border:1px solid #E3E3E3;
+color:#777777;
+padding:0 5px;
+float:left;
+margin:0 0 10px 0;
+}
+#bodyContent .activitiesIconWrapper p{
+	padding:0 0;
+}
+#bodyContent .imageBorder {
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+/* table styles */
+#bodyContent table {
+	border-collapse: collapse;
+}
+#bodyContent table .td-white {
+	background-color: #ffffff;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-light {
+	background-color: #e4f4fb;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-medium {
+	background-color: #4ca3d3;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-dark {
+	background-color: #3385b1;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-white-border {
+	border:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-left {
+	border-left:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-right {
+	border-right:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-top {
+	border-top:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-bottom {
+	border-bottom:1px solid #ffffff;
+}
+#bodyContent table.table-bottom-border {
+	border-bottom: 5px solid #4ca4d3;
+}
+
+
+
+/* Category link table */
+#bodyContent p.categoryImage {
+	border: none;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+#bodyContent p.categoryLinks {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks p{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks {
+	padding: 0px 0px 24px 0px;
+	background: transparent url('/global/images/bodyContent/category_table_bg.png') bottom left repeat-x;
+}
+#bodyContent table.categoryLinks td {
+	width: 225px;
+}
+#bodyContent table.categoryLinks td.categoryLinksSpacer {
+	width: 20px;
+}
+#bodyContent table.categoryLinks td.categoryLinksHeading{
+	background-color: #0294c3;
+}
+#bodyContent table.categoryLinks td h2 {
+	text-align: center;
+	color: #ffffff;
+	background-color: #0294c3;
+	text-transform: uppercase;
+	font-size:1.143em;
+	line-height: 1em;
+	margin: 13px 0px 16px 0px;
+}
+#bodyContent table.categoryLinks td ul {
+	list-style: none;
+	padding: 0px 0px 20px 10px;
+	margin: 0px 0px 25px 0px;
+	font-size:1em;
+	line-height: 1.143em;
+}
+#bodyContent table.categoryLinks td ul li{
+	border-bottom: 1px dashed #dedede;
+	padding: 5px 0px 5px 0px;
+	background: none;
+}
+#bodyContent table.categoryLinks td ul li a{
+	text-decoration: none;
+}
+#bodyContent table.categoryLinks td ul li a:hover{
+	text-decoration: underline;
+}
+
+
+/*
+ * CALLS TO ACTION ON HOME AND CATEGORY PAGES 
+ */
+
+#bodyContent #callsToAction{
+	border-bottom: 1px dashed #dbe5ea;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	width: 225px;
+	float: right;
+}
+
+#bodyContent #callsToAction div.callToAction {
+	width: 225px;
+	float: left;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+#bodyContent #callsToAction div.left, #bodyContent #callsToAction div.center{
+	padding-right: 20px;
+}
+
+#bodyContent #callsToAction div.summary{
+	font-size:0.857em;
+	line-height: 1.667em;
+	background-position: 0px 38px;
+}
+
+#bodyContent #callsToAction div.summary p{
+	margin: 0px; 
+	padding-left: 10px;
+	padding-right: 20px;
+	height: 30px;
+	color: #FFFFFF;
+}
+
+#bodyContent #callsToAction div.heading{
+	background-color: #096299;
+}
+
+#bodyContent #callsToAction div.heading h3{
+	margin: 0px;
+	padding: 0px 10px;
+	color: #FFFFFF;
+	font-size:1.667em;
+	line-height: 1.9em;
+}
+
+#bodyContent #callsToAction a.link{
+	display:block;
+	background: #f3dc92 url(/global/images/bodyContent/yellow_button.png) no-repeat bottom left;
+	font-size:1.286em;
+	line-height: 2.111em;
+	text-align: center;
+	color: #3b4141;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #ffffff;
+}
+#bodyContent #callsToAction a.link:hover{
+	text-decoration: underline;
+}
+
+#bodyContent #callsToAction a {
+	text-decoration: none;
+}
+
+#bodyContent #callsToAction img {
+	margin: 0px 0px -10px 5px;
+}
+
+/*
+ * HOME PAGE RECENT NEWS
+ */
+#bodyContent #recentNewsBox {
+	float: left;
+	width: 480px;
+}
+
+#wrapper #bodyContent #callsToAction div.callToAction{
+	width: 226px;
+}
+
+/*
+ * SITEMAP PAGE STYLES
+ */
+
+#bodyContent #sitemap div.column{
+	width: 220px;
+	padding-right: 20px;
+	float: left;
+}
+#bodyContent #sitemap .lastColumn {
+	width: 240px;
+	padding-right: 0px;
+	float: left;
+}
+#bodyContent #sitemap .section {
+	padding-bottom: 20px;
+}
+#bodyContent #sitemap  ul{
+	display:block;
+	padding:0px 0px 0px 15px;
+	margin:0px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#bodyContent #sitemap  ul li{
+	list-style-type: none;
+	background: none;
+	padding-left: 0px;
+}
+#bodyContent #sitemap a {
+	color: #0c4f73;
+	font-size:0.857em;
+	line-height: 1.333em;
+	text-decoration:none;
+	display: block;
+	padding:2px 5px;
+	border-bottom: 1px solid #f4f4f4;
+}
+#bodyContent #sitemap  a:hover{
+	background-color: #41b1e2;
+	color: #ffffff;
+}
+#bodyContent #sitemap a.first_1 {
+	color:#41b1e2;
+	font-size:1em;
+	line-height: 1.286em;
+	font-weight:bold;
+	border-bottom: none;
+}
+#bodyContent #sitemap a.first_1:hover {
+	color:#1C75A3;
+	text-decoration:underline;
+	background-color: #ffffff;
+}
+
+/*
+ * LISTING RELATED STYLES
+ */
+
+#bodyContent .listing .date, #bodyContent .listing .dateSummary {
+	font-size:0.714em;
+	line-height: 1em;	
+	color: #96c2da;
+	font-weight: bold;
+}
+
+#bodyContent .listing h2 {
+	margin: 0px;
+}
+
+#bodyContent .listing h2 a {
+	text-decoration: none;
+	font-size:0.762em;
+	line-height: 1.125em;
+}
+#bodyContent .listing h2 a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+
+#bodyContent .listing  p {
+	padding-bottom: 10px;
+	margin-bottom: 15px;	
+	border-bottom: 1px dashed #dbe5ea;
+}
+
+#bodyContent #minutes .listing p, #bodyContent #agenda .listing p{
+margin-bottom:0;
+}
+#bodyContent #minutes h3, #bodyContent #agenda h3{
+	text-align:right;
+}
+
+/*
+ * PHOTO GALLERY PAGE STYLES
+ */
+ 
+#bodyContent .photoGallery .photoGalleryImage {
+	width: 200px;
+	padding-left:10px;
+	float: left;
+	text-align: center;
+}
+
+#bodyContent .photoGallery .photoGalleryImage a img {
+	padding: 5px;
+	border: 1px solid #e5e5e5;
+}
+
+#bodyContent .photoGallery .photoGalleryImage h2 {
+	font-size:1em;
+	line-height: 1.143em;
+}
+
+/*
+ * CONTACT FORM STYLES
+ */
+ 
+#bodyContent .contactForm .success {
+	color: #3fa1d3;
+	padding: 10px 0px 5px 0px;
+}
+#bodyContent .contactForm .error {
+	color: #ff0000;
+	font-size:0.857em;
+	line-height: 1.167em;
+	font-weight:normal;
+}
+#bodyContent .contactForm .required {
+	color: #ff0000;
+}
+
+#bodyContent .contactForm label {
+	display: block;
+	font-weight: bold;
+}
+
+#bodyContent .contactForm input, #bodyContent .contactForm textarea {
+	font-family: arial, sans-serif;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+#bodyContent .contactForm .name input, #bodyContent .contactForm .email, #bodyContent .contactForm textarea {
+	border: 1px solid #e3e3e3;
+}
+#bodyContent .contactForm .name, #bodyContent .contactForm .email, #bodyContent .contactForm .message {
+	margin-bottom: 10px;
+}
+	#bodyContent .contactForm .name span {
+		float: left;
+		padding-right: 10px;
+	}
+	#bodyContent .contactForm .name input {
+		width: 148px;
+	}
+	#bodyContent .contactForm .name label{
+		font-weight: normal;
+		font-size:0.857em;
+		line-height: 1.167em;
+	}
+	
+#bodyContent .contactForm .email {
+	width: 310px;
+}
+#bodyContent .contactForm textarea {
+	display: block;
+	width: 310px;
+	height: 125px;
+}
+
+
+/*
+ * SEARCH RESULTS STYLES
+ */
+#bodyContent dt {
+	border-top:1px dotted #E3E3E3;
+	padding:10px 0px 5px 0px;
+}
+
+#bodyContent dt a{
+	color:#069FD1;
+	font-size:1em;
+	line-height:1.5em;
+}
+
+#bodyContent dd{
+	margin:0px 0px 10px 5px;
+}
+
+/*
+ * readMore STYLES
+ */
+ 
+#bodyContent .readMore{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+
+}
+
+#bodyContent .readMore:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+/* PROGRAM SEARCH */
+#bodyContent #programSearch {
+	width: 520px;
+}
+#bodyContent #programSearch #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+	outline: none;
+	display: none;
+}
+#bodyContent #programSearch #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #programSearch #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+
+#bodyContent #programSearch label {
+	display: block;
+}
+#bodyContent #programSearch select {
+	width: 250px;
+}
+
+/*
+Removed by Chris Moore - August 20, 2009
+
+#bodyContent #programSearch  span {
+	float:left;
+	padding: 0px 5px 5px 5px;
+}
+ */
+#bodyContent #programSearch  .info {
+	font-size:0.857em;
+	line-height: 1.333em;
+	border: none;
+	color: #555555;
+	padding: 0px;
+	margin:0px;
+	clear: both;
+}
+#bodyContent #programSearch #advancedSearch {
+	padding: 5px 0px 10px 0px;
+}
+/* PROGRAM CALENDAR */
+#bodyContent #program-calendar table{
+    width:700px;
+    border-collapse: collapse;
+}
+#bodyContent #program-calendar-header{
+    width:701px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #programCalendarFilter{
+    width: 701px;
+}
+#bodyContent #program-calendar-header .seasons {
+    font-weight:bold;
+    padding: 0px 0px 5px 140px;
+    text-align: center;
+    word-spacing: 80px;
+}
+#bodyContent #program-calendar-header .programs-head {
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    width: 138px;
+}
+#bodyContent #program-calendar-header .months {
+    float: right;
+    text-align: center;
+    width: 563px;
+    word-spacing: 18px;
+}
+#bodyContent #program-calendar td .facilityName {
+    font-weight: bold;
+    font-size:0.75em;
+    line-height: 1.333em;
+    margin: 15px 0px 0px 5px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #program-calendar td .programName {
+    font-size:0.75em;
+    line-height: 1.167em;
+    text-align: right;
+    margin: 0px 5px 0px 10px;
+    display: block;
+}
+#bodyContent #program-calendar td {
+    text-align: left;
+    width:20%;
+    vertical-align: bottom;
+    padding: 0px 0px 5px 0px;
+}
+#bodyContent #program-calendar tr td div.off {
+    background-color: transparent;
+}
+#bodyContent #program-calendar .lifeLine {
+    height: 8px;
+    line-height: 8px;
+    border-bottom: 1px dotted #E3E3E3;
+}
+#bodyContent #program-calendar  div.environmental_appreciation {
+    background-color:#ffcb77;
+}
+#bodyContent #program-calendar  div.environmental_learning {
+    background-color:#b26e00;
+}
+#bodyContent #program-calendar  div.heritage_studies {
+    background-color:#ff9d00;
+}
+#bodyContent #program-calendar div.leadership_development {
+    background-color:#2c74b2;
+}
+#bodyContent #program-calendar div.outdoor_recreation {
+    background-color:#0092c9;
+}
+#bodyContent #filterProgramCalendarControl {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+  font-size:0.857em;
+  line-height:1.167em;
+  margin:5px 0;
+  padding:0 0 5px 15px;
+  display: block;
+}
+#bodyContent #filterProgramCalendarControl.active {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #filterProgramCalendar fieldset{
+    width:320px;
+    float: left;
+}
+#bodyContent #filterProgramCalendar fieldset .box{
+    float: left;
+    width: 10px;
+}
+
+/* PROGRAM */
+#bodyContent #program a.booknow {
+	background: #f9eec4 url('/global/images/misc/button_210_22.png') no-repeat left bottom;
+	font-size:1em;
+	line-height: 1.571em;
+	font-weight: bold;
+	color: #3b4141;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+	text-transform: uppercase;
+	float: right;
+	width: 210px;
+}
+
+#bodyContent #program table {
+	width: 100%;
+	margin-top:15px;
+}
+#bodyContent #program table td {
+	width: 33%;
+	padding: 0px;
+	vertical-align: top;
+}
+#bodyContent #program table h3{
+	margin: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e3e3e3;
+	font-size:1.143em;
+	line-height: 1em;
+}
+#bodyContent #program table p{
+	line-height:1.286em;
+	margin: 5px 5px 10px 0px;
+	padding: 0px;
+}
+
+/* CAREERS */
+
+#bodyContent div.job p{
+	border: none;
+}
+
+/* 404 styling */
+#bodyContent div.notFound {
+	background: #318BBC url(/global/images/bodyContent/404_bg.jpg) no-repeat;
+	min-height:505px;
+}
+#bodyContent div.notFound .text{
+width:825px!important;
+padding:90px 0 0 0!important;
+}
+#bodyContent div.notFound .text h1{
+	font-size:1.625em;
+	line-height: 1.154em;
+	color: #069FD1;
+	font-weight:bold;
+	padding-bottom: 0px;
+}
+#bodyContent div.notFound .text p {
+	border:medium none;
+	color:#000000;
+	font-size:0.875em;
+	line-height:1.714em;
+}
+#bodyContent .notFoundFooter {
+	background-color:#318BBC;
+	float:right;
+	width:100%;
+}
+#bodyContent .notFoundLinks {
+background:transparent url(/global/images/bodyContent/404_border_slice.png) no-repeat scroll left center;
+float:right;
+margin:0 20px 0 0;
+padding:15px 0;
+text-align:center;
+width:825px;
+}
+#bodyContent .notFoundLinks a {
+background:transparent url(/global/images/bodyContent/404_btn.png) no-repeat scroll 0 0;
+color:#0C4F73;
+display:inline-block;
+font-size:1.095em;
+font-weight:bold;
+line-height:1.251em;
+margin:0 5px;
+padding:10px 0 10px 0;
+text-decoration:none;
+text-transform:uppercase;
+width:192px;
+}
+#bodyContent .notFoundLinks a:hover {
+	text-decoration:underline;
+}
+
+/*
+ * PAGINATION STYLES
+ */
+ 
+ #bodyContent .pagination{
+	background-color:#0C4F73;
+	margin: 5px 0px 5px 0px;
+}
+ 
+#bodyContent .pagination a{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:capitalize;
+	line-height: 1.563em;
+	
+}
+#bodyContent .pagination a:hover {
+	color: #069FD1;
+	text-decoration: underline;
+}
+
+ 
+#bodyContent .pagination a.previous{
+	float:left;
+}
+
+#bodyContent .pagination a.next{
+	float:right;
+}
+
+/*
+ * MAP STYLES
+ */
+#bodyContent #mapControls {
+}
+#bodyContent #mapControls  #mapInstructions {
+	clear: both;
+	font-size:0.786em;
+	line-height: 1.273em;
+}
+#bodyContent #mapControls  select {
+	margin-top: 5px;
+	float: right;
+	width: 100px;
+}
+
+#bodyContent #mapControls a {
+ 	padding: 0px 5px 0px 5px;
+ 	background-color:#318BBC;
+ 	color: #000000;
+ 	text-decoration: none;
+ 	border-top: 1px solid #ffffff;
+ 	font-size:0.857em;
+	line-height: 2em;
+	display: block;
+	float: left;
+	margin: 0px 1px 5px 0px;
+	outline: none;
+}
+#bodyContent #mapControls a.active {
+	margin-bottom: 0px;
+}
+#bodyContent #mapControls a.active {
+	background-color:#0C4F73;
+ 	color: #ffffff;
+}
+#bodyContent #mapControls #carruthers.active {
+	border-bottom: 5px solid #DDC6FF; 
+}
+#bodyContent #mapControls #don.active {
+	border-bottom: 5px solid #D07E0B;
+}
+#bodyContent #mapControls #duffins.active {
+	border-bottom: 5px solid #7802BD;
+}
+#bodyContent #mapControls #etobicoke.active {
+	border-bottom: 5px solid #17CF87;
+}
+#bodyContent #mapControls #frenchmansbay.active {
+	border-bottom: 5px solid #902720;
+}
+#bodyContent #mapControls #highland.active {
+	border-bottom: 5px solid #E62BC2;
+}
+#bodyContent #mapControls #humber.active {
+	border-bottom: 5px solid #A92183;
+}
+#bodyContent #mapControls #mimico.active {
+	border-bottom: 5px solid #DFBE26;
+}
+#bodyContent #mapControls #petticoat.active {
+	border-bottom: 5px solid #B4E736
+}
+#bodyContent #mapControls #rouge.active {
+	border-bottom: 5px solid #E4251B;
+}
+
+#bodyContent #clearDirections {
+	margin-top:10px;
+	display: none;
+}
+
+.aboutTab img.logo {
+	float:left; 
+	margin: 10px 20px 0px 0px;
+	width: 150px;
+}
+.aboutTab .locationInfo {
+	float: left;
+	padding-left: 5px;
+}
+.aboutTab .activities {
+	clear: both;
+	padding-top: 10px;	
+}
+.aboutTab .activities img {
+	margin: 0px;
+}
+	
+.directionsTab label {
+	width: 100px;
+	padding-right: 5px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	
+}
+.directionsTab .saddrContainer {
+	float: left; 
+}
+.directionsTab #saddr {
+	width: 250px;
+}
+.directionsTab .button {
+	margin:10px 0px 0px 105px;
+}
+
+/* SEARCH STYLES */
+#bodyContent #searchForm div.input {
+	padding: 5px 0px 5px 0px;
+	width: 520px;
+}
+
+#bodyContent #volunteerOpportunitySearch #searchForm div.input{
+	padding: 5px 0px 5px 0px;
+	width: 450px;
+}
+#bodyContent #searchForm label {
+	display: block;
+	float: left;
+	color:#1C75A3;
+}
+#bodyContent #searchForm label.additionalInfo {
+	display: none;
+}
+
+#bodyContent #searchForm select {
+	float: right;
+}
+#bodyContent #searchForm .text  {
+	width: 400px;	
+	float: right;
+}
+#bodyContent #volunteerOpportunitySearch #searchForm .text{
+float:left;
+margin:0 0 0 5px;
+width:370px;
+}
+#bodyContent #searchForm .radios  {
+	width: 500px;	
+	float: right;
+}
+#bodyContent #searchForm .radio input {
+	margin: 3px 3px 0px 0px;
+}
+#bodyContent #searchForm .radio  {
+	margin-right: 15px;
+}
+#bodyContent #searchForm .submit {
+	float: right;
+}
+#bodyContent #searchForm #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent #searchForm #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #searchForm #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+#bodyContent #searchForm #advancedSearch label {
+	padding-left: 15px;
+}
+#bodyContent span.url {
+	display: block;
+	color: #1C75A3;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+/*
+ * NEWSLETTER FORM STYLES
+ */
+ 
+#bodyContent #mailingListsSubscription ul, #bodyContent  #mailingListsUnsubscription ul{
+	line-height:2.5em;
+	list-style-image:none;
+	list-style-type:none;
+	padding:0;
+ }
+ 
+#bodyContent #mailingListsSubscription input#email:focus {
+	background: #fdecb2;
+}
+#bodyContent #mailingListsSubscription label{
+	padding:0 5px 0 0;
+} 
+
+/*
+ * DOCUMENT LIBRARY STYLES
+ */
+
+#bodyContent #documentLibrary .section{
+	width: 325px;
+    float: left;
+    vertical-align: top;
+}
+
+#bodyContent #documentLibrary .section .description{
+	width: 250px;
+    line-height: normal;
+}
+
+/*
+ * EVENT DETAILS STYLES
+ */
+.event-label{
+color:#069FD1;
+display:inline;
+font-size:1em;
+font-weight:bold;
+margin:0;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+text-decoration:none;
+}
+.event-date, .event-description, .event-location, .event-link, .event-files{
+	display:inline;	
+}
+
+
+/* PROGRAM BOOKING */
+#bodyContent #programBooking #program {
+	float: right;
+	width: 300px;	
+	margin: 0px;
+}
+#bodyContent #programBooking #program li {
+	background: none;
+	line-height:1em;
+}
+#bodyContent #programBooking #program li h2 {
+	margin: opx 0px 5px 0px;
+}
+#bodyContent #programBooking #program li h3 {
+	margin: 0px;
+}
+
+#bodyContent #programBooking #programBookingDetails {
+float:left;
+width:400px;
+}
+
+#bodyContent #programBooking #programBookingDetails .accordion h2{
+	margin:0px;
+}
+#bodyContent #programBooking #programBookingDetails h2{
+	margin: 15px 0px 5px 0px;
+}
+
+
+#bodyContent #programBooking #programBookingForm .field, #bodyContent #programBooking #programBookingDetails .field {
+	padding-top: 5px;
+}
+#bodyContent #programBooking #programBookingForm .value, #bodyContent #programBooking #programBookingDetails .value {
+	float: left;
+}
+#bodyContent #programBooking #programBookingForm label, #bodyContent #programBooking #programBookingDetails .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent #programBooking #programBookingForm input{
+float:left;
+}
+
+#bodyContent #programBooking #programBookingForm input.text{
+	width: 200px;	
+}
+#bodyContent #programBooking #programBookingForm textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+#bodyContent #programBooking #programBookingForm .prevNext{
+	padding-top: 20px;
+}
+#bodyContent #programBooking #programBookingForm .prev{
+	background:transparent url(/global/images/misc/bullet_back.png) no-repeat scroll 0 2px;
+	float:left;
+	padding:0 0 0 20px;
+}
+#bodyContent #programBooking #programBookingForm .next{
+	background:transparent url(/global/images/misc/bullet_go.png) no-repeat scroll 35px 2px;
+	float:right;
+	padding:0 22px 0 0;
+}
+#bodyContent #programBooking #programBookingForm .submit{
+	float:right;
+}
+
+#bodyContent #programBooking #programBookingForm #datePicker {
+	font-size: 0.76em;
+	padding: 3px 0px 0px 140px;
+}
+
+
+/* FORMS
+ */
+#bodyContent .generic .field {
+	padding-top: 5px;
+}
+#bodyContent .value {
+	float: left;
+}
+#bodyContent .generic label, #bodyContent .generic .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent .generic input, #bodyContent .generic  select {
+float:left;
+}
+
+#bodyContent .generic input.text{
+	width: 200px;	
+}
+#bodyContent .generic textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+
+/*
+ * FORM ERRORS + VALIDATION
+ */
+#errormsgs, #errorMessages{
+color:#FF0000;
+float:left;
+text-align:left;
+width:100%;
+}
+ 
+ 
+#bodyContent #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png) ;
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+margin:0 0 0 5px;
+}
+#bodyContent #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:22px;
+}
+#bodyContent #EVNlogin #returningCustomer #macro-login-message, #bodyContent #EVNlogin #newCustomer #macro-login-message, #bodyContent #EVNlogin #messagesMessages{
+margin:0 0 0 270px;
+color:#FF0000;
+
+}
+#bodyContent #loginAccount #returningCustomer #macro-login-message{
+margin:0 0 0 35%;
+}
+#bodyContent #returningCustomer #macro-login-message{
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:25px;
+margin:0 0 0 41%;
+color:#FF0000;
+}
+#bodyContent #EVNlogin{
+width:700px;
+}
+
+.form-error{
+background:#FFCCCC none repeat scroll 0 0;
+color:#220000;
+padding:2px;
+
+ }
+ 
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+	background:transparent url(/global/images/misc/valid.png) no-repeat;
+}
+	
+.LV_invalid {
+    color:#CC0000;
+	background:transparent url(/global/images/misc/invalid.png) no-repeat;
+    margin:0 0 0 5px;	
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+
+}
+
+
+#errormsgs div {
+	background: #FFF url(/global/images/misc/invalid.png) no-repeat left center;
+	padding-left: 20px;
+	display: none;
+}
+#bodyContent #newCustomer #errormsgs div, #bodyContent #EVNlogin #errormsgs div{
+	padding-left: 25px;
+	width:550px;
+}
+.helpinfo{
+	cursor:help;	
+}
+
+/*
+ * CSS TOOLTIP
+ */
+ 
+a.tt{
+    position:relative;
+    z-index:24;
+	font-weight:bold;
+    text-decoration:none;
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{ z-index:25; color: #333333; background:;}
+a.tt:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+    text-align: center;
+    color:#333333;
+	filter: alpha(opacity:90);
+	KHTMLOpacity: 0.90;
+	MozOpacity: 0.90;
+	opacity: 0.90;
+	z-index:55; 
+}
+a.tt:hover span.top{
+	display: block;
+	padding: 30px 8px 0;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat top;
+    z-index:25; 
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px; 
+	background:transparent url(/global/images/misc/tt_bubble_filler.png) repeat bottom; 
+	z-index:25; 
+}
+a.tt:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat bottom;
+}
+ 
+
+/* registration form */
+#bodyContent .loginForm{
+float:left;
+}
+
+#bodyContent #returningCustomer, #bodyContent #newCustomer{
+background:transparent url(/global/images/misc/loginFoot.png) repeat-x bottom;
+border:1px solid #DEDEDE;
+float:left;
+margin:15px 0;
+padding:15px 0 0;
+width:100%;
+}
+#bodyContent #newCustomer #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #EVNlogin #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #forgottenPassword{
+	padding:15px 0 0 0;
+}
+#bodyContent #returningCustomer .loginField, #bodyContent #newCustomer .loginField{
+	padding:5px 0 0 25%;
+}
+#bodyContent .forgotPasswordReset .field{
+	padding:5px 0 0 7%;
+}
+#bodyContent #returningCustomer label, #bodyContent #newCustomer label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent .forgotPasswordReset label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent #returningCustomer .inlineInput, #bodyContent #newCustomer .inlineInput{
+	width:200px;
+}
+#bodyContent #returningCustomer .submitFloat, #bodyContent #newCustomer .submitFloat{
+	margin:15px 0 15px 50%;
+	width:85px;
+}
+#bodyContent #EVNlogin .submitFloat{
+	margin:15px 0 15px 47%;
+	width:125px;
+}
+#bodyContent .forgotPasswordReset .btn{
+	margin:15px 0 15px 26%;
+	width:125px;
+}
+#bodyContent .loginFloat{
+margin:0 0 0 25px;
+}
+#bodyContent h3.loginFloat a{
+border-left:1px solid;
+color:#777777;
+font-size:0.8em;
+margin:0 0 0 10px;
+padding:0 0 0 10px;
+}
+#bodyContent .loginCheckboxField{
+margin:5px 0 15px 48%;
+}
+#bodyContent #returningCustomer .loginCheckboxField input{
+float:left;
+margin:3px 0;
+}
+#bodyContent #returningCustomer .loginCheckboxField label{
+color:#777777;
+float:left;
+font-size:0.9em;
+padding:2px 0 0;
+width:90px;
+}
+#bodyContent .loginForm{
+border-top:1px solid #DEDEDE;
+margin:15px 0 0;
+padding:25px 0 0;
+}
+
+#bodyContent #checkoutForm input, #bodyContent #checkoutForm select{
+	width: 190px;
+}
+
+#bodyContent #checkoutForm donationOnBehalf{
+	width: auto;
+}
+
+#bodyContent #checkoutForm #donationOnBehalf, #bodyContent #checkoutForm #saveBillingInfo, #bodyContent #checkoutForm #send-info input, #bodyContent #checkoutForm #shipping-single, #bodyContent #checkoutForm #shipping-multiple{
+	width: auto;
+}
+
+
+#bodyContent .comment-toggle{
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	
+	color:#1C75A3;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:0 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent .additional-comments {
+	border-top:1px dotted #E3E3E3;
+	margin-top:5px;
+	padding-top: 5px;
+}
+
+#bodyContent .active .comment-toggle{
+	background: transparent url('/global/images/secondaryNavContent/didyouknow_minus.png') no-repeat 0px 2px;
+	border-bottom: none;
+}
+#bodyContent .support-block{
+float:left;
+width:343px;
+}
+#bodyContent .support-block-right{
+float:left;
+width:343px;
+padding:0 0 0 29px;
+}
+#bodyContent p.support-btn{
+background:transparent url(/global/images/bodyContent/support-yellow_btn.png) no-repeat scroll 0 0;
+height:38px;
+margin:0;
+text-align:center;
+}
+#bodyContent p.support-btn a{
+color:#3B4141;
+font-size:1.1em;
+font-weight:bold;
+line-height:2.4em;
+text-shadow:1px 1px 0 #FFFFFF;
+}
+#bodyContent .donationTable{
+margin:15px 0 0;
+}
+#bodyContent .donationTable .tableHeading{
+background-color:#069FD1;
+width:150px;
+line-height:2em;
+}
+#bodyContent .donationTable .tableHeading .inlineIconImage{
+display:inline;
+vertical-align:middle;
+margin:0 0 0 5px;
+}
+#bodyContent .donationTable .tableHeading h3{
+color:#FFFFFF;
+display:inline;
+font-size:1em;
+font-weight:normal;
+}
+#bodyContent .supportTableContent{
+background-color:#EBF3F7;
+padding:10px;
+vertical-align:top;
+}
+
+/*
+ * HOMEPAGE SLIDESHOW STYLES
+ */
+
+#bodyContent #contentSlideshow {
+    position:relative;
+	height:296px;
+	padding:0 0 15px;
+	clear:both;
+}
+
+#bodyContent #contentSlideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+
+#bodyContent #contentSlideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#bodyContent #contentSlideshow IMG.last-active {
+    z-index:9;
+}
+/* EVN STUFF */
+#bodyContent .availability .period {
+	width:75px;
+}
+#bodyContent .availability .day {
+text-align:center;
+width:40px;
+}
+#bodyContent .availability table {
+
+}
+#bodyContent .availability table tr td {
+	font-size:0.875em;
+	line-height: 1em;
+	height: 18px;
+}
+
+#bodyContent .availability table.sun_m td.sun_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_m td.mon_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_m td.tue_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_m td.wed_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_m td.thu_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_m td.fri_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_m td.sat_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                       
+#bodyContent .availability table.sun_a td.sun_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_a td.mon_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_a td.tue_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_a td.wed_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_a td.thu_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_a td.fri_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_a td.sat_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                          
+#bodyContent .availability table.sun_e td.sun_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_e td.mon_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_e td.tue_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_e td.wed_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_e td.thu_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_e td.fri_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_e td.sat_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+
+/* Employer Administration */
+
+#bodyContent #employerAdmin{
+}
+#bodyContent #employerAdmin .companyName{
+color:#777777;
+}
+#bodyContent #employerAdmin .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent .formControls .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .actionBtnOptions a:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptions{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptions:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptionsLarge{
+background:#F9EEC4 url(/global/images/misc/button_210_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:210px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptionsLarge:hover{
+text-decoration:underline;
+}
+
+#bodyContent #employerAdmin .description{
+margin:10px 0;
+width:545px;
+}
+#bodyContent #employerAdmin .messageBox{
+background-color:#F0E6CF;
+border:3px solid #DEDEDE;
+line-height:2em;
+margin:10px auto;
+padding:10px 0 10px 20px;
+width:680px;
+}
+#bodyContent #employerAdmin #expiredOpportunities,#bodyContent #employerAdmin #activeOpportunities{
+margin:30px 0;
+}
+#bodyContent #employerAdmin tr, #bodyContent #volunteerApplicationListing tr{
+line-height:2em;	
+}
+#bodyContent #employerAdmin tr.even, #bodyContent #volunteerApplicationListing tr.even{
+}
+#bodyContent #employerAdmin tr.odd, #bodyContent #volunteerApplicationListing tr.odd{
+background-color:#DCDCDC;	
+}
+#bodyContent #employerAdmin th{
+
+}
+#bodyContent #employerAdmin .applicationForReview, #bodyContent #employerAdmin .positionClosing, #bodyContent #employerAdmin .positionEdit{
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .positionDelete, #bodyContent #employerAdmin .positionView{
+padding:0 5px;
+}
+#bodyContent #employerAdmin .position{
+text-align:left;
+width:300px;
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .postingEndDate, #bodyContent #employerAdmin .postingExpDate{
+width:100px;
+text-align:center;
+}
+#bodyContent #employerAdmin .appPositions{
+text-align:center;
+width:220px;
+}
+#bodyContent #employerAdmin #expiredOpportunities .position{
+width:350px;
+}
+
+#bodyContent #volunteerApplicationListing .applicant{
+padding:0 0 0 15px;
+text-align:left;
+width:320px;
+}
+#bodyContent #volunteerApplicationListing .submissionDate{
+text-align:center;
+width:125px;
+}
+#bodyContent #volunteerApplicationListing .refNumber{
+text-align:center;
+width:150px;
+}
+#bodyContent #volunteerApplicationListing .view{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .status{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .legends{
+line-height:1.5em;	
+}
+#bodyContent #volunteerApplicationListing .grey{
+color:#777777;
+cursor:help;
+font-size:0.9em;
+}
+#bodyContent #volunteerApplicationListing h2{
+text-transform:capitalize;
+}
+
+/* Application Details */
+#bodyContent #applicationDetails #availability, #bodyContent #applicationDetails #personalInfo, #bodyContent #applicationDetails #about{
+margin:20px 0;
+}
+#bodyContent #applicationDetails .grey{
+color:#777777;
+}
+#bodyContent #applicationDetails .education-employment, #bodyContent #applicationDetails .vol-reasons, #bodyContent #applicationDetails .positions-seeking, #bodyContent #applicationDetails .ref-comments {
+margin:15px 0;
+}
+#bodyContent #applicationDetails #about .content{
+margin:0 0 0 20px;	
+}
+
+#bodyContent #applicationDetails table#applicantAvailability tr{
+	border-bottom: 1px solid #000000;
+}
+
+#bodyContent #applicationDetails table#applicantAvailability{
+margin:15px;
+}
+#bodyContent #applicationDetails #applicantAvailability th{
+text-align:center;
+width:75px;
+}
+#bodyContent #applicationDetails #applicantAvailability td.available{
+background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;
+}
+#bodyContent #applicationDetails .downloadResume{
+float:left;
+width:200px;
+}
+#bodyContent #applicationDetails .policeCheck{
+float:right;
+width:400px;	
+}
+#bodyContent #applicationDetails .applicantInfo{
+display:inline;
+float:left;
+width:250px;
+overflow:auto;
+}
+ #bodyContent #applicationDetails .applicantTransportation{
+display:inline;
+float:left;
+width:265px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantAddress{
+display:inline;
+float:left;
+width:190px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantDetails{
+float:left;
+width:545px;
+}
+#bodyContent #applicationDetails .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent #applicationDetails .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .black{
+color:#000000;
+}
+
+#bodyContent .actionBtnOptions .print{
+display:none;
+}
+
+/*CM - Added styles for Meetings and Agendas - Start */
+.listTbl {
+	margin:1px!important;
+}
+.listTbl th {
+	text-align:left!important;
+	font:bold 12px Arial, Helvetica, sans-serif!important;
+	padding:3px 5px!important;
+	border-bottom:1px solid #0092C9!important;
+}
+.listTbl td {
+	vertical-align:top!important;
+	padding:3px 5px!important;
+	font:12px Arial, Helvetica, sans-serif!important;
+	border-top:1px solid #0092C9!important;
+}
+/*CM - Added styles for Meetings and Agendas - End*/
+
+	line-height: 1em;
+	margin:5px 0;
+}
+
+#bodyContent h3 {
+	color: #069fd1;
+	font-size:1em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#bodyContent h4 {
+	color: #069fd1;
+	font-size:0.88em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+
+#bodyContent p {
+	padding-bottom: 10px;
+	margin:5px 0;
+}
+
+#bodyContent a{
+	color:#318BBC;
+	outline:none;
+	text-decoration: none;
+}
+
+#bodyContent a:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+#bodyContent .help {
+color:#777777;
+font-size:0.88em;
+line-height:1.167em;
+padding:0;
+}
+#bodyContent a.help{
+text-decoration:none;
+}
+
+#bodyContent p.borderBottom {
+	padding-bottom: 10px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 1px dotted #e3e3e3;
+}
+
+#bodyContent p.teaser {
+	border-top: 1px dotted #e3e3e3;
+	font-size:1.286em;
+	line-height: 1.222em;
+	font-family: georgia, serif;
+	color: #5c901c;
+	border-bottom: none;
+	padding: 10px 0px 25px 0px;
+	margin-bottom: 15px;
+	background: transparent url('/global/images/bodyContent/teaser_divider.png') bottom center no-repeat;
+}
+
+#bodyContent ul {
+line-height:1.3em;
+list-style-type:none;
+list-style-image:none;
+padding:0px 0px 0px 0px;
+}
+#bodyContent ul li{
+background-image:url(/global/images/misc/content-bullet.png);
+background-position:5px 5px;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+}
+
+#bodyContent a img {
+	border: none;
+}
+
+#bodyContent .activitiesIconWrapper{
+border:1px solid #E3E3E3;
+color:#777777;
+padding:0 5px;
+float:left;
+margin:0 0 10px 0;
+}
+#bodyContent .activitiesIconWrapper p{
+	padding:0 0;
+}
+#bodyContent .imageBorder {
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+/* table styles */
+#bodyContent table {
+	border-collapse: collapse;
+}
+#bodyContent table .td-white {
+	background-color: #ffffff;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-light {
+	background-color: #e4f4fb;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-medium {
+	background-color: #4ca3d3;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-dark {
+	background-color: #3385b1;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-white-border {
+	border:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-left {
+	border-left:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-right {
+	border-right:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-top {
+	border-top:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-bottom {
+	border-bottom:1px solid #ffffff;
+}
+#bodyContent table.table-bottom-border {
+	border-bottom: 5px solid #4ca4d3;
+}
+
+
+
+/* Category link table */
+#bodyContent p.categoryImage {
+	border: none;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+#bodyContent p.categoryLinks {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks p{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks {
+	padding: 0px 0px 24px 0px;
+	background: transparent url('/global/images/bodyContent/category_table_bg.png') bottom left repeat-x;
+}
+#bodyContent table.categoryLinks td {
+	width: 225px;
+}
+#bodyContent table.categoryLinks td.categoryLinksSpacer {
+	width: 20px;
+}
+#bodyContent table.categoryLinks td.categoryLinksHeading{
+	background-color: #0294c3;
+}
+#bodyContent table.categoryLinks td h2 {
+	text-align: center;
+	color: #ffffff;
+	background-color: #0294c3;
+	text-transform: uppercase;
+	font-size:1.143em;
+	line-height: 1em;
+	margin: 13px 0px 16px 0px;
+}
+#bodyContent table.categoryLinks td ul {
+	list-style: none;
+	padding: 0px 0px 20px 10px;
+	margin: 0px 0px 25px 0px;
+	font-size:1em;
+	line-height: 1.143em;
+}
+#bodyContent table.categoryLinks td ul li{
+	border-bottom: 1px dashed #dedede;
+	padding: 5px 0px 5px 0px;
+	background: none;
+}
+#bodyContent table.categoryLinks td ul li a{
+	text-decoration: none;
+}
+#bodyContent table.categoryLinks td ul li a:hover{
+	text-decoration: underline;
+}
+
+
+/*
+ * CALLS TO ACTION ON HOME AND CATEGORY PAGES 
+ */
+
+#bodyContent #callsToAction{
+	border-bottom: 1px dashed #dbe5ea;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	width: 225px;
+	float: right;
+}
+
+#bodyContent #callsToAction div.callToAction {
+	width: 225px;
+	float: left;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+#bodyContent #callsToAction div.left, #bodyContent #callsToAction div.center{
+	padding-right: 20px;
+}
+
+#bodyContent #callsToAction div.summary{
+	font-size:0.857em;
+	line-height: 1.667em;
+	background-position: 0px 38px;
+}
+
+#bodyContent #callsToAction div.summary p{
+	margin: 0px; 
+	padding-left: 10px;
+	padding-right: 20px;
+	height: 30px;
+	color: #FFFFFF;
+}
+
+#bodyContent #callsToAction div.heading{
+	background-color: #096299;
+}
+
+#bodyContent #callsToAction div.heading h3{
+	margin: 0px;
+	padding: 0px 10px;
+	color: #FFFFFF;
+	font-size:1.667em;
+	line-height: 1.9em;
+}
+
+#bodyContent #callsToAction a.link{
+	display:block;
+	background: #f3dc92 url(/global/images/bodyContent/yellow_button.png) no-repeat bottom left;
+	font-size:1.286em;
+	line-height: 2.111em;
+	text-align: center;
+	color: #3b4141;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #ffffff;
+}
+#bodyContent #callsToAction a.link:hover{
+	text-decoration: underline;
+}
+
+#bodyContent #callsToAction a {
+	text-decoration: none;
+}
+
+#bodyContent #callsToAction img {
+	margin: 0px 0px -10px 5px;
+}
+
+/*
+ * HOME PAGE RECENT NEWS
+ */
+#bodyContent #recentNewsBox {
+	float: left;
+	width: 480px;
+}
+
+#wrapper #bodyContent #callsToAction div.callToAction{
+	width: 226px;
+}
+
+/*
+ * SITEMAP PAGE STYLES
+ */
+
+#bodyContent #sitemap div.column{
+	width: 220px;
+	padding-right: 20px;
+	float: left;
+}
+#bodyContent #sitemap .lastColumn {
+	width: 240px;
+	padding-right: 0px;
+	float: left;
+}
+#bodyContent #sitemap .section {
+	padding-bottom: 20px;
+}
+#bodyContent #sitemap  ul{
+	display:block;
+	padding:0px 0px 0px 15px;
+	margin:0px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#bodyContent #sitemap  ul li{
+	list-style-type: none;
+	background: none;
+	padding-left: 0px;
+}
+#bodyContent #sitemap a {
+	color: #0c4f73;
+	font-size:0.857em;
+	line-height: 1.333em;
+	text-decoration:none;
+	display: block;
+	padding:2px 5px;
+	border-bottom: 1px solid #f4f4f4;
+}
+#bodyContent #sitemap  a:hover{
+	background-color: #41b1e2;
+	color: #ffffff;
+}
+#bodyContent #sitemap a.first_1 {
+	color:#41b1e2;
+	font-size:1em;
+	line-height: 1.286em;
+	font-weight:bold;
+	border-bottom: none;
+}
+#bodyContent #sitemap a.first_1:hover {
+	color:#1C75A3;
+	text-decoration:underline;
+	background-color: #ffffff;
+}
+
+/*
+ * LISTING RELATED STYLES
+ */
+
+#bodyContent .listing .date, #bodyContent .listing .dateSummary {
+	font-size:0.714em;
+	line-height: 1em;	
+	color: #96c2da;
+	font-weight: bold;
+}
+
+#bodyContent .listing h2 {
+	margin: 0px;
+}
+
+#bodyContent .listing h2 a {
+	text-decoration: none;
+	font-size:0.762em;
+	line-height: 1.125em;
+}
+#bodyContent .listing h2 a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+
+#bodyContent .listing  p {
+	padding-bottom: 10px;
+	margin-bottom: 15px;	
+	border-bottom: 1px dashed #dbe5ea;
+}
+
+#bodyContent #minutes .listing p, #bodyContent #agenda .listing p{
+margin-bottom:0;
+}
+#bodyContent #minutes h3, #bodyContent #agenda h3{
+	text-align:right;
+}
+
+/*
+ * PHOTO GALLERY PAGE STYLES
+ */
+ 
+#bodyContent .photoGallery .photoGalleryImage {
+	width: 200px;
+	padding-left:10px;
+	float: left;
+	text-align: center;
+}
+
+#bodyContent .photoGallery .photoGalleryImage a img {
+	padding: 5px;
+	border: 1px solid #e5e5e5;
+}
+
+#bodyContent .photoGallery .photoGalleryImage h2 {
+	font-size:1em;
+	line-height: 1.143em;
+}
+
+/*
+ * CONTACT FORM STYLES
+ */
+ 
+#bodyContent .contactForm .success {
+	color: #3fa1d3;
+	padding: 10px 0px 5px 0px;
+}
+#bodyContent .contactForm .error {
+	color: #ff0000;
+	font-size:0.857em;
+	line-height: 1.167em;
+	font-weight:normal;
+}
+#bodyContent .contactForm .required {
+	color: #ff0000;
+}
+
+#bodyContent .contactForm label {
+	display: block;
+	font-weight: bold;
+}
+
+#bodyContent .contactForm input, #bodyContent .contactForm textarea {
+	font-family: arial, sans-serif;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+#bodyContent .contactForm .name input, #bodyContent .contactForm .email, #bodyContent .contactForm textarea {
+	border: 1px solid #e3e3e3;
+}
+#bodyContent .contactForm .name, #bodyContent .contactForm .email, #bodyContent .contactForm .message {
+	margin-bottom: 10px;
+}
+	#bodyContent .contactForm .name span {
+		float: left;
+		padding-right: 10px;
+	}
+	#bodyContent .contactForm .name input {
+		width: 148px;
+	}
+	#bodyContent .contactForm .name label{
+		font-weight: normal;
+		font-size:0.857em;
+		line-height: 1.167em;
+	}
+	
+#bodyContent .contactForm .email {
+	width: 310px;
+}
+#bodyContent .contactForm textarea {
+	display: block;
+	width: 310px;
+	height: 125px;
+}
+
+
+/*
+ * SEARCH RESULTS STYLES
+ */
+#bodyContent dt {
+	border-top:1px dotted #E3E3E3;
+	padding:10px 0px 5px 0px;
+}
+
+#bodyContent dt a{
+	color:#069FD1;
+	font-size:1em;
+	line-height:1.5em;
+}
+
+#bodyContent dd{
+	margin:0px 0px 10px 5px;
+}
+
+/*
+ * readMore STYLES
+ */
+ 
+#bodyContent .readMore{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+
+}
+
+#bodyContent .readMore:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+/* PROGRAM SEARCH */
+#bodyContent #programSearch {
+	width: 520px;
+}
+#bodyContent #programSearch #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+	outline: none;
+	display: none;
+}
+#bodyContent #programSearch #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #programSearch #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+
+#bodyContent #programSearch label {
+	display: block;
+}
+#bodyContent #programSearch select {
+	width: 250px;
+}
+
+/*
+Removed by Chris Moore - August 20, 2009
+
+#bodyContent #programSearch  span {
+	float:left;
+	padding: 0px 5px 5px 5px;
+}
+ */
+#bodyContent #programSearch  .info {
+	font-size:0.857em;
+	line-height: 1.333em;
+	border: none;
+	color: #555555;
+	padding: 0px;
+	margin:0px;
+	clear: both;
+}
+#bodyContent #programSearch #advancedSearch {
+	padding: 5px 0px 10px 0px;
+}
+/* PROGRAM CALENDAR */
+#bodyContent #program-calendar table{
+    width:700px;
+    border-collapse: collapse;
+}
+#bodyContent #program-calendar-header{
+    width:701px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #programCalendarFilter{
+    width: 701px;
+}
+#bodyContent #program-calendar-header .seasons {
+    font-weight:bold;
+    padding: 0px 0px 5px 140px;
+    text-align: center;
+    word-spacing: 80px;
+}
+#bodyContent #program-calendar-header .programs-head {
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    width: 138px;
+}
+#bodyContent #program-calendar-header .months {
+    float: right;
+    text-align: center;
+    width: 563px;
+    word-spacing: 18px;
+}
+#bodyContent #program-calendar td .facilityName {
+    font-weight: bold;
+    font-size:0.75em;
+    line-height: 1.333em;
+    margin: 15px 0px 0px 5px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #program-calendar td .programName {
+    font-size:0.75em;
+    line-height: 1.167em;
+    text-align: right;
+    margin: 0px 5px 0px 10px;
+    display: block;
+}
+#bodyContent #program-calendar td {
+    text-align: left;
+    width:20%;
+    vertical-align: bottom;
+    padding: 0px 0px 5px 0px;
+}
+#bodyContent #program-calendar tr td div.off {
+    background-color: transparent;
+}
+#bodyContent #program-calendar .lifeLine {
+    height: 8px;
+    line-height: 8px;
+    border-bottom: 1px dotted #E3E3E3;
+}
+#bodyContent #program-calendar  div.environmental_appreciation {
+    background-color:#ffcb77;
+}
+#bodyContent #program-calendar  div.environmental_learning {
+    background-color:#b26e00;
+}
+#bodyContent #program-calendar  div.heritage_studies {
+    background-color:#ff9d00;
+}
+#bodyContent #program-calendar div.leadership_development {
+    background-color:#2c74b2;
+}
+#bodyContent #program-calendar div.outdoor_recreation {
+    background-color:#0092c9;
+}
+#bodyContent #filterProgramCalendarControl {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+  font-size:0.857em;
+  line-height:1.167em;
+  margin:5px 0;
+  padding:0 0 5px 15px;
+  display: block;
+}
+#bodyContent #filterProgramCalendarControl.active {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #filterProgramCalendar fieldset{
+    width:320px;
+    float: left;
+}
+#bodyContent #filterProgramCalendar fieldset .box{
+    float: left;
+    width: 10px;
+}
+
+/* PROGRAM */
+#bodyContent #program a.booknow {
+	background: #f9eec4 url('/global/images/misc/button_210_22.png') no-repeat left bottom;
+	font-size:1em;
+	line-height: 1.571em;
+	font-weight: bold;
+	color: #3b4141;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+	text-transform: uppercase;
+	float: right;
+	width: 210px;
+}
+
+#bodyContent #program table {
+	width: 100%;
+	margin-top:15px;
+}
+#bodyContent #program table td {
+	width: 33%;
+	padding: 0px;
+	vertical-align: top;
+}
+#bodyContent #program table h3{
+	margin: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e3e3e3;
+	font-size:1.143em;
+	line-height: 1em;
+}
+#bodyContent #program table p{
+	line-height:1.286em;
+	margin: 5px 5px 10px 0px;
+	padding: 0px;
+}
+
+/* CAREERS */
+
+#bodyContent div.job p{
+	border: none;
+}
+
+/* 404 styling */
+#bodyContent div.notFound {
+	background: #318BBC url(/global/images/bodyContent/404_bg.jpg) no-repeat;
+	height:505px;
+}
+#bodyContent div.notFound .text{
+width:825px;
+padding:90px 0 0 90px;
+}
+#bodyContent div.notFound .text h1{
+	font-size:1.625em;
+	line-height: 1.154em;
+	color: #069FD1;
+	font-weight:bold;
+	padding-bottom: 0px;
+}
+#bodyContent div.notFound .text p {
+	border:medium none;
+	color:#000000;
+	font-size:0.875em;
+	line-height:1.714em;
+}
+#bodyContent .notFoundFooter {
+	background-color:#318BBC;
+	float:right;
+	width:100%;
+}
+#bodyContent .notFoundLinks {
+background:transparent url(/global/images/bodyContent/404_border_slice.png) no-repeat scroll left center;
+float:right;
+margin:0 20px 0 0;
+padding:15px 0;
+text-align:center;
+width:645px;
+}
+#bodyContent .notFoundLinks a {
+background:transparent url(/global/images/bodyContent/404_btn.png) no-repeat scroll 0 0;
+color:#0C4F73;
+display:inline-block;
+font-size:1.095em;
+font-weight:bold;
+line-height:1.251em;
+margin:0 5px;
+padding:10px 0 10px 0;
+text-decoration:none;
+text-transform:uppercase;
+width:192px;
+}
+#bodyContent .notFoundLinks a:hover {
+	text-decoration:underline;
+}
+
+/*
+ * PAGINATION STYLES
+ */
+ 
+ #bodyContent .pagination{
+	background-color:#0C4F73;
+	margin: 5px 0px 5px 0px;
+}
+ 
+#bodyContent .pagination a{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:capitalize;
+	line-height: 1.563em;
+	
+}
+#bodyContent .pagination a:hover {
+	color: #069FD1;
+	text-decoration: underline;
+}
+
+ 
+#bodyContent .pagination a.previous{
+	float:left;
+}
+
+#bodyContent .pagination a.next{
+	float:right;
+}
+
+/*
+ * MAP STYLES
+ */
+#bodyContent #mapControls {
+}
+#bodyContent #mapControls  #mapInstructions {
+	clear: both;
+	font-size:0.786em;
+	line-height: 1.273em;
+}
+#bodyContent #mapControls  select {
+	margin-top: 5px;
+	float: right;
+	width: 100px;
+}
+
+#bodyContent #mapControls a {
+ 	padding: 0px 5px 0px 5px;
+ 	background-color:#318BBC;
+ 	color: #000000;
+ 	text-decoration: none;
+ 	border-top: 1px solid #ffffff;
+ 	font-size:0.857em;
+	line-height: 2em;
+	display: block;
+	float: left;
+	margin: 0px 1px 5px 0px;
+	outline: none;
+}
+#bodyContent #mapControls a.active {
+	margin-bottom: 0px;
+}
+#bodyContent #mapControls a.active {
+	background-color:#0C4F73;
+ 	color: #ffffff;
+}
+#bodyContent #mapControls #carruthers.active {
+	border-bottom: 5px solid #DDC6FF; 
+}
+#bodyContent #mapControls #don.active {
+	border-bottom: 5px solid #D07E0B;
+}
+#bodyContent #mapControls #duffins.active {
+	border-bottom: 5px solid #7802BD;
+}
+#bodyContent #mapControls #etobicoke.active {
+	border-bottom: 5px solid #17CF87;
+}
+#bodyContent #mapControls #frenchmansbay.active {
+	border-bottom: 5px solid #902720;
+}
+#bodyContent #mapControls #highland.active {
+	border-bottom: 5px solid #E62BC2;
+}
+#bodyContent #mapControls #humber.active {
+	border-bottom: 5px solid #A92183;
+}
+#bodyContent #mapControls #mimico.active {
+	border-bottom: 5px solid #DFBE26;
+}
+#bodyContent #mapControls #petticoat.active {
+	border-bottom: 5px solid #B4E736
+}
+#bodyContent #mapControls #rouge.active {
+	border-bottom: 5px solid #E4251B;
+}
+
+#bodyContent #clearDirections {
+	margin-top:10px;
+	display: none;
+}
+
+.aboutTab img.logo {
+	float:left; 
+	margin: 10px 20px 0px 0px;
+	width: 150px;
+}
+.aboutTab .locationInfo {
+	float: left;
+	padding-left: 5px;
+}
+.aboutTab .activities {
+	clear: both;
+	padding-top: 10px;	
+}
+.aboutTab .activities img {
+	margin: 0px;
+}
+	
+.directionsTab label {
+	width: 100px;
+	padding-right: 5px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	
+}
+.directionsTab .saddrContainer {
+	float: left; 
+}
+.directionsTab #saddr {
+	width: 250px;
+}
+.directionsTab .button {
+	margin:10px 0px 0px 105px;
+}
+
+/* SEARCH STYLES */
+#bodyContent #searchForm div.input {
+	padding: 5px 0px 5px 0px;
+	width: 520px;
+}
+
+#bodyContent #volunteerOpportunitySearch #searchForm div.input{
+	padding: 5px 0px 5px 0px;
+	width: 450px;
+}
+#bodyContent #searchForm label {
+	display: block;
+	float: left;
+	color:#1C75A3;
+}
+#bodyContent #searchForm label.additionalInfo {
+	display: none;
+}
+
+#bodyContent #searchForm select {
+	float: right;
+}
+#bodyContent #searchForm .text  {
+	width: 400px;	
+	float: right;
+}
+#bodyContent #volunteerOpportunitySearch #searchForm .text{
+float:left;
+margin:0 0 0 5px;
+width:370px;
+}
+#bodyContent #searchForm .radios  {
+	width: 500px;	
+	float: right;
+}
+#bodyContent #searchForm .radio input {
+	margin: 3px 3px 0px 0px;
+}
+#bodyContent #searchForm .radio  {
+	margin-right: 15px;
+}
+#bodyContent #searchForm .submit {
+	float: right;
+}
+#bodyContent #searchForm #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent #searchForm #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #searchForm #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+#bodyContent #searchForm #advancedSearch label {
+	padding-left: 15px;
+}
+#bodyContent span.url {
+	display: block;
+	color: #1C75A3;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+/*
+ * NEWSLETTER FORM STYLES
+ */
+ 
+#bodyContent #mailingListsSubscription ul, #bodyContent  #mailingListsUnsubscription ul{
+	line-height:2.5em;
+	list-style-image:none;
+	list-style-type:none;
+	padding:0;
+ }
+ 
+#bodyContent #mailingListsSubscription input#email:focus {
+	background: #fdecb2;
+}
+#bodyContent #mailingListsSubscription label{
+	padding:0 5px 0 0;
+} 
+
+/*
+ * DOCUMENT LIBRARY STYLES
+ */
+
+#bodyContent #documentLibrary .section{
+	width: 325px;
+    float: left;
+    vertical-align: top;
+}
+
+#bodyContent #documentLibrary .section .description{
+	width: 250px;
+    line-height: normal;
+}
+
+/*
+ * EVENT DETAILS STYLES
+ */
+.event-label{
+color:#069FD1;
+display:inline;
+font-size:1em;
+font-weight:bold;
+margin:0;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+text-decoration:none;
+}
+.event-date, .event-description, .event-location, .event-link, .event-files{
+	display:inline;	
+}
+
+
+/* PROGRAM BOOKING */
+#bodyContent #programBooking #program {
+	float: right;
+	width: 300px;	
+	margin: 0px;
+}
+#bodyContent #programBooking #program li {
+	background: none;
+	line-height:1em;
+}
+#bodyContent #programBooking #program li h2 {
+	margin: opx 0px 5px 0px;
+}
+#bodyContent #programBooking #program li h3 {
+	margin: 0px;
+}
+
+#bodyContent #programBooking #programBookingDetails {
+float:left;
+width:400px;
+}
+
+#bodyContent #programBooking #programBookingDetails .accordion h2{
+	margin:0px;
+}
+#bodyContent #programBooking #programBookingDetails h2{
+	margin: 15px 0px 5px 0px;
+}
+
+
+#bodyContent #programBooking #programBookingForm .field, #bodyContent #programBooking #programBookingDetails .field {
+	padding-top: 5px;
+}
+#bodyContent #programBooking #programBookingForm .value, #bodyContent #programBooking #programBookingDetails .value {
+	float: left;
+}
+#bodyContent #programBooking #programBookingForm label, #bodyContent #programBooking #programBookingDetails .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent #programBooking #programBookingForm input{
+float:left;
+}
+
+#bodyContent #programBooking #programBookingForm input.text{
+	width: 200px;	
+}
+#bodyContent #programBooking #programBookingForm textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+#bodyContent #programBooking #programBookingForm .prevNext{
+	padding-top: 20px;
+}
+#bodyContent #programBooking #programBookingForm .prev{
+	background:transparent url(/global/images/misc/bullet_back.png) no-repeat scroll 0 2px;
+	float:left;
+	padding:0 0 0 20px;
+}
+#bodyContent #programBooking #programBookingForm .next{
+	background:transparent url(/global/images/misc/bullet_go.png) no-repeat scroll 35px 2px;
+	float:right;
+	padding:0 22px 0 0;
+}
+#bodyContent #programBooking #programBookingForm .submit{
+	float:right;
+}
+
+#bodyContent #programBooking #programBookingForm #datePicker {
+	font-size: 0.76em;
+	padding: 3px 0px 0px 140px;
+}
+
+
+/* FORMS
+ */
+#bodyContent .generic .field {
+	padding-top: 5px;
+}
+#bodyContent .value {
+	float: left;
+}
+#bodyContent .generic label, #bodyContent .generic .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent .generic input, #bodyContent .generic  select {
+float:left;
+}
+
+#bodyContent .generic input.text{
+	width: 200px;	
+}
+#bodyContent .generic textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+
+/*
+ * FORM ERRORS + VALIDATION
+ */
+#errormsgs, #errorMessages{
+color:#FF0000;
+float:left;
+text-align:left;
+width:100%;
+}
+ 
+ 
+#bodyContent #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png) ;
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+margin:0 0 0 5px;
+}
+#bodyContent #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:22px;
+}
+#bodyContent #EVNlogin #returningCustomer #macro-login-message, #bodyContent #EVNlogin #newCustomer #macro-login-message, #bodyContent #EVNlogin #messagesMessages{
+margin:0 0 0 270px;
+color:#FF0000;
+
+}
+#bodyContent #loginAccount #returningCustomer #macro-login-message{
+margin:0 0 0 35%;
+}
+#bodyContent #returningCustomer #macro-login-message{
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:25px;
+margin:0 0 0 41%;
+color:#FF0000;
+}
+#bodyContent #EVNlogin{
+width:700px;
+}
+
+.form-error{
+background:#FFCCCC none repeat scroll 0 0;
+color:#220000;
+padding:2px;
+
+ }
+ 
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+	background:transparent url(/global/images/misc/valid.png) no-repeat;
+}
+	
+.LV_invalid {
+    color:#CC0000;
+	background:transparent url(/global/images/misc/invalid.png) no-repeat;
+    margin:0 0 0 5px;	
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+
+}
+
+
+#errormsgs div {
+	background: #FFF url(/global/images/misc/invalid.png) no-repeat left center;
+	padding-left: 20px;
+	display: none;
+}
+#bodyContent #newCustomer #errormsgs div, #bodyContent #EVNlogin #errormsgs div{
+	padding-left: 25px;
+	width:550px;
+}
+.helpinfo{
+	cursor:help;	
+}
+
+/*
+ * CSS TOOLTIP
+ */
+ 
+a.tt{
+    position:relative;
+    z-index:24;
+	font-weight:bold;
+    text-decoration:none;
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{ z-index:25; color: #333333; background:;}
+a.tt:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+    text-align: center;
+    color:#333333;
+	filter: alpha(opacity:90);
+	KHTMLOpacity: 0.90;
+	MozOpacity: 0.90;
+	opacity: 0.90;
+	z-index:55; 
+}
+a.tt:hover span.top{
+	display: block;
+	padding: 30px 8px 0;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat top;
+    z-index:25; 
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px; 
+	background:transparent url(/global/images/misc/tt_bubble_filler.png) repeat bottom; 
+	z-index:25; 
+}
+a.tt:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat bottom;
+}
+ 
+
+/* registration form */
+#bodyContent .loginForm{
+float:left;
+}
+
+#bodyContent #returningCustomer, #bodyContent #newCustomer{
+background:transparent url(/global/images/misc/loginFoot.png) repeat-x bottom;
+border:1px solid #DEDEDE;
+float:left;
+margin:15px 0;
+padding:15px 0 0;
+width:100%;
+}
+#bodyContent #newCustomer #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #EVNlogin #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #forgottenPassword{
+	padding:15px 0 0 0;
+}
+#bodyContent #returningCustomer .loginField, #bodyContent #newCustomer .loginField{
+	padding:5px 0 0 25%;
+}
+#bodyContent .forgotPasswordReset .field{
+	padding:5px 0 0 7%;
+}
+#bodyContent #returningCustomer label, #bodyContent #newCustomer label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent .forgotPasswordReset label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent #returningCustomer .inlineInput, #bodyContent #newCustomer .inlineInput{
+	width:200px;
+}
+#bodyContent #returningCustomer .submitFloat, #bodyContent #newCustomer .submitFloat{
+	margin:15px 0 15px 50%;
+	width:85px;
+}
+#bodyContent #EVNlogin .submitFloat{
+	margin:15px 0 15px 47%;
+	width:125px;
+}
+#bodyContent .forgotPasswordReset .btn{
+	margin:15px 0 15px 26%;
+	width:125px;
+}
+#bodyContent .loginFloat{
+margin:0 0 0 25px;
+}
+#bodyContent h3.loginFloat a{
+border-left:1px solid;
+color:#777777;
+font-size:0.8em;
+margin:0 0 0 10px;
+padding:0 0 0 10px;
+}
+#bodyContent .loginCheckboxField{
+margin:5px 0 15px 48%;
+}
+#bodyContent #returningCustomer .loginCheckboxField input{
+float:left;
+margin:3px 0;
+}
+#bodyContent #returningCustomer .loginCheckboxField label{
+color:#777777;
+float:left;
+font-size:0.9em;
+padding:2px 0 0;
+width:90px;
+}
+#bodyContent .loginForm{
+border-top:1px solid #DEDEDE;
+margin:15px 0 0;
+padding:25px 0 0;
+}
+
+#bodyContent #checkoutForm input, #bodyContent #checkoutForm select{
+	width: 190px;
+}
+
+#bodyContent #checkoutForm donationOnBehalf{
+	width: auto;
+}
+
+#bodyContent #checkoutForm #donationOnBehalf, #bodyContent #checkoutForm #saveBillingInfo, #bodyContent #checkoutForm #send-info input, #bodyContent #checkoutForm #shipping-single, #bodyContent #checkoutForm #shipping-multiple{
+	width: auto;
+}
+
+
+#bodyContent .comment-toggle{
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	
+	color:#1C75A3;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:0 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent .additional-comments {
+	border-top:1px dotted #E3E3E3;
+	margin-top:5px;
+	padding-top: 5px;
+}
+
+#bodyContent .active .comment-toggle{
+	background: transparent url('/global/images/secondaryNavContent/didyouknow_minus.png') no-repeat 0px 2px;
+	border-bottom: none;
+}
+#bodyContent .support-block{
+float:left;
+width:343px;
+}
+#bodyContent .support-block-right{
+float:left;
+width:343px;
+padding:0 0 0 29px;
+}
+#bodyContent p.support-btn{
+background:transparent url(/global/images/bodyContent/support-yellow_btn.png) no-repeat scroll 0 0;
+height:38px;
+margin:0;
+text-align:center;
+}
+#bodyContent p.support-btn a{
+color:#3B4141;
+font-size:1.1em;
+font-weight:bold;
+line-height:2.4em;
+text-shadow:1px 1px 0 #FFFFFF;
+}
+#bodyContent .donationTable{
+margin:15px 0 0;
+}
+#bodyContent .donationTable .tableHeading{
+background-color:#069FD1;
+width:150px;
+line-height:2em;
+}
+#bodyContent .donationTable .tableHeading .inlineIconImage{
+display:inline;
+vertical-align:middle;
+margin:0 0 0 5px;
+}
+#bodyContent .donationTable .tableHeading h3{
+color:#FFFFFF;
+display:inline;
+font-size:1em;
+font-weight:normal;
+}
+#bodyContent .supportTableContent{
+background-color:#EBF3F7;
+padding:10px;
+vertical-align:top;
+}
+
+/*
+ * HOMEPAGE SLIDESHOW STYLES
+ */
+
+#bodyContent #contentSlideshow {
+    position:relative;
+	height:296px;
+	padding:0 0 15px;
+	clear:both;
+}
+
+#bodyContent #contentSlideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+
+#bodyContent #contentSlideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#bodyContent #contentSlideshow IMG.last-active {
+    z-index:9;
+}
+/* EVN STUFF */
+#bodyContent .availability .period {
+	width:75px;
+}
+#bodyContent .availability .day {
+text-align:center;
+width:40px;
+}
+#bodyContent .availability table {
+
+}
+#bodyContent .availability table tr td {
+	font-size:0.875em;
+	line-height: 1em;
+	height: 18px;
+}
+
+#bodyContent .availability table.sun_m td.sun_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_m td.mon_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_m td.tue_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_m td.wed_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_m td.thu_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_m td.fri_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_m td.sat_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                       
+#bodyContent .availability table.sun_a td.sun_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_a td.mon_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_a td.tue_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_a td.wed_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_a td.thu_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_a td.fri_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_a td.sat_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                          
+#bodyContent .availability table.sun_e td.sun_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_e td.mon_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_e td.tue_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_e td.wed_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_e td.thu_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_e td.fri_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_e td.sat_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+
+/* Employer Administration */
+
+#bodyContent #employerAdmin{
+}
+#bodyContent #employerAdmin .companyName{
+color:#777777;
+}
+#bodyContent #employerAdmin .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent .formControls .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .actionBtnOptions a:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptions{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptions:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptionsLarge{
+background:#F9EEC4 url(/global/images/misc/button_210_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:210px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptionsLarge:hover{
+text-decoration:underline;
+}
+
+#bodyContent #employerAdmin .description{
+margin:10px 0;
+width:545px;
+}
+#bodyContent #employerAdmin .messageBox{
+background-color:#F0E6CF;
+border:3px solid #DEDEDE;
+line-height:2em;
+margin:10px auto;
+padding:10px 0 10px 20px;
+width:680px;
+}
+#bodyContent #employerAdmin #expiredOpportunities,#bodyContent #employerAdmin #activeOpportunities{
+margin:30px 0;
+}
+#bodyContent #employerAdmin tr, #bodyContent #volunteerApplicationListing tr{
+line-height:2em;	
+}
+#bodyContent #employerAdmin tr.even, #bodyContent #volunteerApplicationListing tr.even{
+}
+#bodyContent #employerAdmin tr.odd, #bodyContent #volunteerApplicationListing tr.odd{
+background-color:#DCDCDC;	
+}
+#bodyContent #employerAdmin th{
+
+}
+#bodyContent #employerAdmin .applicationForReview, #bodyContent #employerAdmin .positionClosing, #bodyContent #employerAdmin .positionEdit{
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .positionDelete, #bodyContent #employerAdmin .positionView{
+padding:0 5px;
+}
+#bodyContent #employerAdmin .position{
+text-align:left;
+width:300px;
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .postingEndDate, #bodyContent #employerAdmin .postingExpDate{
+width:100px;
+text-align:center;
+}
+#bodyContent #employerAdmin .appPositions{
+text-align:center;
+width:220px;
+}
+#bodyContent #employerAdmin #expiredOpportunities .position{
+width:350px;
+}
+
+#bodyContent #volunteerApplicationListing .applicant{
+padding:0 0 0 15px;
+text-align:left;
+width:320px;
+}
+#bodyContent #volunteerApplicationListing .submissionDate{
+text-align:center;
+width:125px;
+}
+#bodyContent #volunteerApplicationListing .refNumber{
+text-align:center;
+width:150px;
+}
+#bodyContent #volunteerApplicationListing .view{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .status{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .legends{
+line-height:1.5em;	
+}
+#bodyContent #volunteerApplicationListing .grey{
+color:#777777;
+cursor:help;
+font-size:0.9em;
+}
+#bodyContent #volunteerApplicationListing h2{
+text-transform:capitalize;
+}
+
+/* Application Details */
+#bodyContent #applicationDetails #availability, #bodyContent #applicationDetails #personalInfo, #bodyContent #applicationDetails #about{
+margin:20px 0;
+}
+#bodyContent #applicationDetails .grey{
+color:#777777;
+}
+#bodyContent #applicationDetails .education-employment, #bodyContent #applicationDetails .vol-reasons, #bodyContent #applicationDetails .positions-seeking, #bodyContent #applicationDetails .ref-comments {
+margin:15px 0;
+}
+#bodyContent #applicationDetails #about .content{
+margin:0 0 0 20px;	
+}
+
+#bodyContent #applicationDetails table#applicantAvailability tr{
+	border-bottom: 1px solid #000000;
+}
+
+#bodyContent #applicationDetails table#applicantAvailability{
+margin:15px;
+}
+#bodyContent #applicationDetails #applicantAvailability th{
+text-align:center;
+width:75px;
+}
+#bodyContent #applicationDetails #applicantAvailability td.available{
+background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;
+}
+#bodyContent #applicationDetails .downloadResume{
+float:left;
+width:200px;
+}
+#bodyContent #applicationDetails .policeCheck{
+float:right;
+width:400px;	
+}
+#bodyContent #applicationDetails .applicantInfo{
+display:inline;
+float:left;
+width:250px;
+overflow:auto;
+}
+ #bodyContent #applicationDetails .applicantTransportation{
+display:inline;
+float:left;
+width:265px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantAddress{
+display:inline;
+float:left;
+width:190px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantDetails{
+float:left;
+width:545px;
+}
+#bodyContent #applicationDetails .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent #applicationDetails .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .black{
+color:#000000;
+}
+
+#bodyContent .actionBtnOptions .print{
+display:none;
+}
+
+/*CM - Added styles for Meetings and Agendas - Start */
+.listTbl {
+	margin:1px!important;
+}
+.listTbl th {
+	text-align:left!important;
+	font:bold 12px Arial, Helvetica, sans-serif!important;
+	padding:3px 5px!important;
+	border-bottom:1px solid #0092C9!important;
+}
+.listTbl td {
+	vertical-align:top!important;
+	padding:3px 5px!important;
+	font:12px Arial, Helvetica, sans-serif!important;
+	border-top:1px solid #0092C9!important;
+}
+/*CM - Added styles for Meetings and Agendas - End*/
+*
+ * GENERAL DETAIL PAGE STYLES
+ */
+#bodyContent h1 {
+	color:#069fd1;
+	font-size:1.714em;
+	line-height:1em;
+	padding: 5px 0;
+	margin: 0px;
+}
+
+#bodyContent h2 {
+	color:#069fd1;
+	font-size:1.286em;
+	line-height: 1em;
+	margin:5px 0;
+}
+
+#bodyContent h3 {
+	color: #069fd1;
+	font-size:1em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#bodyContent h4 {
+	color: #069fd1;
+	font-size:0.88em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+
+#bodyContent p {
+	padding-bottom: 10px;
+	margin:5px 0;
+}
+
+#bodyContent a{
+	color:#318BBC;
+	outline:none;
+	text-decoration: none;
+}
+
+#bodyContent a:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+#bodyContent .help {
+color:#777777;
+font-size:0.88em;
+line-height:1.167em;
+padding:0;
+}
+#bodyContent a.help{
+text-decoration:none;
+}
+
+#bodyContent p.borderBottom {
+	padding-bottom: 10px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 1px dotted #e3e3e3;
+}
+
+#bodyContent p.teaser {
+	border-top: 1px dotted #e3e3e3;
+	font-size:1.286em;
+	line-height: 1.222em;
+	font-family: georgia, serif;
+	color: #5c901c;
+	border-bottom: none;
+	padding: 10px 0px 25px 0px;
+	margin-bottom: 15px;
+	background: transparent url('/global/images/bodyContent/teaser_divider.png') bottom center no-repeat;
+}
+
+#bodyContent ul {
+line-height:1.3em;
+list-style-type:none;
+list-style-image:none;
+padding:0px 0px 0px 0px;
+}
+#bodyContent ul li{
+background-image:url(/global/images/misc/content-bullet.png);
+background-position:5px 5px;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+}
+
+#bodyContent a img {
+	border: none;
+}
+
+#bodyContent .activitiesIconWrapper{
+border:1px solid #E3E3E3;
+color:#777777;
+padding:0 5px;
+float:left;
+margin:0 0 10px 0;
+}
+#bodyContent .activitiesIconWrapper p{
+	padding:0 0;
+}
+#bodyContent .imageBorder {
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+/* table styles */
+#bodyContent table {
+	border-collapse: collapse;
+}
+#bodyContent table .td-white {
+	background-color: #ffffff;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-light {
+	background-color: #e4f4fb;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-medium {
+	background-color: #4ca3d3;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-dark {
+	background-color: #3385b1;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-white-border {
+	border:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-left {
+	border-left:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-right {
+	border-right:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-top {
+	border-top:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-bottom {
+	border-bottom:1px solid #ffffff;
+}
+#bodyContent table.table-bottom-border {
+	border-bottom: 5px solid #4ca4d3;
+}
+
+
+
+/* Category link table */
+#bodyContent p.categoryImage {
+	border: none;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+#bodyContent p.categoryLinks {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks p{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks {
+	padding: 0px 0px 24px 0px;
+	background: transparent url('/global/images/bodyContent/category_table_bg.png') bottom left repeat-x;
+}
+#bodyContent table.categoryLinks td {
+	width: 225px;
+}
+#bodyContent table.categoryLinks td.categoryLinksSpacer {
+	width: 20px;
+}
+#bodyContent table.categoryLinks td.categoryLinksHeading{
+	background-color: #0294c3;
+}
+#bodyContent table.categoryLinks td h2 {
+	text-align: center;
+	color: #ffffff;
+	background-color: #0294c3;
+	text-transform: uppercase;
+	font-size:1.143em;
+	line-height: 1em;
+	margin: 13px 0px 16px 0px;
+}
+#bodyContent table.categoryLinks td ul {
+	list-style: none;
+	padding: 0px 0px 20px 10px;
+	margin: 0px 0px 25px 0px;
+	font-size:1em;
+	line-height: 1.143em;
+}
+#bodyContent table.categoryLinks td ul li{
+	border-bottom: 1px dashed #dedede;
+	padding: 5px 0px 5px 0px;
+	background: none;
+}
+#bodyContent table.categoryLinks td ul li a{
+	text-decoration: none;
+}
+#bodyContent table.categoryLinks td ul li a:hover{
+	text-decoration: underline;
+}
+
+
+/*
+ * CALLS TO ACTION ON HOME AND CATEGORY PAGES 
+ */
+
+#bodyContent #callsToAction{
+	border-bottom: 1px dashed #dbe5ea;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	width: 225px;
+	float: right;
+}
+
+#bodyContent #callsToAction div.callToAction {
+	width: 225px;
+	float: left;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+#bodyContent #callsToAction div.left, #bodyContent #callsToAction div.center{
+	padding-right: 20px;
+}
+
+#bodyContent #callsToAction div.summary{
+	font-size:0.857em;
+	line-height: 1.667em;
+	background-position: 0px 38px;
+}
+
+#bodyContent #callsToAction div.summary p{
+	margin: 0px; 
+	padding-left: 10px;
+	padding-right: 20px;
+	height: 30px;
+	color: #FFFFFF;
+}
+
+#bodyContent #callsToAction div.heading{
+	background-color: #096299;
+}
+
+#bodyContent #callsToAction div.heading h3{
+	margin: 0px;
+	padding: 0px 10px;
+	color: #FFFFFF;
+	font-size:1.667em;
+	line-height: 1.9em;
+}
+
+#bodyContent #callsToAction a.link{
+	display:block;
+	background: #f3dc92 url(/global/images/bodyContent/yellow_button.png) no-repeat bottom left;
+	font-size:1.286em;
+	line-height: 2.111em;
+	text-align: center;
+	color: #3b4141;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #ffffff;
+}
+#bodyContent #callsToAction a.link:hover{
+	text-decoration: underline;
+}
+
+#bodyContent #callsToAction a {
+	text-decoration: none;
+}
+
+#bodyContent #callsToAction img {
+	margin: 0px 0px -10px 5px;
+}
+
+/*
+ * HOME PAGE RECENT NEWS
+ */
+#bodyContent #recentNewsBox {
+	float: left;
+	width: 480px;
+}
+
+#wrapper #bodyContent #callsToAction div.callToAction{
+	width: 116px;
+}
+
+/*
+ * SITEMAP PAGE STYLES
+ */
+
+#bodyContent #sitemap div.column{
+	width: 220px;
+	padding-right: 20px;
+	float: left;
+}
+#bodyContent #sitemap .lastColumn {
+	width: 240px;
+	padding-right: 0px;
+	float: left;
+}
+#bodyContent #sitemap .section {
+	padding-bottom: 20px;
+}
+#bodyContent #sitemap  ul{
+	display:block;
+	padding:0px 0px 0px 15px;
+	margin:0px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#bodyContent #sitemap  ul li{
+	list-style-type: none;
+	background: none;
+	padding-left: 0px;
+}
+#bodyContent #sitemap a {
+	color: #0c4f73;
+	font-size:0.857em;
+	line-height: 1.333em;
+	text-decoration:none;
+	display: block;
+	padding:2px 5px;
+	border-bottom: 1px solid #f4f4f4;
+}
+#bodyContent #sitemap  a:hover{
+	background-color: #41b1e2;
+	color: #ffffff;
+}
+#bodyContent #sitemap a.first_1 {
+	color:#41b1e2;
+	font-size:1em;
+	line-height: 1.286em;
+	font-weight:bold;
+	border-bottom: none;
+}
+#bodyContent #sitemap a.first_1:hover {
+	color:#1C75A3;
+	text-decoration:underline;
+	background-color: #ffffff;
+}
+
+/*
+ * LISTING RELATED STYLES
+ */
+
+#bodyContent .listing .date, #bodyContent .listing .dateSummary {
+	font-size:0.714em;
+	line-height: 1em;	
+	color: #96c2da;
+	font-weight: bold;
+}
+
+#bodyContent .listing h2 {
+	margin: 0px;
+}
+
+#bodyContent .listing h2 a {
+	text-decoration: none;
+	font-size:0.762em;
+	line-height: 1.125em;
+}
+#bodyContent .listing h2 a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+
+#bodyContent .listing  p {
+	padding-bottom: 10px;
+	margin-bottom: 15px;	
+	border-bottom: 1px dashed #dbe5ea;
+}
+
+#bodyContent #minutes .listing p, #bodyContent #agenda .listing p{
+margin-bottom:0;
+}
+#bodyContent #minutes h3, #bodyContent #agenda h3{
+	text-align:right;
+}
+
+/*
+ * PHOTO GALLERY PAGE STYLES
+ */
+ 
+#bodyContent .photoGallery .photoGalleryImage {
+	width: 200px;
+	padding-left:10px;
+	float: left;
+	text-align: center;
+}
+
+#bodyContent .photoGallery .photoGalleryImage a img {
+	padding: 5px;
+	border: 1px solid #e5e5e5;
+}
+
+#bodyContent .photoGallery .photoGalleryImage h2 {
+	font-size:1em;
+	line-height: 1.143em;
+}
+
+/*
+ * CONTACT FORM STYLES
+ */
+ 
+#bodyContent .contactForm .success {
+	color: #3fa1d3;
+	padding: 10px 0px 5px 0px;
+}
+#bodyContent .contactForm .error {
+	color: #ff0000;
+	font-size:0.857em;
+	line-height: 1.167em;
+	font-weight:normal;
+}
+#bodyContent .contactForm .required {
+	color: #ff0000;
+}
+
+#bodyContent .contactForm label {
+	display: block;
+	font-weight: bold;
+}
+
+#bodyContent .contactForm input, #bodyContent .contactForm textarea {
+	font-family: arial, sans-serif;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+#bodyContent .contactForm .name input, #bodyContent .contactForm .email, #bodyContent .contactForm textarea {
+	border: 1px solid #e3e3e3;
+}
+#bodyContent .contactForm .name, #bodyContent .contactForm .email, #bodyContent .contactForm .message {
+	margin-bottom: 10px;
+}
+	#bodyContent .contactForm .name span {
+		float: left;
+		padding-right: 10px;
+	}
+	#bodyContent .contactForm .name input {
+		width: 148px;
+	}
+	#bodyContent .contactForm .name label{
+		font-weight: normal;
+		font-size:0.857em;
+		line-height: 1.167em;
+	}
+	
+#bodyContent .contactForm .email {
+	width: 310px;
+}
+#bodyContent .contactForm textarea {
+	display: block;
+	width: 310px;
+	height: 125px;
+}
+
+
+/*
+ * SEARCH RESULTS STYLES
+ */
+#bodyContent dt {
+	border-top:1px dotted #E3E3E3;
+	padding:10px 0px 5px 0px;
+}
+
+#bodyContent dt a{
+	color:#069FD1;
+	font-size:1em;
+	line-height:1.5em;
+}
+
+#bodyContent dd{
+	margin:0px 0px 10px 5px;
+}
+
+/*
+ * readMore STYLES
+ */
+ 
+#bodyContent .readMore{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+
+}
+
+#bodyContent .readMore:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+/* PROGRAM SEARCH */
+#bodyContent #programSearch {
+	width: 520px;
+}
+#bodyContent #programSearch #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+	outline: none;
+	display: none;
+}
+#bodyContent #programSearch #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #programSearch #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+
+#bodyContent #programSearch label {
+	display: block;
+}
+#bodyContent #programSearch select {
+	width: 250px;
+}
+
+/*
+Removed by Chris Moore - August 20, 2009
+
+#bodyContent #programSearch  span {
+	float:left;
+	padding: 0px 5px 5px 5px;
+}
+ */
+#bodyContent #programSearch  .info {
+	font-size:0.857em;
+	line-height: 1.333em;
+	border: none;
+	color: #555555;
+	padding: 0px;
+	margin:0px;
+	clear: both;
+}
+#bodyContent #programSearch #advancedSearch {
+	padding: 5px 0px 10px 0px;
+}
+/* PROGRAM CALENDAR */
+#bodyContent #program-calendar table{
+    width:700px;
+    border-collapse: collapse;
+}
+#bodyContent #program-calendar-header{
+    width:701px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #programCalendarFilter{
+    width: 701px;
+}
+#bodyContent #program-calendar-header .seasons {
+    font-weight:bold;
+    padding: 0px 0px 5px 140px;
+    text-align: center;
+    word-spacing: 80px;
+}
+#bodyContent #program-calendar-header .programs-head {
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    width: 138px;
+}
+#bodyContent #program-calendar-header .months {
+    float: right;
+    text-align: center;
+    width: 563px;
+    word-spacing: 18px;
+}
+#bodyContent #program-calendar td .facilityName {
+    font-weight: bold;
+    font-size:0.75em;
+    line-height: 1.333em;
+    margin: 15px 0px 0px 5px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #program-calendar td .programName {
+    font-size:0.75em;
+    line-height: 1.167em;
+    text-align: right;
+    margin: 0px 5px 0px 10px;
+    display: block;
+}
+#bodyContent #program-calendar td {
+    text-align: left;
+    width:20%;
+    vertical-align: bottom;
+    padding: 0px 0px 5px 0px;
+}
+#bodyContent #program-calendar tr td div.off {
+    background-color: transparent;
+}
+#bodyContent #program-calendar .lifeLine {
+    height: 8px;
+    line-height: 8px;
+    border-bottom: 1px dotted #E3E3E3;
+}
+#bodyContent #program-calendar  div.environmental_appreciation {
+    background-color:#ffcb77;
+}
+#bodyContent #program-calendar  div.environmental_learning {
+    background-color:#b26e00;
+}
+#bodyContent #program-calendar  div.heritage_studies {
+    background-color:#ff9d00;
+}
+#bodyContent #program-calendar div.leadership_development {
+    background-color:#2c74b2;
+}
+#bodyContent #program-calendar div.outdoor_recreation {
+    background-color:#0092c9;
+}
+#bodyContent #filterProgramCalendarControl {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+  font-size:0.857em;
+  line-height:1.167em;
+  margin:5px 0;
+  padding:0 0 5px 15px;
+  display: block;
+}
+#bodyContent #filterProgramCalendarControl.active {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #filterProgramCalendar fieldset{
+    width:320px;
+    float: left;
+}
+#bodyContent #filterProgramCalendar fieldset .box{
+    float: left;
+    width: 10px;
+}
+
+/* PROGRAM */
+#bodyContent #program a.booknow {
+	background: #f9eec4 url('/global/images/misc/button_210_22.png') no-repeat left bottom;
+	font-size:1em;
+	line-height: 1.571em;
+	font-weight: bold;
+	color: #3b4141;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+	text-transform: uppercase;
+	float: right;
+	width: 210px;
+}
+
+#bodyContent #program table {
+	width: 100%;
+	margin-top:15px;
+}
+#bodyContent #program table td {
+	width: 33%;
+	padding: 0px;
+	vertical-align: top;
+}
+#bodyContent #program table h3{
+	margin: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e3e3e3;
+	font-size:1.143em;
+	line-height: 1em;
+}
+#bodyContent #program table p{
+	line-height:1.286em;
+	margin: 5px 5px 10px 0px;
+	padding: 0px;
+}
+
+/* CAREERS */
+
+#bodyContent div.job p{
+	border: none;
+}
+
+/* 404 styling */
+#bodyContent div.notFound {
+	background: #318BBC url(/global/images/bodyContent/404_bg.jpg) no-repeat;
+	min-height:505px;
+}
+#bodyContent div.notFound .text{
+width:825px;
+padding:90px 0 0 90px;
+}
+#bodyContent div.notFound .text h1{
+	font-size:1.625em;
+	line-height: 1.154em;
+	color: #069FD1;
+	font-weight:bold;
+	padding-bottom: 0px;
+}
+#bodyContent div.notFound .text p {
+	border:medium none;
+	color:#000000;
+	font-size:0.875em;
+	line-height:1.714em;
+}
+#bodyContent .notFoundFooter {
+	background-color:#318BBC;
+	float:right;
+	width:100%;
+}
+#bodyContent .notFoundLinks {
+background:transparent url(/global/images/bodyContent/404_border_slice.png) no-repeat scroll left center;
+float:right;
+margin:0 20px 0 0;
+padding:15px 0;
+text-align:center;
+width:645px;
+}
+#bodyContent .notFoundLinks a {
+background:transparent url(/global/images/bodyContent/404_btn.png) no-repeat scroll 0 0;
+color:#0C4F73;
+display:inline-block;
+font-size:1.095em;
+font-weight:bold;
+line-height:1.251em;
+margin:0 5px;
+padding:10px 0 10px 0;
+text-decoration:none;
+text-transform:uppercase;
+width:192px;
+}
+#bodyContent .notFoundLinks a:hover {
+	text-decoration:underline;
+}
+
+/*
+ * PAGINATION STYLES
+ */
+ 
+ #bodyContent .pagination{
+	background-color:#0C4F73;
+	margin: 5px 0px 5px 0px;
+}
+ 
+#bodyContent .pagination a{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:capitalize;
+	line-height: 1.563em;
+	
+}
+#bodyContent .pagination a:hover {
+	color: #069FD1;
+	text-decoration: underline;
+}
+
+ 
+#bodyContent .pagination a.previous{
+	float:left;
+}
+
+#bodyContent .pagination a.next{
+	float:right;
+}
+
+/*
+ * MAP STYLES
+ */
+#bodyContent #mapControls {
+}
+#bodyContent #mapControls  #mapInstructions {
+	clear: both;
+	font-size:0.786em;
+	line-height: 1.273em;
+}
+#bodyContent #mapControls  select {
+	margin-top: 5px;
+	float: right;
+	width: 100px;
+}
+
+#bodyContent #mapControls a {
+ 	padding: 0px 5px 0px 5px;
+ 	background-color:#318BBC;
+ 	color: #000000;
+ 	text-decoration: none;
+ 	border-top: 1px solid #ffffff;
+ 	font-size:0.857em;
+	line-height: 2em;
+	display: block;
+	float: left;
+	margin: 0px 1px 5px 0px;
+	outline: none;
+}
+#bodyContent #mapControls a.active {
+	margin-bottom: 0px;
+}
+#bodyContent #mapControls a.active {
+	background-color:#0C4F73;
+ 	color: #ffffff;
+}
+#bodyContent #mapControls #carruthers.active {
+	border-bottom: 5px solid #DDC6FF; 
+}
+#bodyContent #mapControls #don.active {
+	border-bottom: 5px solid #D07E0B;
+}
+#bodyContent #mapControls #duffins.active {
+	border-bottom: 5px solid #7802BD;
+}
+#bodyContent #mapControls #etobicoke.active {
+	border-bottom: 5px solid #17CF87;
+}
+#bodyContent #mapControls #frenchmansbay.active {
+	border-bottom: 5px solid #902720;
+}
+#bodyContent #mapControls #highland.active {
+	border-bottom: 5px solid #E62BC2;
+}
+#bodyContent #mapControls #humber.active {
+	border-bottom: 5px solid #A92183;
+}
+#bodyContent #mapControls #mimico.active {
+	border-bottom: 5px solid #DFBE26;
+}
+#bodyContent #mapControls #petticoat.active {
+	border-bottom: 5px solid #B4E736
+}
+#bodyContent #mapControls #rouge.active {
+	border-bottom: 5px solid #E4251B;
+}
+
+#bodyContent #clearDirections {
+	margin-top:10px;
+	display: none;
+}
+
+.aboutTab img.logo {
+	float:left; 
+	margin: 10px 20px 0px 0px;
+	width: 150px;
+}
+.aboutTab .locationInfo {
+	float: left;
+	padding-left: 5px;
+}
+.aboutTab .activities {
+	clear: both;
+	padding-top: 10px;	
+}
+.aboutTab .activities img {
+	margin: 0px;
+}
+	
+.directionsTab label {
+	width: 100px;
+	padding-right: 5px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	
+}
+.directionsTab .saddrContainer {
+	float: left; 
+}
+.directionsTab #saddr {
+	width: 250px;
+}
+.directionsTab .button {
+	margin:10px 0px 0px 105px;
+}
+
+/* SEARCH STYLES */
+#bodyContent #searchForm div.input {
+	padding: 5px 0px 5px 0px;
+	width: 520px;
+}
+
+#bodyContent #volunteerOpportunitySearch #searchForm div.input{
+	padding: 5px 0px 5px 0px;
+	width: 450px;
+}
+#bodyContent #searchForm label {
+	display: block;
+	float: left;
+	color:#1C75A3;
+}
+#bodyContent #searchForm label.additionalInfo {
+	display: none;
+}
+
+#bodyContent #searchForm select {
+	float: right;
+}
+#bodyContent #searchForm .text  {
+	width: 400px;	
+	float: right;
+}
+#bodyContent #volunteerOpportunitySearch #searchForm .text{
+float:left;
+margin:0 0 0 5px;
+width:370px;
+}
+#bodyContent #searchForm .radios  {
+	width: 500px;	
+	float: right;
+}
+#bodyContent #searchForm .radio input {
+	margin: 3px 3px 0px 0px;
+}
+#bodyContent #searchForm .radio  {
+	margin-right: 15px;
+}
+#bodyContent #searchForm .submit {
+	float: right;
+}
+#bodyContent #searchForm #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent #searchForm #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #searchForm #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+#bodyContent #searchForm #advancedSearch label {
+	padding-left: 15px;
+}
+#bodyContent span.url {
+	display: block;
+	color: #1C75A3;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+/*
+ * NEWSLETTER FORM STYLES
+ */
+ 
+#bodyContent #mailingListsSubscription ul, #bodyContent  #mailingListsUnsubscription ul{
+	line-height:2.5em;
+	list-style-image:none;
+	list-style-type:none;
+	padding:0;
+ }
+ 
+#bodyContent #mailingListsSubscription input#email:focus {
+	background: #fdecb2;
+}
+#bodyContent #mailingListsSubscription label{
+	padding:0 5px 0 0;
+} 
+
+/*
+ * DOCUMENT LIBRARY STYLES
+ */
+
+#bodyContent #documentLibrary .section{
+	width: 325px;
+    float: left;
+    vertical-align: top;
+}
+
+#bodyContent #documentLibrary .section .description{
+	width: 250px;
+    line-height: normal;
+}
+
+/*
+ * EVENT DETAILS STYLES
+ */
+.event-label{
+color:#069FD1;
+display:inline;
+font-size:1em;
+font-weight:bold;
+margin:0;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+text-decoration:none;
+}
+.event-date, .event-description, .event-location, .event-link, .event-files{
+	display:inline;	
+}
+
+
+/* PROGRAM BOOKING */
+#bodyContent #programBooking #program {
+	float: right;
+	width: 300px;	
+	margin: 0px;
+}
+#bodyContent #programBooking #program li {
+	background: none;
+	line-height:1em;
+}
+#bodyContent #programBooking #program li h2 {
+	margin: opx 0px 5px 0px;
+}
+#bodyContent #programBooking #program li h3 {
+	margin: 0px;
+}
+
+#bodyContent #programBooking #programBookingDetails {
+float:left;
+width:400px;
+}
+
+#bodyContent #programBooking #programBookingDetails .accordion h2{
+	margin:0px;
+}
+#bodyContent #programBooking #programBookingDetails h2{
+	margin: 15px 0px 5px 0px;
+}
+
+
+#bodyContent #programBooking #programBookingForm .field, #bodyContent #programBooking #programBookingDetails .field {
+	padding-top: 5px;
+}
+#bodyContent #programBooking #programBookingForm .value, #bodyContent #programBooking #programBookingDetails .value {
+	float: left;
+}
+#bodyContent #programBooking #programBookingForm label, #bodyContent #programBooking #programBookingDetails .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent #programBooking #programBookingForm input{
+float:left;
+}
+
+#bodyContent #programBooking #programBookingForm input.text{
+	width: 200px;	
+}
+#bodyContent #programBooking #programBookingForm textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+#bodyContent #programBooking #programBookingForm .prevNext{
+	padding-top: 20px;
+}
+#bodyContent #programBooking #programBookingForm .prev{
+	background:transparent url(/global/images/misc/bullet_back.png) no-repeat scroll 0 2px;
+	float:left;
+	padding:0 0 0 20px;
+}
+#bodyContent #programBooking #programBookingForm .next{
+	background:transparent url(/global/images/misc/bullet_go.png) no-repeat scroll 35px 2px;
+	float:right;
+	padding:0 22px 0 0;
+}
+#bodyContent #programBooking #programBookingForm .submit{
+	float:right;
+}
+
+#bodyContent #programBooking #programBookingForm #datePicker {
+	font-size: 0.76em;
+	padding: 3px 0px 0px 140px;
+}
+
+
+/* FORMS
+ */
+#bodyContent .generic .field {
+	padding-top: 5px;
+}
+#bodyContent .value {
+	float: left;
+}
+#bodyContent .generic label, #bodyContent .generic .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent .generic input, #bodyContent .generic  select {
+float:left;
+}
+
+#bodyContent .generic input.text{
+	width: 200px;	
+}
+#bodyContent .generic textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+
+/*
+ * FORM ERRORS + VALIDATION
+ */
+#errormsgs, #errorMessages{
+color:#FF0000;
+float:left;
+text-align:left;
+width:100%;
+}
+ 
+ 
+#bodyContent #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png) ;
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+margin:0 0 0 5px;
+}
+#bodyContent #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:22px;
+}
+#bodyContent #EVNlogin #returningCustomer #macro-login-message, #bodyContent #EVNlogin #newCustomer #macro-login-message, #bodyContent #EVNlogin #messagesMessages{
+margin:0 0 0 270px;
+color:#FF0000;
+
+}
+#bodyContent #loginAccount #returningCustomer #macro-login-message{
+margin:0 0 0 35%;
+}
+#bodyContent #returningCustomer #macro-login-message{
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:25px;
+margin:0 0 0 41%;
+color:#FF0000;
+}
+#bodyContent #EVNlogin{
+width:700px;
+}
+
+.form-error{
+background:#FFCCCC none repeat scroll 0 0;
+color:#220000;
+padding:2px;
+
+ }
+ 
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+	background:transparent url(/global/images/misc/valid.png) no-repeat;
+}
+	
+.LV_invalid {
+    color:#CC0000;
+	background:transparent url(/global/images/misc/invalid.png) no-repeat;
+    margin:0 0 0 5px;	
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+
+}
+
+
+#errormsgs div {
+	background: #FFF url(/global/images/misc/invalid.png) no-repeat left center;
+	padding-left: 20px;
+	display: none;
+}
+#bodyContent #newCustomer #errormsgs div, #bodyContent #EVNlogin #errormsgs div{
+	padding-left: 25px;
+	width:550px;
+}
+.helpinfo{
+	cursor:help;	
+}
+
+/*
+ * CSS TOOLTIP
+ */
+ 
+a.tt{
+    position:relative;
+    z-index:24;
+	font-weight:bold;
+    text-decoration:none;
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{ z-index:25; color: #333333; background:;}
+a.tt:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+    text-align: center;
+    color:#333333;
+	filter: alpha(opacity:90);
+	KHTMLOpacity: 0.90;
+	MozOpacity: 0.90;
+	opacity: 0.90;
+	z-index:55; 
+}
+a.tt:hover span.top{
+	display: block;
+	padding: 30px 8px 0;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat top;
+    z-index:25; 
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px; 
+	background:transparent url(/global/images/misc/tt_bubble_filler.png) repeat bottom; 
+	z-index:25; 
+}
+a.tt:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat bottom;
+}
+ 
+
+/* registration form */
+#bodyContent .loginForm{
+float:left;
+}
+
+#bodyContent #returningCustomer, #bodyContent #newCustomer{
+background:transparent url(/global/images/misc/loginFoot.png) repeat-x bottom;
+border:1px solid #DEDEDE;
+float:left;
+margin:15px 0;
+padding:15px 0 0;
+width:100%;
+}
+#bodyContent #newCustomer #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #EVNlogin #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #forgottenPassword{
+	padding:15px 0 0 0;
+}
+#bodyContent #returningCustomer .loginField, #bodyContent #newCustomer .loginField{
+	padding:5px 0 0 25%;
+}
+#bodyContent .forgotPasswordReset .field{
+	padding:5px 0 0 7%;
+}
+#bodyContent #returningCustomer label, #bodyContent #newCustomer label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent .forgotPasswordReset label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent #returningCustomer .inlineInput, #bodyContent #newCustomer .inlineInput{
+	width:200px;
+}
+#bodyContent #returningCustomer .submitFloat, #bodyContent #newCustomer .submitFloat{
+	margin:15px 0 15px 50%;
+	width:85px;
+}
+#bodyContent #EVNlogin .submitFloat{
+	margin:15px 0 15px 47%;
+	width:125px;
+}
+#bodyContent .forgotPasswordReset .btn{
+	margin:15px 0 15px 26%;
+	width:125px;
+}
+#bodyContent .loginFloat{
+margin:0 0 0 25px;
+}
+#bodyContent h3.loginFloat a{
+border-left:1px solid;
+color:#777777;
+font-size:0.8em;
+margin:0 0 0 10px;
+padding:0 0 0 10px;
+}
+#bodyContent .loginCheckboxField{
+margin:5px 0 15px 48%;
+}
+#bodyContent #returningCustomer .loginCheckboxField input{
+float:left;
+margin:3px 0;
+}
+#bodyContent #returningCustomer .loginCheckboxField label{
+color:#777777;
+float:left;
+font-size:0.9em;
+padding:2px 0 0;
+width:90px;
+}
+#bodyContent .loginForm{
+border-top:1px solid #DEDEDE;
+margin:15px 0 0;
+padding:25px 0 0;
+}
+
+#bodyContent #checkoutForm input, #bodyContent #checkoutForm select{
+	width: 190px;
+}
+
+#bodyContent #checkoutForm donationOnBehalf{
+	width: auto;
+}
+
+#bodyContent #checkoutForm #donationOnBehalf, #bodyContent #checkoutForm #saveBillingInfo, #bodyContent #checkoutForm #send-info input, #bodyContent #checkoutForm #shipping-single, #bodyContent #checkoutForm #shipping-multiple{
+	width: auto;
+}
+
+
+#bodyContent .comment-toggle{
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	
+	color:#1C75A3;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:0 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent .additional-comments {
+	border-top:1px dotted #E3E3E3;
+	margin-top:5px;
+	padding-top: 5px;
+}
+
+#bodyContent .active .comment-toggle{
+	background: transparent url('/global/images/secondaryNavContent/didyouknow_minus.png') no-repeat 0px 2px;
+	border-bottom: none;
+}
+#bodyContent .support-block{
+float:left;
+width:343px;
+}
+#bodyContent .support-block-right{
+float:left;
+width:343px;
+padding:0 0 0 29px;
+}
+#bodyContent p.support-btn{
+background:transparent url(/global/images/bodyContent/support-yellow_btn.png) no-repeat scroll 0 0;
+height:38px;
+margin:0;
+text-align:center;
+}
+#bodyContent p.support-btn a{
+color:#3B4141;
+font-size:1.1em;
+font-weight:bold;
+line-height:2.4em;
+text-shadow:1px 1px 0 #FFFFFF;
+}
+#bodyContent .donationTable{
+margin:15px 0 0;
+}
+#bodyContent .donationTable .tableHeading{
+background-color:#069FD1;
+width:150px;
+line-height:2em;
+}
+#bodyContent .donationTable .tableHeading .inlineIconImage{
+display:inline;
+vertical-align:middle;
+margin:0 0 0 5px;
+}
+#bodyContent .donationTable .tableHeading h3{
+color:#FFFFFF;
+display:inline;
+font-size:1em;
+font-weight:normal;
+}
+#bodyContent .supportTableContent{
+background-color:#EBF3F7;
+padding:10px;
+vertical-align:top;
+}
+
+/*
+ * HOMEPAGE SLIDESHOW STYLES
+ */
+
+#bodyContent #contentSlideshow {
+    position:relative;
+	height:296px;
+	padding:0 0 15px;
+	clear:both;
+}
+
+#bodyContent #contentSlideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+
+#bodyContent #contentSlideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#bodyContent #contentSlideshow IMG.last-active {
+    z-index:9;
+}
+/* EVN STUFF */
+#bodyContent .availability .period {
+	width:75px;
+}
+#bodyContent .availability .day {
+text-align:center;
+width:40px;
+}
+#bodyContent .availability table {
+
+}
+#bodyContent .availability table tr td {
+	font-size:0.875em;
+	line-height: 1em;
+	height: 18px;
+}
+
+#bodyContent .availability table.sun_m td.sun_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_m td.mon_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_m td.tue_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_m td.wed_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_m td.thu_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_m td.fri_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_m td.sat_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                       
+#bodyContent .availability table.sun_a td.sun_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_a td.mon_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_a td.tue_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_a td.wed_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_a td.thu_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_a td.fri_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_a td.sat_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                          
+#bodyContent .availability table.sun_e td.sun_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_e td.mon_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_e td.tue_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_e td.wed_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_e td.thu_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_e td.fri_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_e td.sat_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+
+/* Employer Administration */
+
+#bodyContent #employerAdmin{
+}
+#bodyContent #employerAdmin .companyName{
+color:#777777;
+}
+#bodyContent #employerAdmin .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent .formControls .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .actionBtnOptions a:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptions{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptions:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptionsLarge{
+background:#F9EEC4 url(/global/images/misc/button_210_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:210px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptionsLarge:hover{
+text-decoration:underline;
+}
+
+#bodyContent #employerAdmin .description{
+margin:10px 0;
+width:545px;
+}
+#bodyContent #employerAdmin .messageBox{
+background-color:#F0E6CF;
+border:3px solid #DEDEDE;
+line-height:2em;
+margin:10px auto;
+padding:10px 0 10px 20px;
+width:680px;
+}
+#bodyContent #employerAdmin #expiredOpportunities,#bodyContent #employerAdmin #activeOpportunities{
+margin:30px 0;
+}
+#bodyContent #employerAdmin tr, #bodyContent #volunteerApplicationListing tr{
+line-height:2em;	
+}
+#bodyContent #employerAdmin tr.even, #bodyContent #volunteerApplicationListing tr.even{
+}
+#bodyContent #employerAdmin tr.odd, #bodyContent #volunteerApplicationListing tr.odd{
+background-color:#DCDCDC;	
+}
+#bodyContent #employerAdmin th{
+
+}
+#bodyContent #employerAdmin .applicationForReview, #bodyContent #employerAdmin .positionClosing, #bodyContent #employerAdmin .positionEdit{
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .positionDelete, #bodyContent #employerAdmin .positionView{
+padding:0 5px;
+}
+#bodyContent #employerAdmin .position{
+text-align:left;
+width:300px;
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .postingEndDate, #bodyContent #employerAdmin .postingExpDate{
+width:100px;
+text-align:center;
+}
+#bodyContent #employerAdmin .appPositions{
+text-align:center;
+width:220px;
+}
+#bodyContent #employerAdmin #expiredOpportunities .position{
+width:350px;
+}
+
+#bodyContent #volunteerApplicationListing .applicant{
+padding:0 0 0 15px;
+text-align:left;
+width:320px;
+}
+#bodyContent #volunteerApplicationListing .submissionDate{
+text-align:center;
+width:125px;
+}
+#bodyContent #volunteerApplicationListing .refNumber{
+text-align:center;
+width:150px;
+}
+#bodyContent #volunteerApplicationListing .view{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .status{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .legends{
+line-height:1.5em;	
+}
+#bodyContent #volunteerApplicationListing .grey{
+color:#777777;
+cursor:help;
+font-size:0.9em;
+}
+#bodyContent #volunteerApplicationListing h2{
+text-transform:capitalize;
+}
+
+/* Application Details */
+#bodyContent #applicationDetails #availability, #bodyContent #applicationDetails #personalInfo, #bodyContent #applicationDetails #about{
+margin:20px 0;
+}
+#bodyContent #applicationDetails .grey{
+color:#777777;
+}
+#bodyContent #applicationDetails .education-employment, #bodyContent #applicationDetails .vol-reasons, #bodyContent #applicationDetails .positions-seeking, #bodyContent #applicationDetails .ref-comments {
+margin:15px 0;
+}
+#bodyContent #applicationDetails #about .content{
+margin:0 0 0 20px;	
+}
+
+#bodyContent #applicationDetails table#applicantAvailability tr{
+	border-bottom: 1px solid #000000;
+}
+
+#bodyContent #applicationDetails table#applicantAvailability{
+margin:15px;
+}
+#bodyContent #applicationDetails #applicantAvailability th{
+text-align:center;
+width:75px;
+}
+#bodyContent #applicationDetails #applicantAvailability td.available{
+background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;
+}
+#bodyContent #applicationDetails .downloadResume{
+float:left;
+width:200px;
+}
+#bodyContent #applicationDetails .policeCheck{
+float:right;
+width:400px;	
+}
+#bodyContent #applicationDetails .applicantInfo{
+display:inline;
+float:left;
+width:250px;
+overflow:auto;
+}
+ #bodyContent #applicationDetails .applicantTransportation{
+display:inline;
+float:left;
+width:265px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantAddress{
+display:inline;
+float:left;
+width:190px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantDetails{
+float:left;
+width:545px;
+}
+#bodyContent #applicationDetails .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent #applicationDetails .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .black{
+color:#000000;
+}
+
+#bodyContent .actionBtnOptions .print{
+display:none;
+}
+
+/*CM - Added styles for Meetings and Agendas - Start */
+.listTbl {
+	margin:1px!important;
+}
+.listTbl th {
+	text-align:left!important;
+	font:bold 12px Arial, Helvetica, sans-serif!important;
+	padding:3px 5px!important;
+	border-bottom:1px solid #0092C9!important;
+}
+.listTbl td {
+	vertical-align:top!important;
+	padding:3px 5px!important;
+	font:12px Arial, Helvetica, sans-serif!important;
+	border-top:1px solid #0092C9!important;
+}
+/*CM - Added styles for Meetings and Agendas - End*/
+
+	line-height: 1em;
+	margin:5px 0;
+}
+
+#bodyContent h3 {
+	color: #069fd1;
+	font-size:1em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#bodyContent h4 {
+	color: #069fd1;
+	font-size:0.88em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+
+#bodyContent p {
+	padding-bottom: 10px;
+	margin:5px 0;
+}
+
+#bodyContent a{
+	color:#318BBC;
+	outline:none;
+	text-decoration: none;
+}
+
+#bodyContent a:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+#bodyContent .help {
+color:#777777;
+font-size:0.88em;
+line-height:1.167em;
+padding:0;
+}
+#bodyContent a.help{
+text-decoration:none;
+}
+
+#bodyContent p.borderBottom {
+	padding-bottom: 10px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 1px dotted #e3e3e3;
+}
+
+#bodyContent p.teaser {
+	border-top: 1px dotted #e3e3e3;
+	font-size:1.286em;
+	line-height: 1.222em;
+	font-family: georgia, serif;
+	color: #5c901c;
+	border-bottom: none;
+	padding: 10px 0px 25px 0px;
+	margin-bottom: 15px;
+	background: transparent url('/global/images/bodyContent/teaser_divider.png') bottom center no-repeat;
+}
+
+#bodyContent ul {
+line-height:1.3em;
+list-style-type:none;
+list-style-image:none;
+padding:0px 0px 0px 0px;
+}
+#bodyContent ul li{
+background-image:url(/global/images/misc/content-bullet.png);
+background-position:5px 5px;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+}
+
+#bodyContent a img {
+	border: none;
+}
+
+#bodyContent .activitiesIconWrapper{
+border:1px solid #E3E3E3;
+color:#777777;
+padding:0 5px;
+float:left;
+margin:0 0 10px 0;
+}
+#bodyContent .activitiesIconWrapper p{
+	padding:0 0;
+}
+#bodyContent .imageBorder {
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+/* table styles */
+#bodyContent table {
+	border-collapse: collapse;
+}
+#bodyContent table .td-white {
+	background-color: #ffffff;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-light {
+	background-color: #e4f4fb;
+	padding: 10px 5px 10px 5px;
+}
+#bodyContent table .td-medium {
+	background-color: #4ca3d3;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-dark {
+	background-color: #3385b1;
+	padding: 10px 5px 10px 5px;
+	color: #ffffff;
+}
+#bodyContent table .td-white-border {
+	border:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-left {
+	border-left:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-right {
+	border-right:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-top {
+	border-top:1px solid #ffffff;
+}
+#bodyContent table .td-white-border-bottom {
+	border-bottom:1px solid #ffffff;
+}
+#bodyContent table.table-bottom-border {
+	border-bottom: 5px solid #4ca4d3;
+}
+
+
+
+/* Category link table */
+#bodyContent p.categoryImage {
+	border: none;
+	padding: 0px 0px 20px 0px;
+	margin: 0px;
+}
+#bodyContent p.categoryLinks {
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks p{
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#bodyContent table.categoryLinks {
+	padding: 0px 0px 24px 0px;
+	background: transparent url('/global/images/bodyContent/category_table_bg.png') bottom left repeat-x;
+}
+#bodyContent table.categoryLinks td {
+	width: 225px;
+}
+#bodyContent table.categoryLinks td.categoryLinksSpacer {
+	width: 20px;
+}
+#bodyContent table.categoryLinks td.categoryLinksHeading{
+	background-color: #0294c3;
+}
+#bodyContent table.categoryLinks td h2 {
+	text-align: center;
+	color: #ffffff;
+	background-color: #0294c3;
+	text-transform: uppercase;
+	font-size:1.143em;
+	line-height: 1em;
+	margin: 13px 0px 16px 0px;
+}
+#bodyContent table.categoryLinks td ul {
+	list-style: none;
+	padding: 0px 0px 20px 10px;
+	margin: 0px 0px 25px 0px;
+	font-size:1em;
+	line-height: 1.143em;
+}
+#bodyContent table.categoryLinks td ul li{
+	border-bottom: 1px dashed #dedede;
+	padding: 5px 0px 5px 0px;
+	background: none;
+}
+#bodyContent table.categoryLinks td ul li a{
+	text-decoration: none;
+}
+#bodyContent table.categoryLinks td ul li a:hover{
+	text-decoration: underline;
+}
+
+
+/*
+ * CALLS TO ACTION ON HOME AND CATEGORY PAGES 
+ */
+
+#bodyContent #callsToAction{
+	border-bottom: 1px dashed #dbe5ea;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	width: 225px;
+	float: right;
+}
+
+#bodyContent #callsToAction div.callToAction {
+	width: 225px;
+	float: left;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+#bodyContent #callsToAction div.left, #bodyContent #callsToAction div.center{
+	padding-right: 20px;
+}
+
+#bodyContent #callsToAction div.summary{
+	font-size:0.857em;
+	line-height: 1.667em;
+	background-position: 0px 38px;
+}
+
+#bodyContent #callsToAction div.summary p{
+	margin: 0px; 
+	padding-left: 10px;
+	padding-right: 20px;
+	height: 30px;
+	color: #FFFFFF;
+}
+
+#bodyContent #callsToAction div.heading{
+	background-color: #096299;
+}
+
+#bodyContent #callsToAction div.heading h3{
+	margin: 0px;
+	padding: 0px 10px;
+	color: #FFFFFF;
+	font-size:1.667em;
+	line-height: 1.9em;
+}
+
+#bodyContent #callsToAction a.link{
+	display:block;
+	background: #f3dc92 url(/global/images/bodyContent/yellow_button.png) no-repeat bottom left;
+	font-size:1.286em;
+	line-height: 2.111em;
+	text-align: center;
+	color: #3b4141;
+	text-decoration:none;
+	text-shadow: 1px 1px 0px #ffffff;
+}
+#bodyContent #callsToAction a.link:hover{
+	text-decoration: underline;
+}
+
+#bodyContent #callsToAction a {
+	text-decoration: none;
+}
+
+#bodyContent #callsToAction img {
+	margin: 0px 0px -10px 5px;
+}
+
+/*
+ * HOME PAGE RECENT NEWS
+ */
+#bodyContent #recentNewsBox {
+	float: left;
+	width: 480px;
+}
+
+#wrapper #bodyContent #callsToAction div.callToAction{
+	width: 226px;
+}
+
+/*
+ * SITEMAP PAGE STYLES
+ */
+
+#bodyContent #sitemap div.column{
+	width: 220px;
+	padding-right: 20px;
+	float: left;
+}
+#bodyContent #sitemap .lastColumn {
+	width: 240px;
+	padding-right: 0px;
+	float: left;
+}
+#bodyContent #sitemap .section {
+	padding-bottom: 20px;
+}
+#bodyContent #sitemap  ul{
+	display:block;
+	padding:0px 0px 0px 15px;
+	margin:0px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#bodyContent #sitemap  ul li{
+	list-style-type: none;
+	background: none;
+	padding-left: 0px;
+}
+#bodyContent #sitemap a {
+	color: #0c4f73;
+	font-size:0.857em;
+	line-height: 1.333em;
+	text-decoration:none;
+	display: block;
+	padding:2px 5px;
+	border-bottom: 1px solid #f4f4f4;
+}
+#bodyContent #sitemap  a:hover{
+	background-color: #41b1e2;
+	color: #ffffff;
+}
+#bodyContent #sitemap a.first_1 {
+	color:#41b1e2;
+	font-size:1em;
+	line-height: 1.286em;
+	font-weight:bold;
+	border-bottom: none;
+}
+#bodyContent #sitemap a.first_1:hover {
+	color:#1C75A3;
+	text-decoration:underline;
+	background-color: #ffffff;
+}
+
+/*
+ * LISTING RELATED STYLES
+ */
+
+#bodyContent .listing .date, #bodyContent .listing .dateSummary {
+	font-size:0.714em;
+	line-height: 1em;	
+	color: #96c2da;
+	font-weight: bold;
+}
+
+#bodyContent .listing h2 {
+	margin: 0px;
+}
+
+#bodyContent .listing h2 a {
+	text-decoration: none;
+	font-size:0.762em;
+	line-height: 1.125em;
+}
+#bodyContent .listing h2 a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+
+#bodyContent .listing  p {
+	padding-bottom: 10px;
+	margin-bottom: 15px;	
+	border-bottom: 1px dashed #dbe5ea;
+}
+
+#bodyContent #minutes .listing p, #bodyContent #agenda .listing p{
+margin-bottom:0;
+}
+#bodyContent #minutes h3, #bodyContent #agenda h3{
+	text-align:right;
+}
+
+/*
+ * PHOTO GALLERY PAGE STYLES
+ */
+ 
+#bodyContent .photoGallery .photoGalleryImage {
+	width: 200px;
+	padding-left:10px;
+	float: left;
+	text-align: center;
+}
+
+#bodyContent .photoGallery .photoGalleryImage a img {
+	padding: 5px;
+	border: 1px solid #e5e5e5;
+}
+
+#bodyContent .photoGallery .photoGalleryImage h2 {
+	font-size:1em;
+	line-height: 1.143em;
+}
+
+/*
+ * CONTACT FORM STYLES
+ */
+ 
+#bodyContent .contactForm .success {
+	color: #3fa1d3;
+	padding: 10px 0px 5px 0px;
+}
+#bodyContent .contactForm .error {
+	color: #ff0000;
+	font-size:0.857em;
+	line-height: 1.167em;
+	font-weight:normal;
+}
+#bodyContent .contactForm .required {
+	color: #ff0000;
+}
+
+#bodyContent .contactForm label {
+	display: block;
+	font-weight: bold;
+}
+
+#bodyContent .contactForm input, #bodyContent .contactForm textarea {
+	font-family: arial, sans-serif;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+#bodyContent .contactForm .name input, #bodyContent .contactForm .email, #bodyContent .contactForm textarea {
+	border: 1px solid #e3e3e3;
+}
+#bodyContent .contactForm .name, #bodyContent .contactForm .email, #bodyContent .contactForm .message {
+	margin-bottom: 10px;
+}
+	#bodyContent .contactForm .name span {
+		float: left;
+		padding-right: 10px;
+	}
+	#bodyContent .contactForm .name input {
+		width: 148px;
+	}
+	#bodyContent .contactForm .name label{
+		font-weight: normal;
+		font-size:0.857em;
+		line-height: 1.167em;
+	}
+	
+#bodyContent .contactForm .email {
+	width: 310px;
+}
+#bodyContent .contactForm textarea {
+	display: block;
+	width: 310px;
+	height: 125px;
+}
+
+
+/*
+ * SEARCH RESULTS STYLES
+ */
+#bodyContent dt {
+	border-top:1px dotted #E3E3E3;
+	padding:10px 0px 5px 0px;
+}
+
+#bodyContent dt a{
+	color:#069FD1;
+	font-size:1em;
+	line-height:1.5em;
+}
+
+#bodyContent dd{
+	margin:0px 0px 10px 5px;
+}
+
+/*
+ * readMore STYLES
+ */
+ 
+#bodyContent .readMore{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+
+}
+
+#bodyContent .readMore:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+/* PROGRAM SEARCH */
+#bodyContent #programSearch {
+	width: 520px;
+}
+#bodyContent #programSearch #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+	outline: none;
+	display: none;
+}
+#bodyContent #programSearch #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #programSearch #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+
+#bodyContent #programSearch label {
+	display: block;
+}
+#bodyContent #programSearch select {
+	width: 250px;
+}
+
+/*
+Removed by Chris Moore - August 20, 2009
+
+#bodyContent #programSearch  span {
+	float:left;
+	padding: 0px 5px 5px 5px;
+}
+ */
+#bodyContent #programSearch  .info {
+	font-size:0.857em;
+	line-height: 1.333em;
+	border: none;
+	color: #555555;
+	padding: 0px;
+	margin:0px;
+	clear: both;
+}
+#bodyContent #programSearch #advancedSearch {
+	padding: 5px 0px 10px 0px;
+}
+/* PROGRAM CALENDAR */
+#bodyContent #program-calendar table{
+    width:700px;
+    border-collapse: collapse;
+}
+#bodyContent #program-calendar-header{
+    width:701px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #programCalendarFilter{
+    width: 701px;
+}
+#bodyContent #program-calendar-header .seasons {
+    font-weight:bold;
+    padding: 0px 0px 5px 140px;
+    text-align: center;
+    word-spacing: 80px;
+}
+#bodyContent #program-calendar-header .programs-head {
+    float: left;
+    font-weight: bold;
+    text-align: left;
+    width: 138px;
+}
+#bodyContent #program-calendar-header .months {
+    float: right;
+    text-align: center;
+    width: 563px;
+    word-spacing: 18px;
+}
+#bodyContent #program-calendar td .facilityName {
+    font-weight: bold;
+    font-size:0.75em;
+    line-height: 1.333em;
+    margin: 15px 0px 0px 5px;
+    border-bottom: 1px solid #E3E3E3;
+}
+#bodyContent #program-calendar td .programName {
+    font-size:0.75em;
+    line-height: 1.167em;
+    text-align: right;
+    margin: 0px 5px 0px 10px;
+    display: block;
+}
+#bodyContent #program-calendar td {
+    text-align: left;
+    width:20%;
+    vertical-align: bottom;
+    padding: 0px 0px 5px 0px;
+}
+#bodyContent #program-calendar tr td div.off {
+    background-color: transparent;
+}
+#bodyContent #program-calendar .lifeLine {
+    height: 8px;
+    line-height: 8px;
+    border-bottom: 1px dotted #E3E3E3;
+}
+#bodyContent #program-calendar  div.environmental_appreciation {
+    background-color:#ffcb77;
+}
+#bodyContent #program-calendar  div.environmental_learning {
+    background-color:#b26e00;
+}
+#bodyContent #program-calendar  div.heritage_studies {
+    background-color:#ff9d00;
+}
+#bodyContent #program-calendar div.leadership_development {
+    background-color:#2c74b2;
+}
+#bodyContent #program-calendar div.outdoor_recreation {
+    background-color:#0092c9;
+}
+#bodyContent #filterProgramCalendarControl {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+  font-size:0.857em;
+  line-height:1.167em;
+  margin:5px 0;
+  padding:0 0 5px 15px;
+  display: block;
+}
+#bodyContent #filterProgramCalendarControl.active {
+  background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #filterProgramCalendar fieldset{
+    width:320px;
+    float: left;
+}
+#bodyContent #filterProgramCalendar fieldset .box{
+    float: left;
+    width: 10px;
+}
+
+/* PROGRAM */
+#bodyContent #program a.booknow {
+	background: #f9eec4 url('/global/images/misc/button_210_22.png') no-repeat left bottom;
+	font-size:1em;
+	line-height: 1.571em;
+	font-weight: bold;
+	color: #3b4141;
+	display: block;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+	text-transform: uppercase;
+	float: right;
+	width: 210px;
+}
+
+#bodyContent #program table {
+	width: 100%;
+	margin-top:15px;
+}
+#bodyContent #program table td {
+	width: 33%;
+	padding: 0px;
+	vertical-align: top;
+}
+#bodyContent #program table h3{
+	margin: 0px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e3e3e3;
+	font-size:1.143em;
+	line-height: 1em;
+}
+#bodyContent #program table p{
+	line-height:1.286em;
+	margin: 5px 5px 10px 0px;
+	padding: 0px;
+}
+
+/* CAREERS */
+
+#bodyContent div.job p{
+	border: none;
+}
+
+/* 404 styling */
+#bodyContent div.notFound {
+	background: #318BBC url(/global/images/bodyContent/404_bg.jpg) no-repeat;
+	height:505px;
+}
+#bodyContent div.notFound .text{
+width:605px;
+padding:90px 0 0 310px;
+}
+#bodyContent div.notFound .text h1{
+	font-size:1.625em;
+	line-height: 1.154em;
+	color: #069FD1;
+	font-weight:bold;
+	padding-bottom: 0px;
+}
+#bodyContent div.notFound .text p {
+	border:medium none;
+	color:#000000;
+	font-size:0.875em;
+	line-height:1.714em;
+}
+#bodyContent .notFoundFooter {
+	background-color:#318BBC;
+	float:right;
+	width:100%;
+}
+#bodyContent .notFoundLinks {
+background:transparent url(/global/images/bodyContent/404_border_slice.png) no-repeat scroll left center;
+float:right;
+margin:0 20px 0 0;
+padding:15px 0;
+text-align:center;
+width:645px;
+}
+#bodyContent .notFoundLinks a {
+background:transparent url(/global/images/bodyContent/404_btn.png) no-repeat scroll 0 0;
+color:#0C4F73;
+display:inline-block;
+font-size:1.095em;
+font-weight:bold;
+line-height:1.251em;
+margin:0 5px;
+padding:10px 0 10px 0;
+text-decoration:none;
+text-transform:uppercase;
+width:192px;
+}
+#bodyContent .notFoundLinks a:hover {
+	text-decoration:underline;
+}
+
+/*
+ * PAGINATION STYLES
+ */
+ 
+ #bodyContent .pagination{
+	background-color:#0C4F73;
+	margin: 5px 0px 5px 0px;
+}
+ 
+#bodyContent .pagination a{
+	padding:0px 10px;
+	color:#FFFFFF;
+	text-decoration:none;
+	text-transform:capitalize;
+	line-height: 1.563em;
+	
+}
+#bodyContent .pagination a:hover {
+	color: #069FD1;
+	text-decoration: underline;
+}
+
+ 
+#bodyContent .pagination a.previous{
+	float:left;
+}
+
+#bodyContent .pagination a.next{
+	float:right;
+}
+
+/*
+ * MAP STYLES
+ */
+#bodyContent #mapControls {
+}
+#bodyContent #mapControls  #mapInstructions {
+	clear: both;
+	font-size:0.786em;
+	line-height: 1.273em;
+}
+#bodyContent #mapControls  select {
+	margin-top: 5px;
+	float: right;
+	width: 100px;
+}
+
+#bodyContent #mapControls a {
+ 	padding: 0px 5px 0px 5px;
+ 	background-color:#318BBC;
+ 	color: #000000;
+ 	text-decoration: none;
+ 	border-top: 1px solid #ffffff;
+ 	font-size:0.857em;
+	line-height: 2em;
+	display: block;
+	float: left;
+	margin: 0px 1px 5px 0px;
+	outline: none;
+}
+#bodyContent #mapControls a.active {
+	margin-bottom: 0px;
+}
+#bodyContent #mapControls a.active {
+	background-color:#0C4F73;
+ 	color: #ffffff;
+}
+#bodyContent #mapControls #carruthers.active {
+	border-bottom: 5px solid #DDC6FF; 
+}
+#bodyContent #mapControls #don.active {
+	border-bottom: 5px solid #D07E0B;
+}
+#bodyContent #mapControls #duffins.active {
+	border-bottom: 5px solid #7802BD;
+}
+#bodyContent #mapControls #etobicoke.active {
+	border-bottom: 5px solid #17CF87;
+}
+#bodyContent #mapControls #frenchmansbay.active {
+	border-bottom: 5px solid #902720;
+}
+#bodyContent #mapControls #highland.active {
+	border-bottom: 5px solid #E62BC2;
+}
+#bodyContent #mapControls #humber.active {
+	border-bottom: 5px solid #A92183;
+}
+#bodyContent #mapControls #mimico.active {
+	border-bottom: 5px solid #DFBE26;
+}
+#bodyContent #mapControls #petticoat.active {
+	border-bottom: 5px solid #B4E736
+}
+#bodyContent #mapControls #rouge.active {
+	border-bottom: 5px solid #E4251B;
+}
+
+#bodyContent #clearDirections {
+	margin-top:10px;
+	display: none;
+}
+
+.aboutTab img.logo {
+	float:left; 
+	margin: 10px 20px 0px 0px;
+	width: 150px;
+}
+.aboutTab .locationInfo {
+	float: left;
+	padding-left: 5px;
+}
+.aboutTab .activities {
+	clear: both;
+	padding-top: 10px;	
+}
+.aboutTab .activities img {
+	margin: 0px;
+}
+	
+.directionsTab label {
+	width: 100px;
+	padding-right: 5px;
+	display: block;
+	float: left;
+	font-weight: bold;
+	text-align: right;
+	
+}
+.directionsTab .saddrContainer {
+	float: left; 
+}
+.directionsTab #saddr {
+	width: 250px;
+}
+.directionsTab .button {
+	margin:10px 0px 0px 105px;
+}
+
+/* SEARCH STYLES */
+#bodyContent #searchForm div.input {
+	padding: 5px 0px 5px 0px;
+	width: 520px;
+}
+
+#bodyContent #volunteerOpportunitySearch #searchForm div.input{
+	padding: 5px 0px 5px 0px;
+	width: 450px;
+}
+#bodyContent #searchForm label {
+	display: block;
+	float: left;
+	color:#1C75A3;
+}
+#bodyContent #searchForm label.additionalInfo {
+	display: none;
+}
+
+#bodyContent #searchForm select {
+	float: right;
+}
+#bodyContent #searchForm .text  {
+	width: 400px;	
+	float: right;
+}
+#bodyContent #volunteerOpportunitySearch #searchForm .text{
+float:left;
+margin:0 0 0 5px;
+width:370px;
+}
+#bodyContent #searchForm .radios  {
+	width: 500px;	
+	float: right;
+}
+#bodyContent #searchForm .radio input {
+	margin: 3px 3px 0px 0px;
+}
+#bodyContent #searchForm .radio  {
+	margin-right: 15px;
+}
+#bodyContent #searchForm .submit {
+	float: right;
+}
+#bodyContent #searchForm #advancedSearchControl {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:5px 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent #searchForm #advancedSearchControl.active {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll 0 2px;
+}
+#bodyContent #searchForm #advancedSearch {
+	border-top: 1px dotted #E3E3E3;
+	margin-top: 5px;
+}
+#bodyContent #searchForm #advancedSearch label {
+	padding-left: 15px;
+}
+#bodyContent span.url {
+	display: block;
+	color: #1C75A3;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+/*
+ * NEWSLETTER FORM STYLES
+ */
+ 
+#bodyContent #mailingListsSubscription ul, #bodyContent  #mailingListsUnsubscription ul{
+	line-height:2.5em;
+	list-style-image:none;
+	list-style-type:none;
+	padding:0;
+ }
+ 
+#bodyContent #mailingListsSubscription input#email:focus {
+	background: #fdecb2;
+}
+#bodyContent #mailingListsSubscription label{
+	padding:0 5px 0 0;
+} 
+
+/*
+ * DOCUMENT LIBRARY STYLES
+ */
+
+#bodyContent #documentLibrary .section{
+	width: 325px;
+    float: left;
+    vertical-align: top;
+}
+
+#bodyContent #documentLibrary .section .description{
+	width: 250px;
+    line-height: normal;
+}
+
+/*
+ * EVENT DETAILS STYLES
+ */
+.event-label{
+color:#069FD1;
+display:inline;
+font-size:1em;
+font-weight:bold;
+margin:0;
+outline-color:-moz-use-text-color;
+outline-style:none;
+outline-width:medium;
+text-decoration:none;
+}
+.event-date, .event-description, .event-location, .event-link, .event-files{
+	display:inline;	
+}
+
+
+/* PROGRAM BOOKING */
+#bodyContent #programBooking #program {
+	float: right;
+	width: 300px;	
+	margin: 0px;
+}
+#bodyContent #programBooking #program li {
+	background: none;
+	line-height:1em;
+}
+#bodyContent #programBooking #program li h2 {
+	margin: opx 0px 5px 0px;
+}
+#bodyContent #programBooking #program li h3 {
+	margin: 0px;
+}
+
+#bodyContent #programBooking #programBookingDetails {
+float:left;
+width:400px;
+}
+
+#bodyContent #programBooking #programBookingDetails .accordion h2{
+	margin:0px;
+}
+#bodyContent #programBooking #programBookingDetails h2{
+	margin: 15px 0px 5px 0px;
+}
+
+
+#bodyContent #programBooking #programBookingForm .field, #bodyContent #programBooking #programBookingDetails .field {
+	padding-top: 5px;
+}
+#bodyContent #programBooking #programBookingForm .value, #bodyContent #programBooking #programBookingDetails .value {
+	float: left;
+}
+#bodyContent #programBooking #programBookingForm label, #bodyContent #programBooking #programBookingDetails .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent #programBooking #programBookingForm input{
+float:left;
+}
+
+#bodyContent #programBooking #programBookingForm input.text{
+	width: 200px;	
+}
+#bodyContent #programBooking #programBookingForm textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+#bodyContent #programBooking #programBookingForm .prevNext{
+	padding-top: 20px;
+}
+#bodyContent #programBooking #programBookingForm .prev{
+	background:transparent url(/global/images/misc/bullet_back.png) no-repeat scroll 0 2px;
+	float:left;
+	padding:0 0 0 20px;
+}
+#bodyContent #programBooking #programBookingForm .next{
+	background:transparent url(/global/images/misc/bullet_go.png) no-repeat scroll 35px 2px;
+	float:right;
+	padding:0 22px 0 0;
+}
+#bodyContent #programBooking #programBookingForm .submit{
+	float:right;
+}
+
+#bodyContent #programBooking #programBookingForm #datePicker {
+	font-size: 0.76em;
+	padding: 3px 0px 0px 140px;
+}
+
+
+/* FORMS
+ */
+#bodyContent .generic .field {
+	padding-top: 5px;
+}
+#bodyContent .value {
+	float: left;
+}
+#bodyContent .generic label, #bodyContent .generic .label {
+float:left;
+padding:0 5px;
+text-align:right;
+width:130px;
+}
+
+#bodyContent .generic input, #bodyContent .generic  select {
+float:left;
+}
+
+#bodyContent .generic input.text{
+	width: 200px;	
+}
+#bodyContent .generic textarea{
+	font-family:arial,sans-serif;	
+	font-size:0.875em;
+	line-height: 1.286em;
+}
+
+
+/*
+ * FORM ERRORS + VALIDATION
+ */
+#errormsgs, #errorMessages{
+color:#FF0000;
+float:left;
+text-align:left;
+width:100%;
+}
+ 
+ 
+#bodyContent #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png) ;
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+margin:0 0 0 5px;
+}
+#bodyContent #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #errorMessages ul li {
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+color:#FF0000;
+list-style-type:none;
+margin:0;
+padding-left:20px;
+}
+#bodyContent #EVNlogin #messagesMessages ul li {
+background-image:url(/global/images/misc/valid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:22px;
+}
+#bodyContent #EVNlogin #returningCustomer #macro-login-message, #bodyContent #EVNlogin #newCustomer #macro-login-message, #bodyContent #EVNlogin #messagesMessages{
+margin:0 0 0 270px;
+color:#FF0000;
+
+}
+#bodyContent #loginAccount #returningCustomer #macro-login-message{
+margin:0 0 0 35%;
+}
+#bodyContent #returningCustomer #macro-login-message{
+background-image:url(/global/images/misc/invalid.png);
+background-position:0 0;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:25px;
+margin:0 0 0 41%;
+color:#FF0000;
+}
+#bodyContent #EVNlogin{
+width:700px;
+}
+
+.form-error{
+background:#FFCCCC none repeat scroll 0 0;
+color:#220000;
+padding:2px;
+
+ }
+ 
+.LV_validation_message{
+    font-weight:bold;
+    margin:0 0 0 5px;
+}
+
+.LV_valid {
+	background:transparent url(/global/images/misc/valid.png) no-repeat;
+}
+	
+.LV_invalid {
+    color:#CC0000;
+	background:transparent url(/global/images/misc/invalid.png) no-repeat;
+    margin:0 0 0 5px;	
+}
+    
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {
+
+}
+    
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active {
+
+}
+
+
+#errormsgs div {
+	background: #FFF url(/global/images/misc/invalid.png) no-repeat left center;
+	padding-left: 20px;
+	display: none;
+}
+#bodyContent #newCustomer #errormsgs div, #bodyContent #EVNlogin #errormsgs div{
+	padding-left: 25px;
+	width:550px;
+}
+.helpinfo{
+	cursor:help;	
+}
+
+/*
+ * CSS TOOLTIP
+ */
+ 
+a.tt{
+    position:relative;
+    z-index:24;
+	font-weight:bold;
+    text-decoration:none;
+}
+a.tt span{ display: none; }
+
+/*background:; ie hack, something must be changed in a for ie to execute it*/
+a.tt:hover{ z-index:25; color: #333333; background:;}
+a.tt:hover span.tooltip{
+    display:block;
+    position:absolute;
+    top:0px; left:0;
+	padding: 15px 0 0 0;
+	width:200px;
+    text-align: center;
+    color:#333333;
+	filter: alpha(opacity:90);
+	KHTMLOpacity: 0.90;
+	MozOpacity: 0.90;
+	opacity: 0.90;
+	z-index:55; 
+}
+a.tt:hover span.top{
+	display: block;
+	padding: 30px 8px 0;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat top;
+    z-index:25; 
+}
+a.tt:hover span.middle{ /* different middle bg for stretch */
+	display: block;
+	padding: 0 8px; 
+	background:transparent url(/global/images/misc/tt_bubble_filler.png) repeat bottom; 
+	z-index:25; 
+}
+a.tt:hover span.bottom{
+	display: block;
+	padding:3px 8px 10px;
+    background:transparent url(/global/images/misc/tt_bubble.png) no-repeat bottom;
+}
+ 
+
+/* registration form */
+#bodyContent .loginForm{
+float:left;
+}
+
+#bodyContent #returningCustomer, #bodyContent #newCustomer{
+background:transparent url(/global/images/misc/loginFoot.png) repeat-x bottom;
+border:1px solid #DEDEDE;
+float:left;
+margin:15px 0;
+padding:15px 0 0;
+width:100%;
+}
+#bodyContent #newCustomer #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #EVNlogin #errormsgs{
+padding:0 0 0 35%;
+}
+#bodyContent #forgottenPassword{
+	padding:15px 0 0 0;
+}
+#bodyContent #returningCustomer .loginField, #bodyContent #newCustomer .loginField{
+	padding:5px 0 0 25%;
+}
+#bodyContent .forgotPasswordReset .field{
+	padding:5px 0 0 7%;
+}
+#bodyContent #returningCustomer label, #bodyContent #newCustomer label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent .forgotPasswordReset label{
+	float:left;
+	padding:0 5px;
+	text-align:right;
+	width:110px;
+}
+#bodyContent #returningCustomer .inlineInput, #bodyContent #newCustomer .inlineInput{
+	width:200px;
+}
+#bodyContent #returningCustomer .submitFloat, #bodyContent #newCustomer .submitFloat{
+	margin:15px 0 15px 50%;
+	width:85px;
+}
+#bodyContent #EVNlogin .submitFloat{
+	margin:15px 0 15px 47%;
+	width:125px;
+}
+#bodyContent .forgotPasswordReset .btn{
+	margin:15px 0 15px 26%;
+	width:125px;
+}
+#bodyContent .loginFloat{
+margin:0 0 0 25px;
+}
+#bodyContent h3.loginFloat a{
+border-left:1px solid;
+color:#777777;
+font-size:0.8em;
+margin:0 0 0 10px;
+padding:0 0 0 10px;
+}
+#bodyContent .loginCheckboxField{
+margin:5px 0 15px 48%;
+}
+#bodyContent #returningCustomer .loginCheckboxField input{
+float:left;
+margin:3px 0;
+}
+#bodyContent #returningCustomer .loginCheckboxField label{
+color:#777777;
+float:left;
+font-size:0.9em;
+padding:2px 0 0;
+width:90px;
+}
+#bodyContent .loginForm{
+border-top:1px solid #DEDEDE;
+margin:15px 0 0;
+padding:25px 0 0;
+}
+
+#bodyContent #checkoutForm input, #bodyContent #checkoutForm select{
+	width: 190px;
+}
+
+#bodyContent #checkoutForm donationOnBehalf{
+	width: auto;
+}
+
+#bodyContent #checkoutForm #donationOnBehalf, #bodyContent #checkoutForm #saveBillingInfo, #bodyContent #checkoutForm #send-info input, #bodyContent #checkoutForm #shipping-single, #bodyContent #checkoutForm #shipping-multiple{
+	width: auto;
+}
+
+
+#bodyContent .comment-toggle{
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+	
+	color:#1C75A3;
+	font-size:0.857em;
+	line-height:1.167em;
+	margin:0 0;
+	padding:0 0 5px 15px;
+}
+#bodyContent .additional-comments {
+	border-top:1px dotted #E3E3E3;
+	margin-top:5px;
+	padding-top: 5px;
+}
+
+#bodyContent .active .comment-toggle{
+	background: transparent url('/global/images/secondaryNavContent/didyouknow_minus.png') no-repeat 0px 2px;
+	border-bottom: none;
+}
+#bodyContent .support-block{
+float:left;
+width:343px;
+}
+#bodyContent .support-block-right{
+float:left;
+width:343px;
+padding:0 0 0 29px;
+}
+#bodyContent p.support-btn{
+background:transparent url(/global/images/bodyContent/support-yellow_btn.png) no-repeat scroll 0 0;
+height:38px;
+margin:0;
+text-align:center;
+}
+#bodyContent p.support-btn a{
+color:#3B4141;
+font-size:1.1em;
+font-weight:bold;
+line-height:2.4em;
+text-shadow:1px 1px 0 #FFFFFF;
+}
+#bodyContent .donationTable{
+margin:15px 0 0;
+}
+#bodyContent .donationTable .tableHeading{
+background-color:#069FD1;
+width:150px;
+line-height:2em;
+}
+#bodyContent .donationTable .tableHeading .inlineIconImage{
+display:inline;
+vertical-align:middle;
+margin:0 0 0 5px;
+}
+#bodyContent .donationTable .tableHeading h3{
+color:#FFFFFF;
+display:inline;
+font-size:1em;
+font-weight:normal;
+}
+#bodyContent .supportTableContent{
+background-color:#EBF3F7;
+padding:10px;
+vertical-align:top;
+}
+
+/*
+ * HOMEPAGE SLIDESHOW STYLES
+ */
+
+#bodyContent #contentSlideshow {
+    position:relative;
+	height:296px;
+	padding:0 0 15px;
+	clear:both;
+}
+
+#bodyContent #contentSlideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    border:1px solid #E0E0E1;
+    padding:5px;
+}
+
+#bodyContent #contentSlideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#bodyContent #contentSlideshow IMG.last-active {
+    z-index:9;
+}
+/* EVN STUFF */
+#bodyContent .availability .period {
+	width:75px;
+}
+#bodyContent .availability .day {
+text-align:center;
+width:40px;
+}
+#bodyContent .availability table {
+
+}
+#bodyContent .availability table tr td {
+	font-size:0.875em;
+	line-height: 1em;
+	height: 18px;
+}
+
+#bodyContent .availability table.sun_m td.sun_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_m td.mon_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_m td.tue_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_m td.wed_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_m td.thu_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_m td.fri_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_m td.sat_m {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                       
+#bodyContent .availability table.sun_a td.sun_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_a td.mon_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_a td.tue_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_a td.wed_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_a td.thu_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_a td.fri_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_a td.sat_a {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+                                                          
+#bodyContent .availability table.sun_e td.sun_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.mon_e td.mon_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.tue_e td.tue_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.wed_e td.wed_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.thu_e td.thu_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.fri_e td.fri_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+#bodyContent .availability table.sat_e td.sat_e {background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;}
+
+/* Employer Administration */
+
+#bodyContent #employerAdmin{
+}
+#bodyContent #employerAdmin .companyName{
+color:#777777;
+}
+#bodyContent #employerAdmin .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent .formControls .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions {
+float:left;
+margin:0 15px 0 0;
+}
+#bodyContent .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .actionBtnOptions a:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptions{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptions:hover{
+text-decoration:underline;
+}
+
+#bodyContent  a.actionBtnOptionsLarge{
+background:#F9EEC4 url(/global/images/misc/button_210_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:210px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent  a.actionBtnOptionsLarge:hover{
+text-decoration:underline;
+}
+
+#bodyContent #employerAdmin .description{
+margin:10px 0;
+width:545px;
+}
+#bodyContent #employerAdmin .messageBox{
+background-color:#F0E6CF;
+border:3px solid #DEDEDE;
+line-height:2em;
+margin:10px auto;
+padding:10px 0 10px 20px;
+width:680px;
+}
+#bodyContent #employerAdmin #expiredOpportunities,#bodyContent #employerAdmin #activeOpportunities{
+margin:30px 0;
+}
+#bodyContent #employerAdmin tr, #bodyContent #volunteerApplicationListing tr{
+line-height:2em;	
+}
+#bodyContent #employerAdmin tr.even, #bodyContent #volunteerApplicationListing tr.even{
+}
+#bodyContent #employerAdmin tr.odd, #bodyContent #volunteerApplicationListing tr.odd{
+background-color:#DCDCDC;	
+}
+#bodyContent #employerAdmin th{
+
+}
+#bodyContent #employerAdmin .applicationForReview, #bodyContent #employerAdmin .positionClosing, #bodyContent #employerAdmin .positionEdit{
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .positionDelete, #bodyContent #employerAdmin .positionView{
+padding:0 5px;
+}
+#bodyContent #employerAdmin .position{
+text-align:left;
+width:300px;
+padding:0 0 0 5px;
+}
+#bodyContent #employerAdmin .postingEndDate, #bodyContent #employerAdmin .postingExpDate{
+width:100px;
+text-align:center;
+}
+#bodyContent #employerAdmin .appPositions{
+text-align:center;
+width:220px;
+}
+#bodyContent #employerAdmin #expiredOpportunities .position{
+width:350px;
+}
+
+#bodyContent #volunteerApplicationListing .applicant{
+padding:0 0 0 15px;
+text-align:left;
+width:320px;
+}
+#bodyContent #volunteerApplicationListing .submissionDate{
+text-align:center;
+width:125px;
+}
+#bodyContent #volunteerApplicationListing .refNumber{
+text-align:center;
+width:150px;
+}
+#bodyContent #volunteerApplicationListing .view{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .status{
+text-align:center;
+width:50px;
+}
+#bodyContent #volunteerApplicationListing .legends{
+line-height:1.5em;	
+}
+#bodyContent #volunteerApplicationListing .grey{
+color:#777777;
+cursor:help;
+font-size:0.9em;
+}
+#bodyContent #volunteerApplicationListing h2{
+text-transform:capitalize;
+}
+
+/* Application Details */
+#bodyContent #applicationDetails #availability, #bodyContent #applicationDetails #personalInfo, #bodyContent #applicationDetails #about{
+margin:20px 0;
+}
+#bodyContent #applicationDetails .grey{
+color:#777777;
+}
+#bodyContent #applicationDetails .education-employment, #bodyContent #applicationDetails .vol-reasons, #bodyContent #applicationDetails .positions-seeking, #bodyContent #applicationDetails .ref-comments {
+margin:15px 0;
+}
+#bodyContent #applicationDetails #about .content{
+margin:0 0 0 20px;	
+}
+
+#bodyContent #applicationDetails table#applicantAvailability tr{
+	border-bottom: 1px solid #000000;
+}
+
+#bodyContent #applicationDetails table#applicantAvailability{
+margin:15px;
+}
+#bodyContent #applicationDetails #applicantAvailability th{
+text-align:center;
+width:75px;
+}
+#bodyContent #applicationDetails #applicantAvailability td.available{
+background:transparent url(/global/images/misc/valid.png) no-repeat scroll top center;
+}
+#bodyContent #applicationDetails .downloadResume{
+float:left;
+width:200px;
+}
+#bodyContent #applicationDetails .policeCheck{
+float:right;
+width:400px;	
+}
+#bodyContent #applicationDetails .applicantInfo{
+display:inline;
+float:left;
+width:250px;
+overflow:auto;
+}
+ #bodyContent #applicationDetails .applicantTransportation{
+display:inline;
+float:left;
+width:265px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantAddress{
+display:inline;
+float:left;
+width:190px;
+overflow:auto;
+}
+#bodyContent #applicationDetails .applicantDetails{
+float:left;
+width:545px;
+}
+#bodyContent #applicationDetails .actionBtnOptions{
+float:right;
+margin:0 15px 0 0;
+}
+#bodyContent #applicationDetails .actionBtnOptions a{
+background:#F9EEC4 url(/global/images/misc/button_154_22.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:0.9em;
+font-weight:normal;
+line-height:1.571em;
+text-align:center;
+text-decoration:none;
+width:154px;
+height:22px;
+margin:5px 0;
+}
+#bodyContent .black{
+color:#000000;
+}
+
+#bodyContent .actionBtnOptions .print{
+display:none;
+}
+
+/*CM - Added styles for Meetings and Agendas - Start */
+.listTbl {
+	margin:1px!important;
+}
+.listTbl th {
+	text-align:left!important;
+	font:bold 12px Arial, Helvetica, sans-serif!important;
+	padding:3px 5px!important;
+	border-bottom:1px solid #0092C9!important;
+}
+.listTbl td {
+	vertical-align:top!important;
+	padding:3px 5px!important;
+	font:12px Arial, Helvetica, sans-serif!important;
+	border-top:1px solid #0092C9!important;
+}
+/*CM - Added styles for Meetings and Agendas - End*/

@@ -1,0 +1,4677 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0066)http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1& -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" class="webkit safari mac js webkit safari mac js webkit safari mac js webkit safari mac js webkit safari mac js webkit safari mac js webkit safari mac js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script id="twitter-wjs" src="widgets.js"></script><script type="text/javascript" async="" src="inpage_linkid.js" id="undefined"></script><script type="text/javascript" async="" src="ga.js"></script><script type="text/javascript">/*
+Created By: Chris Campbell
+Website: http://particletree.com
+Date: 2/1/2006
+
+Adapted By: Simon de Haan
+Website: http://blog.eight.nl
+Date: 21/2/2006
+
+further adapted by Jason Tesser and David Torres
+www.dotcms.org
+Date: 1/6/2008
+
+Inspired by the lightbox implementation found at http://www.huddletogether.com/projects/lightbox/
+And the lightbox gone wild by ParticleTree at http://particletree.com/features/lightbox-gone-wild/
+
+*/
+
+/*-------------------------------GLOBAL VARIABLES------------------------------------*/
+
+var dotLBDetect = navigator.userAgent.toLowerCase();
+var dotLBOS,dotLBBrowser,dotLBVersion,dotLBTotal,dotLBThestring;
+
+/*-----------------------------------------------------------------------------------------------*/
+
+// Turn everything on - mainly the IE fixes
+	function dotActivate (divId){
+		var myDiv = document.getElementById(divId);
+		if (dotLBBrowser == 'Internet Explorer'){
+			dotGetScroll(myDiv);
+			dotPrepareIE('100%', 'hidden');
+			dotSetScroll(0,0);
+			dotHideSelects('hidden');
+		}
+		dotDisplayLightbox("block", myDiv);
+	}
+	
+	// Ie requires height to 100% and overflow hidden or else you can scroll down past the lightbox
+	function dotPrepareIE(height, overflow){
+		bod = document.getElementsByTagName('body')[0];
+		bod.style.height = height;
+		bod.style.overflow = overflow;
+  
+		htm = document.getElementsByTagName('html')[0];
+		htm.style.height = height;
+		htm.style.overflow = overflow; 
+	}
+	
+	// In IE, select elements hover on top of the lightbox
+	function dotHideSelects(visibility){
+		selects = document.getElementsByTagName('select');
+		for(i = 0; i < selects.length; i++) {
+			selects[i].style.visibility = visibility;
+		}
+	}
+	
+	// Taken from lightbox implementation found at http://www.huddletogether.com/projects/lightbox/
+	function dotGetScroll(myDiv){
+		if (self.pageYOffset) {
+			myDiv.yPos = self.pageYOffset;
+		} else if (document.documentElement && document.documentElement.scrollTop){
+			myDiv.yPos = document.documentElement.scrollTop; 
+		} else if (document.body) {
+			myDiv.yPos = document.body.scrollTop;
+		}
+	}
+	
+	function dotSetScroll(x, y){
+		window.scrollTo(x, y); 
+	}
+	
+	function dotDisplayLightbox(display,div){
+		document.getElementById('dotoverlay').style.display = display;
+		div.style.display = display;	
+	}
+	
+	// Example of creating your own functionality once lightbox is initiated
+	function dotDeactivate(divId){
+		var myDiv = document.getElementById(divId);
+		if (dotLBBrowser == "Internet Explorer"){
+			dotSetScroll(0,this.yPos);
+			dotPrepareIE("auto", "auto");
+			dotHideSelects("visible");
+		}
+		
+		dotDisplayLightbox("none", myDiv);
+	}
+
+//Browser detect script origionally created by Peter Paul Koch at http://www.quirksmode.org/
+
+function dotLBGetBrowserInfo() {
+	if (dotLBCheckIt('konqueror')) {
+		dotLBBrowser = "Konqueror";
+		dotLBOS = "Linux";
+	}
+	else if (dotLBCheckIt('safari')) dotLBBrowser 	= "Safari"
+	else if (dotLBCheckIt('omniweb')) dotLBBrowser 	= "OmniWeb"
+	else if (dotLBCheckIt('opera')) dotLBBrowser 		= "Opera"
+	else if (dotLBCheckIt('webtv')) dotLBBrowser 		= "WebTV";
+	else if (dotLBCheckIt('icab')) dotLBBrowser 		= "iCab"
+	else if (dotLBCheckIt('msie')) dotLBBrowser 		= "Internet Explorer"
+	else if (!dotLBCheckIt('compatible')) {
+		dotLBBrowser = "Netscape Navigator"
+		dotLBVersion = dotLBDetect.charAt(8);
+	}
+	else dotLBBrowser = "An unknown browser";
+
+	if (!dotLBVersion) dotLBVersion = dotLBDetect.charAt(place + dotLBThestring.length);
+
+	if (!dotLBOS) {
+		if (dotLBCheckIt('linux')) dotLBOS 		= "Linux";
+		else if (dotLBCheckIt('x11')) dotLBOS 	= "Unix";
+		else if (dotLBCheckIt('mac')) dotLBOS 	= "Mac"
+		else if (dotLBCheckIt('win')) dotLBOS 	= "Windows"
+		else dotLBOS 								= "an unknown operating system";
+	}
+}
+
+function dotLBCheckIt(string) {
+	place = dotLBDetect.indexOf(string) + 1;
+	dotLBThestring = string;
+	return place;
+}
+
+// Onload, make all links that need to trigger a lightbox active
+function dotLBInitialize(){
+	dotLBAddLightboxMarkup();
+//	lbox = document.getElementsByClassName('dotlbOn');
+//	for(i = 0; i < lbox.length; i++) {
+//		valid = new top.frameMenu.dotlightbox(lbox[i]);
+//	}
+}
+
+// Add in markup necessary to make this work. Basically two divs:
+// Overlay holds the shadow
+// Lightbox is the centered square that the content is put into.
+function dotLBAddLightboxMarkup() {
+	//dotLBGetBrowserInfo();
+	//var bod 				= document.getElementsByTagName('body')[0];
+	//var bod 				= document.body || document.documentElement;
+	
+	//var overlay 			= document.createElement('div');
+	//overlay.id			= 'dotoverlay';
+	//if (dotLBBrowser == "Internet Explorer"){
+		//top.frameMenu.protoInsertionBottomWrapper(bod,overlay);
+	//}else{
+		//bod.appendChild(overlay);
+	//}
+}
+dotLBInitialize();</script>
+	
+	<style media="all" type="text/css">.dotlightbox {
+	color: #333;
+	display: none;
+	position: absolute;
+	top: 5%;
+	left: 7%;
+	width: 80%;
+	height: 470px;
+	padding: 12px;
+	border: 12px solid #B8B8B8;
+	background-color: #f0f0f0;
+	text-align: left;
+	z-index:1001;
+	overflow: auto;	
+}
+
+#dotoverlay{
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:1000;
+	background-color:#333;
+	-moz-opacity: 0.8;
+	opacity:.80;
+	filter: alpha(opacity=80);
+}
+
+.dotlightbox[id]{ /* IE6 and below Can't See This */    position:fixed;    }#dotoverlay[id]{ /* IE6 and below Can't See This */    position:fixed;    }</style>
+	<link rel="STYLESHEET" type="text/css" href="preview.css">
+
+		
+	</head><body data-twttr-rendered="true"><div style="display:none">
+		<form action="http://trca.on.ca/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Fdirector%2Fdirect" id="submitParent" method="post" target="_top">
+			<input type="hidden" name="referer" id="referer" value="/c/portal/layout?p_l_id=24.1&amp;p_p_id=EXT_BROWSER&amp;p_p_action=1&amp;p_p_state=maximized&amp;_EXT_BROWSER_struts_action=%2Fext%2Fhtmlpages%2Fpreview_htmlpage&amp;inode=56&amp;language=1"><br>
+			<input type="hidden" name="cmd" id="cmd" value=""><br>
+			<input type="hidden" name="container" id="container" value=""><br>
+			<input type="hidden" name="htmlPage" id="htmlPage" value="56"><br>
+			<input type="hidden" name="contentlet" id="contentlet" value=""><br>
+			<input type="hidden" name="_dotAddWidget" id="_dotAddWidget" value=""><br>
+			<input type="hidden" name="event" id="event" value=""><br>
+			<input type="hidden" name="file" id="file" value=""><br>
+			<input type="hidden" name="selectedcontentlet" id="selectedcontentlet" value=""><br>
+			<input type="hidden" name="menuItem" id="menuItem" value=""><br>
+			<input type="hidden" name="level" id="level" value=""><br>
+			<input type="hidden" name="static" id="static" value=""><br>
+			<input type="hidden" name="language" id="language" value="1"><br>
+			<input type="hidden" name="parentFolder" id="parentFolder" value=""><br>
+			<input type="hidden" name="selectedStructure" id="selectedStructure" value=""><br>
+			<input type="hidden" name="selectedStructureFake" id="selectedStructureFake" value=""><br>
+		</form>
+	</div>
+	
+	<div id="dotoverlay"></div>
+	
+	<script type="text/javascript">
+		var _dotStructureTypeName = "";
+		var _dotPage = 1;
+		var _dotPerPage = 12;
+		var _dotWidgetNameSelected, _dotWidgetInodeSelected;
+		
+		//
+		var _inodeCounter = 0;
+
+		function _dotWidgetSelected(){
+			var _dotWidgetSelect = document.getElementById("_dotWidgetSelect");
+			var selIndex = _dotWidgetSelect.selectedIndex;
+			var woptions = _dotWidgetSelect.options;
+			_dotWidgetNameSelected = woptions[selIndex].text;
+			_dotWidgetInodeSelected = woptions[selIndex].value;
+			_dotStructureTypeName = _dotWidgetNameSelected;
+			if(_dotWidgetInodeSelected == 0){
+				_dotWidgetClearFields();
+				return;
+			}
+			var categoriesValues = new Array ();
+			var fieldsValues = new Array ();
+			top.frameMenu.ContentletAjax.searchContentlet(_dotWidgetInodeSelected, fieldsValues, categoriesValues, false, _dotPage, _dotPerPage, "widgetTitle asc", _dotFillWidgetResults);
+		}
+		
+		function _dotWidgetSearch(){
+			_dotPage = 1;
+			var _dotWidgetAjaxSearch = document.getElementById("_dotWidgetAjaxSearch");
+			var categoriesValues = new Array ();
+			var fieldsValues = new Array ();
+			fieldsValues[0] = "text1";
+			fieldsValues[1] = _dotWidgetAjaxSearch.value;
+			top.frameMenu.ContentletAjax.searchContentlet(_dotWidgetInodeSelected, fieldsValues, categoriesValues, false, _dotPage, _dotPerPage,"widgetTitle asc", _dotFillWidgetResults);
+		}
+		
+		function _dotFillWidgetResults(widgets){
+			_dotWidgetClearFields();
+			var dotEditMDWidgetSearchType = document.getElementById("dotEditMDWidgetSearchType");
+			var _dotEditMDWidgetAdd = document.getElementById("_dotEditMDWidgetAdd");
+			var _dotEditMDSearchWidget = document.getElementById("_dotEditMDSearchWidget");
+			var _dotWidgetListings = document.getElementById("_dotWidgetListings");
+			var counters = widgets[0];
+			var hasNext = counters["hasNext"];
+			var hasPrevious = counters["hasPrevious"];
+			var total = counters["total"];
+			
+			top.frameMenu.protoUpdateWrapper(_dotEditMDWidgetAdd, '<a href="#" onclick="javascript:addWidget(_dotWidgetInodeSelected);" class="dotGreenBtn"><span>Create New &quot;' + _dotStructureTypeName + '&quot;</span></a>');
+			top.frameMenu.protoUpdateWrapper(dotEditMDWidgetSearchType, '<span class="dotLightBoxTitle">Search:</span> <input type="text" id="_dotWidgetAjaxSearch"/>');
+			top.frameMenu.protoUpdateWrapper(_dotEditMDSearchWidget, '<a href="#" onclick="_dotWidgetSearch();" class="dotBlueBtn"><span>Search</span></a> ');
+			widgets = widgets.slice(2,widgets.length);
+			for(var i = _dotWidgetListings.rows.length - 1; i > 0; i--){
+				_dotWidgetListings.deleteRow(i);
+			}
+			for (var i = 0; i < widgets.length; i++) {
+				var row = _dotWidgetListings.insertRow(i);
+				var td = row.insertCell(0);
+   				td.setAttribute('style','padding-top:3px;padding-bottom:3px');
+   				td.innerHTML='<a href="#" onclick="javascript:dotAddWidgetToContainer(' + widgets[i].inode + ')" class="dotGreyBtn"><span>Select</span></a>&nbsp;&nbsp;&nbsp; ' + widgets[i].text1 + '<br/>';
+			}
+			if(hasNext || hasPrevious){
+				var row = _dotWidgetListings.insertRow(_dotWidgetListings.rows.length);
+				var td = row.insertCell(0);
+   				td.innerHTML='&nbsp;';
+   				var html = '';
+				if(hasPrevious){
+					html= '<a href="javascript:_dotPrevWidgetPage()">Previous</a>';
+				}
+				html = html + '&nbsp;&nbsp;&nbsp; Page ' + _dotPage + ' &nbsp;&nbsp;&nbsp;';
+				if(hasNext){
+					html = html + '<a href="javascript:_dotNextWidgetPage()">Next</a>';	
+				}
+				td.innerHTML=html;
+			}
+		}
+		
+		function _dotNextWidgetPage(){
+			_dotPage = _dotPage + 1;
+			_dotWidgetSelected();
+		}
+		
+		function _dotPrevWidgetPage(){
+			_dotPage = _dotPage - 1;
+			_dotWidgetSelected();
+		}
+		
+		function _dotCloseWidgetDiv(){
+		        try
+			{
+			   var _dotWidgetSelect = document.getElementById("_dotWidgetSelect");
+			   _dotWidgetSelect.selectedIndex = -1;
+			   _dotWidgetClearFields();
+			}
+			catch(err){}
+			dotDeactivate('dotAddWidget');
+			
+		}
+		
+		function _dotWidgetClearFields(){
+			var dotEditMDWidgetSearchType = document.getElementById("dotEditMDWidgetSearchType");
+			var _dotEditMDWidgetAdd = document.getElementById("_dotEditMDWidgetAdd");
+			var _dotEditMDSearchWidget = document.getElementById("_dotEditMDSearchWidget");
+			top.frameMenu.protoUpdateWrapper(dotEditMDWidgetSearchType, "&nbsp;");
+			top.frameMenu.protoUpdateWrapper(_dotEditMDWidgetAdd, "&nbsp;");
+			top.frameMenu.protoUpdateWrapper(_dotEditMDSearchWidget, "&nbsp;");
+			_dotWidgetCleanResultsData();
+		}
+		
+		function _dotWidgetCleanResultsData(){
+			var _dotWidgetListings = document.getElementById("_dotWidgetListings");
+			for(var i = _dotWidgetListings.rows.length - 1; i >= 0; i--){
+				_dotWidgetListings.deleteRow(i);
+			}
+			var row = _dotWidgetListings.insertRow(0);
+			var td = row.insertCell(0);
+   			td.innerHTML='&nbsp;';
+   			td.setAttribute('style','padding-top:3px;padding-bottom:3px');
+		}
+		
+	</script>
+	<div id="dotAddWidget" class="dotlightbox">
+		<div id="dotLightboxContainer">
+			<div class="dotLightboxHeader">
+					<img src="icon_widget.png" width="136" height="39" alt="" align="absmiddle">
+			</div>
+									<table id="editModeWidgetPopupTable" cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tbody><tr>
+					<td width="250" style="border-right:1px solid #b8b8b8;padding-right:20px;">
+						<p><strong>Select the type</strong> of widget you would like to insert or create from the list below.</p> 
+
+						
+						<select id="_dotWidgetSelect" class="dotLightboxSelect" size="20" onchange="_dotWidgetSelected();">
+																						<option value="28393">Agenda Archive</option>
+															<option value="4035">Banner Widget</option>
+															<option value="6591">Contact Form Widget</option>
+															<option value="15084">Did You Know? Accordion Widget</option>
+															<option value="3912">Did You Know? Widget</option>
+															<option value="19986">Donate Monthly Widget</option>
+															<option value="19779">Donate Now Widget</option>
+															<option value="8309">Event Listing Widget</option>
+															<option value="21920">Event Map Widget</option>
+															<option value="30416">Featured Opportunities</option>
+															<option value="6127">Flood Forecast Widget</option>
+															<option value="13117">Google Map Widget</option>
+															<option value="5986">Home Page News Widget</option>
+															<option value="86627">Humber Book Purchase Widget</option>
+															<option value="88435">Humber Book Widget</option>
+															<option value="26243">Image Slideshow</option>
+															<option value="92608">LIDSWP Book Purchase Widget</option>
+															<option value="20140">Membership Purchase Widget</option>
+															<option value="28320">Minutes Archive</option>
+															<option value="20029">Multiple Shipping Address Widget</option>
+															<option value="2576">News Listing Widget</option>
+															<option value="100299">Newsletter Archive</option>
+															<option value="77216">Places to Visit Accordion Widget</option>
+															<option value="187182">Property Listings Widget</option>
+															<option value="19801">Shopping Cart Widget</option>
+															<option value="22659">Volunteer Widget</option>
+													</select>
+						<p><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#" class="dotLinkSmall">
+							<img src="btn_info.png" width="16" height="16" alt="Info" align="absmiddle">
+							Learn how to create new widget types.</a>
+						</p>
+					</td>
+					<td valign="top" style="padding:0 0 0 10px;">
+						<table id="editModeWidgetPopupTableRight" cellpadding="0" cellspacing="0" border="0">
+							<tbody><tr>
+								<td id="dotEditMDWidgetSearchType" nowrap="" style="padding:0 5px 0 0;">&nbsp;</td>
+								<td id="_dotEditMDSearchWidget" nowrap="" style="padding:0 5px 0 0;">&nbsp;</td>
+								<td id="_dotEditMDWidgetAdd" nowrap="" style="padding:0 5px 0 0;">&nbsp;</td>
+							</tr>
+						</tbody></table>
+						<div class="dotLightboxListBox">
+							<table id="_dotWidgetListings" cellpadding="0" cellspacing="5" border="0">
+								<tbody><tr>
+									<td>&nbsp;</td>
+								</tr>
+							</tbody></table>
+						</div>
+					</td><td>
+				</td></tr>
+			</tbody></table>
+						<table align="center" cellpadding="0" cellspacing="0" border="0">
+				<tbody><tr>
+					<td valign="middle">
+						<a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#" onclick="_dotCloseWidgetDiv();" class="dotGreyBtn"><span>Cancel</span></a>
+					</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+
+	<script>
+		
+		function dotShowHide(x, e, toLeft, xcoordinate, ycoordinate){
+            
+			var ele = document.getElementById("myId" + x);
+
+			//Displaying the manu
+			if(ele.style.display != "block"){
+				ele.style.display="block";
+			}
+			else{
+				ele.style.display="none";
+			}
+			
+			if (e != null) {
+				//Repositioning it to the mouse position
+				var posx = 0;
+				var posy = 0;
+				if (!e) var e = window.event;
+				if (e.pageX || e.pageY)
+				{
+					posx = e.pageX;
+					posy = e.pageY;
+				}
+				else if (e.clientX || e.clientY)
+				{
+					posx = e.clientX + document.body.scrollLeft;
+					posy = e.clientY + document.body.scrollTop;
+				}
+				
+				
+				if (toLeft != null && toLeft == true) {
+					posx = posx - ele.clientWidth - 10;
+				}
+				
+				if(xcoordinate != null && ycoordinate != null){
+					posx = xcoordinate;
+					posy = ycoordinate;
+				}
+				
+				var coordinates = findDivCoordinates(x);
+				moveDiv("myId" + x, coordinates[0], coordinates[1]);			
+			}
+		}
+		
+		function dotShowHideContainerNotes(x, e, toLeft, xcoordinate, ycoordinate){
+            
+			var ele = document.getElementById("myId" + x);
+
+			//Displaying the manu
+			if(ele.style.display != "block"){
+				ele.style.display="block";
+			}
+			else{
+				ele.style.display="none";
+			}
+			
+			if (e != null) {
+				//Repositioning it to the mouse position
+				var posx = 0;
+				var posy = 0;
+				if (!e) var e = window.event;
+				if (e.pageX || e.pageY)
+				{
+					posx = e.pageX;
+					posy = e.pageY;
+				}
+				else if (e.clientX || e.clientY)
+				{
+					posx = e.clientX + document.body.scrollLeft;
+					posy = e.clientY + document.body.scrollTop;
+				}
+				
+				
+				if (toLeft != null && toLeft == true) {
+					posx = posx - ele.clientWidth - 10;
+				}
+				
+				if(xcoordinate != null && ycoordinate != null){
+					posx = xcoordinate;
+					posy = ycoordinate;
+				}
+				
+				var coordinates = findContainerNotesDivCoordinates(x);
+				moveDiv("myId" + x, coordinates[0], coordinates[1]);			
+			}
+		}
+		
+		window.onresize = afterResize;
+		
+		function afterResize(){
+			for(i = 0; i < _inodeCounter; i++){
+				var divId = document.getElementById('counter' + i).value;
+				var coordinates = getPosition(document.getElementById("showHide" + divId));
+				var containerNotesCoordinates = getPosition(document.getElementById("cnotes" + divId));
+				document.getElementById('offsetLeft' + divId).value = coordinates[0];
+				document.getElementById('offsetTop' + divId).value = coordinates[1];
+				moveDiv("myIdnotes" + divId, containerNotesCoordinates[0] , containerNotesCoordinates[1]);
+				moveDiv("myId" + divId, coordinates[0], coordinates[1]);
+			}
+		}
+		
+		function findDivCoordinates(x){
+			var coordinates = getPosition(document.getElementById("showHide" + x));	
+			return[coordinates[0], coordinates[1]];	
+		}
+		
+		function findContainerNotesDivCoordinates(x){
+			var coordinates = getPosition(document.getElementById("c" + x));
+			return[coordinates[0], coordinates[1]];
+		}
+		
+		function moveDiv(id,x,y) {
+			id = document.getElementById(id);
+				id.style.position = 'absolute';
+				id.style.top = y+'px';
+				id.style.left = x+'px';
+		}
+		
+		function getScrollX() {
+		  var scrOfX = 0, scrOfY = 0;
+		  if( typeof( window.pageYOffset ) == 'number' ) {
+		  } else if( document.body.scrollLeft ) {
+		  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+		    //IE6 standards compliant mode
+		    scrOfX = top.document.documentElement.scrollLeft;
+		  }
+		  return scrOfX;
+		}
+		
+		function getScrollY() {
+		  var scrOfY = 0;
+		  if( typeof( window.pageYOffset ) == 'number' ) {
+		  } else if(document.body.scrollTop) {
+		  } else if( document.documentElement && ( document.documentElement.scrollLeft || document.documentElement.scrollTop ) ) {
+		    //IE6 standards compliant mode
+		    scrOfY = document.documentElement.scrollTop;
+		  }
+		  return scrOfY;
+		}	
+		
+		
+		function backToCMS(){
+			window.location  = "/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Ffolders%2Fview_folders";
+		}
+	
+		function livePage(){
+			window.location  = "/home/index.dot?livePage=1";
+		}
+		function previewPage(){
+			window.location  = "/home/index.dot?previewPage=1";
+		}
+	
+		function popBrowser(x){
+		 	document.getElementById('container').value=x;
+			form = document.getElementById('submitParent');
+		    form.cmd.value="addChild";
+		    var content = 'contentlets';
+			var popup = 'contentlet';
+			newwin = window.open('/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Ffolders%2Fview_folders&view=%28working%3D1+and+deleted%3D0and+language_id+%3D+1%29&content='+content+'&popup='+popup+'&container=' + x + '&child=true#treeTop', 'newwin', 'scrollbars=yes,width=700,height=400,scrollbars=yes,resizable=yes');
+		}
+	
+		function popContentletsBrowser(x){
+		 	document.getElementById('container').value=x;
+			form = document.getElementById('submitParent');
+		    form.cmd.value="addChild";
+		    var content = 'contentlets';
+			var popup = 'contentlet';
+			newwin = window.open('/c/portal/layout?p_l_id=24.1&p_p_id=EXT_BROWSER&p_p_action=1&p_p_state=maximized&_EXT_BROWSER_struts_action=%2Fext%2Fcontentlet%2Fview_contentlets_popup&popup='+popup+'&child=true'+'&container_inode='+x, 'newwin', 'scrollbars=yes,width=1000,height=400,scrollbars=yes,resizable=yes');
+		}
+	
+		function submitParent(){
+			if(newwin) newwin.close();
+			form = document.getElementById('submitParent');
+		        form.cmd.value="addChild";
+			form.submit();
+		}
+	
+		function addPage(){
+		 	document.getElementById('htmlPage').value='0';
+			form = document.getElementById('submitParent');
+		        form.cmd.value="editHTMLPage";
+		        form.submit();
+		}
+	
+		function editPage(){
+		 	document.getElementById('htmlPage').value='56';
+			form = document.getElementById('submitParent');
+		        form.cmd.value="editHTMLPage";
+		        form.submit();
+		}
+	
+		function publishAll(){
+			if(confirm("Are you sure you would like to publish this page?")){
+			form = document.getElementById('submitParent');
+		        form.cmd.value="publishHTMLPage";
+		        form.htmlPage.value='56';
+		        form.submit();
+			}
+		}
+	
+		function editTemplate(){
+			document.getElementById('htmlPage').value='56';
+			form = document.getElementById('submitParent');
+		        form.cmd.value="editTemplate";
+		        form.submit();
+	
+		}
+	
+		function makeHomePage(){
+		 	document.getElementById('htmlPage').value='56';
+			form = document.getElementById('submitParent');
+		        form.cmd.value="makeHomePage";
+		        form.submit();
+	
+		}
+	
+		function removeContentlet(x,y){
+		 	document.getElementById('container').value=x;
+		 	document.getElementById('contentlet').value=y;
+			form = document.getElementById('submitParent');
+			form.cmd.value="removeChild";
+			form.submit();
+		}
+	
+		function addContentlet(x){
+		 	document.getElementById('container').value=x;
+		 	document.getElementById('contentlet').value=0;
+			form = document.getElementById('submitParent');
+			form.cmd.value="newedit";
+			form.submit();
+		}
+		
+ 		function addWidget(structure){
+		 	document.getElementById('contentlet').value=0;
+		 	document.getElementById('_dotAddWidget').value='true';
+		 	document.getElementById('selectedStructure').value=structure;
+			form = document.getElementById('submitParent');
+			form.cmd.value="newedit";
+			form.submit();
+		}
+	
+		function dotAddWidgetToContainer(widgetInode){
+			document.getElementById('contentlet').value=widgetInode;
+			form = document.getElementById('submitParent');
+		    form.cmd.value="addChild";
+			form.submit();
+		}
+	
+		function editContentlet(x,y){
+		 	document.getElementById('container').value=x;
+		 	document.getElementById('contentlet').value=y;
+			form = document.getElementById('submitParent');
+			form.cmd.value="edit";
+			form.submit();
+		}
+		
+		function editEvent(x){
+		 	document.getElementById('event').value=x;
+			form = document.getElementById('submitParent');
+	        form.cmd.value="editEvent";
+	        form.submit();
+		}
+		
+		function moveDown(x,y,z){
+		 	document.getElementById('container').value=x;
+		 	document.getElementById('contentlet').value=y;
+		 	document.getElementById('static').value=z;
+			form = document.getElementById('submitParent');
+	        form.cmd.value="moveDown";
+	        form.submit();
+		}
+	
+		function moveUp(x,y,z){
+		 	document.getElementById('container').value=x;
+		 	document.getElementById('contentlet').value=y;
+		 	document.getElementById('static').value=z;
+	
+			form = document.getElementById('submitParent');
+	        form.cmd.value="moveUp";
+	        form.submit();
+	
+		}
+	
+		function editContainer(x){
+		 	document.getElementById('container').value=x;
+			form = document.getElementById('submitParent');
+	        form.cmd.value="editContainer";
+	        form.submit();
+	
+		}
+	
+		function editFile(x){
+		 	document.getElementById('file').value=x;
+			form = document.getElementById('submitParent');
+	        form.cmd.value="editFile";
+	        form.submit();
+		}
+	
+		function submitMenu(formName) {
+			form = document.getElementById(formName);
+			formsubmitParent = document.getElementById("submitParent");
+			form.referer.value = formsubmitParent.referer.value;
+			form.submit();
+		}
+		
+		function addContentletChapter(x){
+			document.getElementById('container').value=0;
+		 	document.getElementById('contentlet').value=0;
+		 	document.getElementById('selectedStructure').value=x;
+		 	document.getElementById('selectedStructureFake').value=x;
+		 	form = document.getElementById('submitParent');
+			form.cmd.value="newedit";
+			form.selectedStructure.value=x;
+			form.submit();
+	
+		}
+		
+		 if(controlsHTML == null)
+			var controlsHTML = '';
+
+	</script>
+
+
+
+
+<title>Toronto and Region Conservation Authority for The Living City</title>
+<link rel="shortcut icon" href="http://trca.on.ca/global/images/misc/favicon.ico" type="image/x-icon">
+
+<meta http-equiv="content-language" name="language" content="en">
+		<meta name="keywords" content="Parks and Culture, TRCA, Humber River, Don River, Watershed, Ontario, Rouge River, Etobicoke Creek, Mimico Creek, Duffins Creek, Carruthers Creek, Highland Creek, Lake Ontario, Conservation, Bird Watching, Camping, Canoeing, Paddling, Cross Country Skiing, Dog Walking, Fishing, Fly-fishing, Golfing, Hiking, Historic Sight Seeing, Horseback Riding, Maple Syrup Festival, Mountain Biking, Picnics, Playgrounds, Swimming, Albion Hills, Albion Hills Campground, Bathurst Glen Golf, Black Creek Pioneer Village, Black Creek, Boyd , Bruce&#39;s Mill, Glen Haffy, Conservation Area, Heart Lake, Indian Line Campground, Kortright Center for Conservation, Kortright, Petticoat Creek, Altona Forest, Claireville, East Duffins, Oak Ridges Moraine, Rouge Park, Tommy Thompson Park, The Humber River Watershed, Rouge River Watershed, Etobicoke and Mimico Creek Watershed, Duffins and Carruthers Creek Watershed, Highland Creek Watershed, Lake Ontario Waterfront, Don River Watershed">
+<meta name="description" content="Toronto and Region Conservation Authority, TRCA works with governments businesses and individuals to build a greener cleaner healthier place to live. Nature and outdoor spaces are good for people and vital for healthy communities especially in city regions. They promote healthy living and community building. Explore the wide range of outdoor locations TRCA offers for you to enjoy with your family and friends. ">
+<meta name="google-site-verification" content="K04K5eqeV0jrjDwmIh4WrgYtRNcnKXeILOAeU6InKQ4">
+<meta name="p:domain_verify" content="3777ba3a85227b8553ab4526e7b3bb34">
+
+<link type="text/css" rel="StyleSheet" media="screen" href="secondaryNavContent.css">
+<link type="text/css" rel="StyleSheet" media="screen" href="footer.css">
+<link type="text/css" rel="StyleSheet" media="screen" href="accordion.css">
+<link type="text/css" rel="StyleSheet" media="print" href="print.css">
+<link rel="stylesheet" type="text/css" media="screen" href="screen.css">
+<link type="text/css" rel="StyleSheet" media="screen" href="bodyContent.css">
+<link type="text/css" rel="StyleSheet" media="screen" href="homepage.css">
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>-->
+<script type="text/javascript" src="jquery.min.js"></script>
+<!--[if lte IE 6]>
+<link rel="stylesheet" type="text/css" media="all" href="/global/2/css/ie6.css" />
+<script src="/global/2/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script>
+  DD_belatedPNG.fix('#headerMenu,img,a,#mainMenu,#navShade,#nav');
+</script>
+<![endif]-->
+<!--[if IE 7]>
+		<link type="text/css" rel="StyleSheet" media="screen" href="/global/css/ie7.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="/global/2/css/ie.css" />
+<![endif]-->
+<script type="text/javascript" src="jquery_002.js"></script>
+<script type="text/javascript" src="jquery_003.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="ui.js"></script>
+<script language="JavaScript" type="text/javascript" src="homepageInformation.js"></script>
+<script language="JavaScript" type="text/javascript" src="jquery.cycle.all.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="didYouKnow.js"></script>
+<script language="JavaScript" type="text/javascript" src="jquery.accordion.js"></script>
+<script language="JavaScript" type="text/javascript">
+$(document).ready(function(){	
+
+		
+		
+		
+		    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+    
+        
+
+
+$(function () {
+	$('#homepage-accordion').accordion({
+		header: 'H2.accordion-handle',
+		selectedClass: 'open',
+		active: 0,
+		event: 'mousemove'
+	});
+});
+
+
+
+});
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl])
+  _gaq.push(['_setDomainName', 'trca.on.ca']); 
+  _gaq.push(['_setAccount', 'UA-555264-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#bodyContent" class="additionalInfo" title="Skip to Main Content">Skip to Main Content</a>
+<div id="wrapper">
+  <div id="container">
+      			<div id="header">
+     <h1 id="trcaLogo"><a href="trca.html">Toronto and Region Conservation</a></h1>
+      <ul id="headerMenu">
+        <li class="hdrHome"><a href="trca.html">Home</a></li>
+        <li class="hdrAbout"><a href="http://trca.on.ca/about/">About</a></li>
+        <li class="hdrCareers"><a href="http://trca.on.ca/careers/">Careers</a></li>
+        <li class="hdrEvents"><a href="http://trca.on.ca/events/">Events</a></li>
+        <li class="hdrSitemap"><a href="http://trca.on.ca/sitemap/">Site Map</a></li>
+        <li class="hdrContact"><a href="http://trca.on.ca/contact/">Contact</a></li>
+      </ul>
+      <div id="headerSearch">       <!--  <form action="/search/" id="search_form">
+          <input type="text" name="query" onfocus="if(this.value == 'Search...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Search...'; }" alt="Enter a term to search for" id="search_query" value="Search..." class="searchField" />
+          <input type="image" src="/global/2/images/btn_go.png" value="Go" name="submit"  id="search_submit" class="searchBtn" />
+        </form>-->
+         <form id="searchForm" name="searchForm" method="get" action="http://trca.on.ca/search/index.dot">
+          <label>
+			<input name="q" type="text" id="search_query" onfocus="if(this.value == &#39;Search...&#39;) { this.value = &#39;&#39;; }" onblur="if(this.value == &#39;&#39;) { this.value = &#39;Search...&#39;; }" alt="Enter a term to search for" class="searchField">
+          	<input type="image" src="btn_go.png" value="Go" name="submit" id="search_submit" class="searchBtn">
+            <input name="cx" type="hidden" value="009586267775484727279:mxc5edb8ucq ">
+          </label>
+        </form>
+<div style="width=200px; float:right; clear:right; font-size:10px; padding-top:2px; text-align:left;"><a style="color:#C8E648;" href="http://trca.on.ca/explore">Search by address ›</a></div>
+      </div>
+      <ul id="audienceMenu">
+        <li class="label">Find content for:</li>
+        <li><a href="http://trca.on.ca/audience/home-owners.dot">Home Owners</a></li>
+        <li><a href="http://trca.on.ca/audience/property-developers.dot">Property Developers</a></li>
+        <li><a href="http://trca.on.ca/audience/teachers.dot">Teachers</a></li>
+        <li><a href="http://trca.on.ca/audience/families.dot">Families</a></li>
+        <li class="end"><a href="http://trca.on.ca/audience/business.dot">Business</a></li>
+      </ul>
+      <div id="mainMenu">
+         <ul id="nav">
+                   <li id="placesToVisit"><a href="http://trca.on.ca/enjoy/locations/">Places to Visit</a>
+                 <ul>
+              <li><a href="http://blackcreek.ca/" target="_blank">Black Creek Pioneer Village</a></li>
+              <li><a href="http://kortright.org/" target="_blank">Kortright Centre</a></li>
+              <li><a href="http://trca.on.ca/enjoy/activities/camping.dot">Campgrounds</a></li>
+              <li><a href="http://trca.on.ca/enjoy/">Parks</a></li>
+              <li><a href="http://tommythompsonpark.ca/" target="_blank">Tommy Thompson Park</a></li>
+              <li><a href="http://trca.on.ca/enjoy/locations/">View all Locations ›</a></li>
+            </ul>
+          </li>
+          <li id="recreation"><a href="http://trca.on.ca/enjoy/activities/">Recreation</a>
+            <ul>
+              <li><a href="http://trca.on.ca/enjoy/activities/picnics.dot">Picnics</a></li>
+<li><a href="http://trca.on.ca/enjoy/activities/swimming.dot">Swimming</a></li>
+	      <li><a href="http://trca.on.ca/enjoy/activities/fishing.dot">Fishing</a></li>
+              <li><a href="http://trca.on.ca/enjoy/activities/hiking.dot">Hiking &amp; Dog Walking</a></li>
+              <li><a href="http://trca.on.ca/enjoy/activities/camping.dot">Camping</a></li>
+              <li><a href="http://trca.on.ca/enjoy/activities/mountain-biking-cycling.dot">Mountain Biking</a></li>
+              <li><a href="http://trca.on.ca/enjoy/activities/canoeing-paddling.dot">Canoeing/Paddling</a></li>
+      </ul>
+          </li>
+          <li id="theLivingCity"><a href="http://trca.on.ca/the-living-city/index.dot">The Living City™</a>
+            <ul>
+              <li><a href="http://trca.on.ca/the-living-city/watersheds/">Watersheds</a></li>
+              <li><a href="http://trca.on.ca/the-living-city/land/">Land</a></li>
+              <li><a href="http://trca.on.ca/the-living-city/water-flood-management/">Water &amp; Flood Management</a></li>
+              <li><a href="http://trca.on.ca/the-living-city/programs-of-the-living-city/sustainable-communities.dot">Sustainable Communities</a></li>
+              <li><a href="http://trca.on.ca/the-living-city/green-infrastructure-projects/">Green Infrastructure Projects</a></li>
+              <li><a href="http://www.thelivingcity.org/" target="_blank">Support</a></li>
+            </ul>
+          </li>
+          <li id="getInvolved"><a href="http://trca.on.ca/get-involved/">Get Involved</a>
+            <ul>
+              <li><a href="http://trca.on.ca/get-involved/stewardship/community-stewardship/">In Your Community</a></li>
+              <li><a href="http://trca.on.ca/get-involved/stewardship/private-land-stewardship/">Private Land Stewardship</a></li>
+              <li><a href="http://trca.on.ca/get-involved/stewardship/multicultural-connections.dot">Multicultural Connections</a></li>
+              <li><a href="http://trca.on.ca/get-involved/volunteer/">Environmental Volunteer Network (EVN)</a></li>
+              <li><a href="http://trca.on.ca/get-involved/bridge-training.dot">Bridge Training</a></li>
+
+            </ul>
+          </li>
+          <li id="schoolPrograms"><a href="http://trca.on.ca/school-programs/">Learning Programs</a>
+            <ul>
+              <li><a href="http://trca.on.ca/school-programs/online-booking/">Register for a Program</a></li>
+              <li><a href="http://trca.on.ca/school-programs/facilities-and-programs/">Learning Facilities</a></li>
+              <li><a href="http://trca.on.ca/school-programs/outreach-education/">Outreach Education</a></li>
+              <li><a href="http://trca.on.ca/school-programs/overnight-visits/">Overnight Visits</a></li>
+              <li><a href="http://trca.on.ca/school-programs/day-visits/">Day Visits</a></li>
+              <li><a href="https://www.thelivingcitycampus.com/" target="_blank">The Living City Campus</a></li>
+            </ul>
+          </li>
+          <li id="planningAndPermits"><a href="http://trca.on.ca/planning-services-permits/">Planning &amp; Permits</a>
+            <ul>
+  <li><a href="http://trca.on.ca/the-living-city/public-consultations/the-living-city-policies.dot"> The Living City Policies - Public Consultation</a></li>              
+<li><a href="http://trca.on.ca/planning-services-permits/information-for-residential.dot">Residential Property</a></li>
+              <li><a href="http://trca.on.ca/planning-services-permits/">Building Industry</a></li>
+              <li><a href="http://trca.on.ca/planning-services-permits/permit-applications/">Permit Applications</a></li>
+              <li><a href="http://trca.on.ca/planning-services-permits/environmental-assessment.dot">Environmental Assessment</a></li>
+            <!--  <li><a href="/planning-services-permits/purchase-flood-plain-maps.dot">Flood Plain Maps</a></li>-->
+              <li><a href="http://trca.on.ca/planning-services-permits/regulation-and-policy-development.dot">Regulated Areas</a></li>
+            </ul>
+          </li>
+          <li id="contentFor"><a href="http://trca.on.ca/audience/online-services.dot">Online Services:</a>
+           <ul>
+              <li><a href="https://shop.trca.on.ca/category/memberships/" target="_blank">Buy Memberships</a></li>
+              <li><a href="http://www.reservations.trca.on.ca/en/" target="_blank">Camping Reservations</a></li>
+              <li><a href="https://shop.trca.on.ca/category/golfing/" target="_blank">Buy Golf</a></li>
+              <li><a href="http://biddingo.com/trca" target="_blank">Public Tenders</a></li>
+              <!--<li><a href="/planning-services-permits/purchase-flood-plain-maps.dot">Buy Flood Plain Maps</a></li>-->
+              <li><a href="https://cause2give.unxvision.com/P2PWeb/Secure/Donate.aspx?EventId=119&LanguageId=1" target="_blank">Donate to The Living City Foundation</a></li>
+              <li><a href="http://trca.on.ca/audience/online-services.dot">View Online Services ›</a></li>
+            </ul>
+
+          </li>
+        </ul>
+      </div>
+      <!-- /#nav -->
+      <div id="navShade"></div>
+    </div>
+    <!-- /#header -->    <div id="content">
+      <div id="contentContainer">
+        <div id="bodyContent">           <div class="container">
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+<h1>Toronto and Region Conservation Authority</h1>
+<p>Toronto and Region Conservation (TRCA) works with its partners to ensure The Living City is built on a natural foundation of healthy rivers and shorelines, greenspace and biodiversity, and sustainable communities.</p>
+
+
+
+</div>
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=1<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=15449<BR> 
+IDENTIFIER_INODE=5870<BR> 
+CONTAINER_INODE=3441<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId15449">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+						<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/edit.gif);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('3441', '15449');">Edit Content</a>
+			</div>		
+
+
+<div class="moveContent">	
+			<img src="btn_arrow_up_disabled.gif" width="16" height="16" alt="" border="0">
+		<img src="btn_arrow_down_disabled.gif" width="16" height="16" alt="" border="0">
+				<a href="javascript: removeContentlet('3441', '15449');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 3441
+CONTAINER_IDENTIFIER_INODE = 3442
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 1
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget3441(){
+			document.getElementById('container').value='3441';
+			dotShowHide('3441');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide3441"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display:block;height:24px;width:90px;padding: 3px 0 0 32px;font-weight:bolder;font-size:12px;text-decoration:none;text-align:left;color:#777;font-family:Arial, Helvetica, sanserif;background-image:url(/portal/images/preview/containerControl.gif);background-repeat:no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;3441&#39;, event , null, document.getElementById(&#39;offsetLeft3441&#39;).value, document.getElementById(&#39;offsetTop3441&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide3441"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft3441\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop3441\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft3441" value="1084"><input type="hidden" id="offsetTop3441" value="189">
+	<div class="containerNotes" id="cnotes3441"><a href="javascript: ;" id="containerNotes3441" onclick="javascript:dotShowHideContainerNotes(&#39;notes3441&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes3441&#39;).value, document.getElementById(&#39;offsetTopContainerNotes3441&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes3441"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes3441\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes3441\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes3441" value="1057"><input type="hidden" id="offsetTopContainerNotes3441" value="189">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"3441\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId3441">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'3441\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'3441\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget3441();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'3441\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes3441">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Body Content<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes3441\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'3441\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter0" value="3441">
+
+
+</div>          <div id="homepageSlideshow">             		
+		
+		
+		    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+			             <img id="image-rotor-1" src="165237.jpg" alt="Trca Main 2014treeplanting V2" height="294" width="715" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 6; opacity: 0;">              <img id="image-rotor-2" src="188327.jpg" alt="CYC2014" height="294" width="715" style="display: block; position: absolute; top: 0px; left: 0px; z-index: 7; opacity: 1; width: 715px; height: 294px;">              <img id="image-rotor-3" src="163039.jpg" alt="Flood-before-after" height="294" width="715" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 4; opacity: 0;">              <img id="image-rotor-4" src="156702.jpg" alt="Watershed Checkup" height="294" width="715" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 3; opacity: 0;">              <img id="image-rotor-5" src="154558.jpg" alt="The Living City Policies - Public Consultation" height="294" width="715" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 2; opacity: 0;">              <img id="image-rotor-6" src="162355.jpg" alt="Stewardshipbanner" height="294" width="715" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 1; opacity: 0;">              </div><div id="homepageSlideshowNav"><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#" class="">1</a><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#" class="activeSlide">2</a><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#">3</a><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#">4</a><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#">5</a><a href="http://trca.on.ca/?mainFrame=true&livePage=0&language=1&host_id=1&#">6</a></div>
+          <script language="JavaScript" type="text/javascript">
+  $(document).ready(function(){	
+    $("#image-rotor-1").click(function() {window.location = '/the-living-city/land/habitat-protection-and-regeneration/reforestation.dot'; });
+        $("#image-rotor-2").click(function() {window.location = '/cyc/'; });
+        $("#image-rotor-3").click(function() {window.location = 'http://trca.on.ca/flood'; });
+        $("#image-rotor-4").click(function() {window.location = 'http://trca.on.ca/reportcards'; });
+        $("#image-rotor-5").click(function() {window.location = '/the-living-city/public-consultations/the-living-city-policies.dot'; });
+        $("#image-rotor-6").click(function() {window.location = 'http://trca.on.ca/get-involved/stewardship/index.dot'; });
+      });
+</script>
+          <h2 class="additionalInfo"> Learn More and Get Involved </h2>
+          <div>
+            <div id="recentNewsBox">               <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+<div id="recentNews">
+<div class="title">
+  <h2>Recent News</h2>
+</div>
+
+<div class="listing">
+
+
+		
+		
+		
+		    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+     <div class="item">
+     	<div class="date">
+                     06/05/2014
+             </div>
+     	<h3><a href="http://trca.on.ca/news-media/news/releases/188243">Celebrate the 15th Anniversary of the Humber being designated a Canadian Heritage River</a></h3>
+     	<p>15th anniversary celebration of Heritage River designation honours Toronto's largest river and promotes understanding and appreciation of the country's rich river heritage</p>
+     </div>
+     <div class="item">
+     	<div class="date">
+                     06/04/2014
+             </div>
+     	<h3><a href="http://trca.on.ca/news-media/news/releases/188269">Give Your Car a Break Challenge Begins June 5 in Peel</a></h3>
+     	<p></p>
+     </div>
+     <div class="item">
+     	<div class="date">
+                     05/30/2014
+             </div>
+     	<h3><a href="http://trca.on.ca/news-media/news/releases/188029">             Ontario Trillium Foundation Grant Boosts Environmental Initiatives in Caledon</a></h3>
+     	<p>Valleywood Community Project kicks off at community planting event</p>
+     </div>
+     <div class="item">
+     	<div class="date">
+                     05/29/2014
+             </div>
+     	<h3><a href="http://trca.on.ca/news-media/news/releases/187937">Discover the Rouge River Watershed during Rouge Days from June 5 to June 8 </a></h3>
+     	<p>Rouge Days Celebration kicks off with special evening of musical performances, traditional camping activities and an evening hike</p>
+     </div>
+     <div class="item">
+     	<div class="date">
+                     05/22/2014
+             </div>
+     	<h3><a href="http://trca.on.ca/news-media/news/releases/187525">Get Into the Centre of Local Eco-Action at Richmond Hill?s Only Annual Community Environmental Festival</a></h3>
+     	<p>Thousands of residents to celebrate the Don River at the 16th Annual Mill Pond Splash on Sunday June 1 at free family eco-festival</p>
+     </div>
+     <div class="item">
+     	<div class="date">
+                     05/16/2014
+             </div>
+     	<h3><a href="http://trca.on.ca/news-media/news/releases/187334">2014 Ontario BioBlitz to Set Up Camp in Humber Valley</a></h3>
+     	<p></p>
+     </div>
+
+</div><!-- .listing -->
+
+
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=2<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=180980<BR> 
+IDENTIFIER_INODE=5996<BR> 
+CONTAINER_INODE=23<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId180980">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+								<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/bnt_add_widget.png);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('23', '180980');">Edit Widget</a>
+				</div>		
+
+
+<div class="moveContent">	
+			<a href="javascript:moveUp('23', '180980','true'); ">
+			<img src="btn_arrow_up.gif" width="16" height="16" alt="Move Content Up" border="0">
+		</a>
+		<a href="javascript:moveDown('23', '180980','true'); ">
+			<img src="btn_arrow_down.gif" width="16" height="16" alt="Move Content Down" border="0">
+		</a>
+				<a href="javascript: removeContentlet('23', '180980');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+<p><a href="http://trca.on.ca/news-media/index.dot"><img style="border: 0pt none;" title="Mediaroom-btn-green" alt="Media Room" src="125974.png" height="32" width="128"></a></p></div>
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=2<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=125975<BR> 
+IDENTIFIER_INODE=125972<BR> 
+CONTAINER_INODE=23<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId125975">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+						<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/edit.gif);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('23', '125975');">Edit Content</a>
+			</div>		
+
+
+<div class="moveContent">	
+			<a href="javascript:moveUp('23', '125975','true'); ">
+			<img src="btn_arrow_up.gif" width="16" height="16" alt="Move Content Up" border="0">
+		</a>
+		<a href="javascript:moveDown('23', '125975','true'); ">
+			<img src="btn_arrow_down.gif" width="16" height="16" alt="Move Content Down" border="0">
+		</a>
+				<a href="javascript: removeContentlet('23', '125975');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 23
+CONTAINER_IDENTIFIER_INODE = 24
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 2
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget23(){
+			document.getElementById('container').value='23';
+			dotShowHide('23');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide23"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display:block;height:24px;width:90px;padding: 3px 0 0 32px;font-weight:bolder;font-size:12px;text-decoration:none;text-align:left;color:#777;font-family:Arial, Helvetica, sanserif;background-image:url(/portal/images/preview/containerControl.gif);background-repeat:no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;23&#39;, event , null, document.getElementById(&#39;offsetLeft23&#39;).value, document.getElementById(&#39;offsetTop23&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide23"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft23\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop23\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft23" value="849"><input type="hidden" id="offsetTop23" value="649">
+	<div class="containerNotes" id="cnotes23"><a href="javascript: ;" id="containerNotes23" onclick="javascript:dotShowHideContainerNotes(&#39;notes23&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes23&#39;).value, document.getElementById(&#39;offsetTopContainerNotes23&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes23"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes23\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes23\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes23" value="822"><input type="hidden" id="offsetTopContainerNotes23" value="649">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"23\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId23">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'23\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'23\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget23();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'23\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes23">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Content Box 1<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes23\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'23\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter1" value="23">
+
+
+</div> </div>
+            <div id="callsToAction">
+              <!--CM TEMP-->
+                            <div class="container">
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+<div id="recentTweetsBox" style="margin-top:-14px;">
+<div id="recentTweets">
+<div class="title">
+  <h2>TRCA on Twitter:</h2>
+</div>
+</div>
+<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-timeline twitter-timeline-rendered" style="width: 1px; height: 0px; border: none; position: absolute; visibility: hidden;"></iframe><a class="twitter-timeline" data-dnt="true" href="https://twitter.com/TRCA_Trails/trca-official" data-widget-id="357229383020343296" data-chrome="noheader transparent" width="226" height="470" data-twttr-rendered="true">TRCA on Twitter:</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<p><a href="http://trca.on.ca/about/twitter.dot"><img title="More TRCA Tweets" alt="More TRCA Tweets" height="27" width="128" src="181007.jpg"></a></p></div></div>
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=1<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=181010<BR> 
+IDENTIFIER_INODE=180972<BR> 
+CONTAINER_INODE=84941<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId181010">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+						<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/edit.gif);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('84941', '181010');">Edit Content</a>
+			</div>		
+
+
+<div class="moveContent">	
+			<img src="btn_arrow_up_disabled.gif" width="16" height="16" alt="" border="0">
+		<img src="btn_arrow_down_disabled.gif" width="16" height="16" alt="" border="0">
+				<a href="javascript: removeContentlet('84941', '181010');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 84941
+CONTAINER_IDENTIFIER_INODE = 84942
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 1
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget84941(){
+			document.getElementById('container').value='84941';
+			dotShowHide('84941');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide84941"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display:block;height:24px;width:90px;padding: 3px 0 0 32px;font-weight:bolder;font-size:12px;text-decoration:none;text-align:left;color:#777;font-family:Arial, Helvetica, sanserif;background-image:url(/portal/images/preview/containerControl.gif);background-repeat:no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;84941&#39;, event , null, document.getElementById(&#39;offsetLeft84941&#39;).value, document.getElementById(&#39;offsetTop84941&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide84941"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft84941\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop84941\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft84941" value="1084"><input type="hidden" id="offsetTop84941" value="663">
+	<div class="containerNotes" id="cnotes84941"><a href="javascript: ;" id="containerNotes84941" onclick="javascript:dotShowHideContainerNotes(&#39;notes84941&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes84941&#39;).value, document.getElementById(&#39;offsetTopContainerNotes84941&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes84941"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes84941\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes84941\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes84941" value="1057"><input type="hidden" id="offsetTopContainerNotes84941" value="649">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"84941\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId84941">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'84941\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'84941\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget84941();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'84941\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes84941">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Content Box 6<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes84941\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'84941\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter2" value="84941">
+
+
+</div>              <div class="clear"></div>
+            </div>
+            <!-- callsToAction -->
+            <div class="clear"></div>
+          </div>
+        </div>
+        <!-- bodyContent -->
+        <div id="secondaryNav">
+          <!-- Start Homepage Accordion -->
+          <div class="accordion ui-accordion" id="homepage-accordion">
+            <div class="boxcap-top">
+              <div class="boxcap-top_left"></div>
+              <div class="boxcap-top_right"></div>
+            </div>
+                        <div class="container">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="contentlet">
+<div class="open">
+
+		
+		
+		
+		    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+    
+        
+      
+<h2 class="accordion-handle open">Flood Forecasting<a class="rss" href="http://trca.on.ca/flood-forecast.rss">Flood Forecasting RSS Feed</a></h2>
+<div class="accordion-content">
+    <div id="floodForecasting">
+                <div class="item statementSafety">
+                    <h3>Current State:</h3>
+                    <p class="state">Watershed Conditions Statement: Water Safety</p>
+                    <h3>Message:</h3>
+                    <p class="summary">
+                                                Higher than normal water levels 
+                            <a class="more" href="http://trca.on.ca/flood-monitoring/forecast/188606">More</a>	
+                        </p>
+                    <a href="http://trca.on.ca/flood-management-service/">Learn more about the Flood Monitoring Program...</a>
+                </div>
+    </div>
+</div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=1<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=146319<BR> 
+IDENTIFIER_INODE=6139<BR> 
+CONTAINER_INODE=82<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId146319">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+								<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/bnt_add_widget.png);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('82', '146319');">Edit Widget</a>
+				</div>		
+
+
+<div class="moveContent">	
+			<img src="btn_arrow_up_disabled.gif" width="16" height="16" alt="" border="0">
+		<img src="btn_arrow_down_disabled.gif" width="16" height="16" alt="" border="0">
+				<a href="javascript: removeContentlet('82', '146319');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 82
+CONTAINER_IDENTIFIER_INODE = 83
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 1
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget82(){
+			document.getElementById('container').value='82';
+			dotShowHide('82');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide82"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display: block; height: 24px; width: 90px; padding: 3px 0px 0px 32px; font-weight: bolder; font-size: 12px; text-decoration: none; text-align: left; color: rgb(119, 119, 119); font-family: Arial, Helvetica, sanserif; background-image: url(http://trca.on.ca/portal/images/preview/containerControl.gif); background-repeat: no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;82&#39;, event , null, document.getElementById(&#39;offsetLeft82&#39;).value, document.getElementById(&#39;offsetTop82&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide82"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft82\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop82\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft82" value="349"><input type="hidden" id="offsetTop82" value="189">
+	<div class="containerNotes" id="cnotes82"><a href="javascript: ;" id="containerNotes82" onclick="javascript:dotShowHideContainerNotes(&#39;notes82&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes82&#39;).value, document.getElementById(&#39;offsetTopContainerNotes82&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes82"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes82\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes82\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes82" value="322"><input type="hidden" id="offsetTopContainerNotes82" value="189">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"82\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId82">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'82\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'82\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget82();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'82\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes82">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Content Box 5<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes82\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'82\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter3" value="82">
+
+
+</div>            
+                        <div class="container">
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+[ 	Body
+ ]</div>
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 76
+CONTAINER_IDENTIFIER_INODE = 77
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 0
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget76(){
+			document.getElementById('container').value='76';
+			dotShowHide('76');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide76"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display:block;height:24px;width:90px;padding: 3px 0 0 32px;font-weight:bolder;font-size:12px;text-decoration:none;text-align:left;color:#777;font-family:Arial, Helvetica, sanserif;background-image:url(/portal/images/preview/containerControl.gif);background-repeat:no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;76&#39;, event , null, document.getElementById(&#39;offsetLeft76&#39;).value, document.getElementById(&#39;offsetTop76&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide76"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft76\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop76\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft76" value="334"><input type="hidden" id="offsetTop76" value="612">
+	<div class="containerNotes" id="cnotes76"><a href="javascript: ;" id="containerNotes76" onclick="javascript:dotShowHideContainerNotes(&#39;notes76&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes76&#39;).value, document.getElementById(&#39;offsetTopContainerNotes76&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes76"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes76\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes76\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes76" value="307"><input type="hidden" id="offsetTopContainerNotes76" value="612">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"76\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId76">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'76\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'76\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget76();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'76\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes76">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Content Box 3<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes76\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'76\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter4" value="76">
+
+
+</div>            
+                        <div class="container">
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+<h2 class="accordion-handle">Upcoming Events<a class="rss" href="http://trca.on.ca/events/calendar.rss">Event RSS Feed</a></h2>
+<div class="accordion-content" style="display: none;">
+    <div id="calendarOfEvents">
+        
+    		
+		
+		
+		    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			    
+		   
+	   
+			         				      
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=186652">Battle of Black Creek Creek</a>
+        <br>
+           Saturday, June 14 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188628">Survival Skills</a>
+        <br>
+           Sunday, June 15 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188633">Good Bugs Bad Bugs</a>
+        <br>
+           Tuesday, June 17 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177175">BAAB #2/14</a>
+        <br>
+           Friday, June 20 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177177">Authority #5/14</a>
+        <br>
+           Friday, June 20 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=178343">Bike the Creek</a>
+        <br>
+           Saturday, June 21 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188699">LEED Breakfast Series Session II on Materials: The Quiet, Emerging Force of LEED</a>
+        <br>
+           Wednesday, June 25 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188635">Partners in Project Green "Lets Get Nosey" Sustainable Bus Tour: Energy</a>
+        <br>
+           Friday, June 27 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188637">Adult Workshop Series:  Introduction to Trail Running</a>
+        <br>
+           Saturday, June 28 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188236">Canada Day Celebration and Citizenship Ceremony</a>
+        <br>
+           Tuesday, July 1 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=161108">Caledon Canada Day</a>
+        <br>
+           Tuesday, July 1 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177179">Executive #5/14</a>
+        <br>
+           Friday, July 4 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188644">Archetype Sustainable House Tour</a>
+        <br>
+           Sunday, July 6 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188642">Extraordinary Energy Hike</a>
+        <br>
+           Sunday, July 6 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177181">Authority #6/14</a>
+        <br>
+           Friday, July 25 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188639">WWI 100th Anniversary Ceremony at Black Creek</a>
+        <br>
+           Monday, July 28 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188647">Nature Art at Kortright</a>
+        <br>
+           Sunday, August 3 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177183">Executive #6/14</a>
+        <br>
+           Friday, August 8 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188652">Quilts at the Creek</a>
+        <br>
+           Saturday, August 16 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=182688">Annual Tommy Thompson Park Butterfly Festival</a>
+        <br>
+           Saturday, August 23 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=187680">Hop Harvest at Black Creek Pioneer Village</a>
+        <br>
+           Saturday, August 23 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177185">Executive #7/14</a>
+        <br>
+           Friday, September 5 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177187">Authority #7/14</a>
+        <br>
+           Friday, September 19 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=188702">A Spirited Affair: Celebrating Beer, Whisky and Wine</a>
+        <br>
+           Thursday, September 25 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177189">BAAB #3/14</a>
+        <br>
+           Friday, October 10 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177191">Executive #8/14</a>
+        <br>
+           Friday, October 10 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177193">Authority #8/14</a>
+        <br>
+           Friday, October 31 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177195">Executive #9/14</a>
+        <br>
+           Friday, November 7 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177197">Authority #9/14</a>
+        <br>
+           Friday, November 28 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177199">Executive #10/14</a>
+        <br>
+           Friday, December 12 2014
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177201">Authority #10/14</a>
+        <br>
+           Friday, January 2 2015
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177203">Executive #11/14</a>
+        <br>
+           Friday, January 16 2015
+        </div>
+            <div class="item">
+                   
+          <a href="http://trca.on.ca/events/event.dot?id=177207">ANNUAL Authority Meeting #1/15</a>
+        <br>
+           Friday, January 30 2015
+        </div>
+        </div>										
+</div></div>
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=1<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=88684<BR> 
+IDENTIFIER_INODE=5246<BR> 
+CONTAINER_INODE=72<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId88684">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+						<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/edit.gif);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('72', '88684');">Edit Content</a>
+			</div>		
+
+
+<div class="moveContent">	
+			<img src="btn_arrow_up_disabled.gif" width="16" height="16" alt="" border="0">
+		<img src="btn_arrow_down_disabled.gif" width="16" height="16" alt="" border="0">
+				<a href="javascript: removeContentlet('72', '88684');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 72
+CONTAINER_IDENTIFIER_INODE = 73
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 1
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget72(){
+			document.getElementById('container').value='72';
+			dotShowHide('72');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide72"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display:block;height:24px;width:90px;padding: 3px 0 0 32px;font-weight:bolder;font-size:12px;text-decoration:none;text-align:left;color:#777;font-family:Arial, Helvetica, sanserif;background-image:url(/portal/images/preview/containerControl.gif);background-repeat:no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;72&#39;, event , null, document.getElementById(&#39;offsetLeft72&#39;).value, document.getElementById(&#39;offsetTop72&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide72"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft72\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop72\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft72" value="334"><input type="hidden" id="offsetTop72" value="695">
+	<div class="containerNotes" id="cnotes72"><a href="javascript: ;" id="containerNotes72" onclick="javascript:dotShowHideContainerNotes(&#39;notes72&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes72&#39;).value, document.getElementById(&#39;offsetTopContainerNotes72&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes72"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes72\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes72\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes72" value="307"><input type="hidden" id="offsetTopContainerNotes72" value="695">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"72\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId72">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'72\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'72\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget72();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'72\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes72">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Content Box 2<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes72\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'72\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter5" value="72">
+
+
+</div>            <div class="boxcap">
+              <div class="boxcap-bottom_left"></div>
+              <div class="boxcap-bottom_right"></div>
+            </div>
+          </div>
+          <!-- Close Homepage Accordion -->
+                    <div class="container">
+
+
+
+
+
+
+
+<div class="contentlet">
+<div>
+<p style="text-align: center;"><a href="http://trca.on.ca/the-living-city/land/habitat-protection-and-regeneration/emerarld-ash-borer.dot"><img style="border: 0px none;" alt="Emerald Ash Borer - information and resources for landowners" src="186934.png" height="42" width="225"></a></p>
+<p style="text-align: center;"><a href="http://trca.on.ca/alhb"><img title="Asian Long-horned Beetle Information" alt="Asian Long-horned Beetle Information" src="182344.png" height="42" width="225"></a></p>
+<p style="text-align: center;"><a target="_blank" href="http://trca.on.ca/annualreport2012"><img src="175458.jpg" alt="TRCA Annual Report 2012" title="TRCA Annual Report 2012"></a></p>
+<p><a target="_blank" href="http://trca.on.ca/annualreport2012"> </a></p>
+<p style="text-align: center;"><a target="_blank" href="http://trca.on.ca/annualreport2012"></a><a href="http://trca.on.ca/about/strategic-plan.dot"><img src="175460.jpg" alt="TRCA 10 Year Strategic Plan" title="TRCA 10 Year Strategic Plan" height="272" width="225"></a></p>
+<p><a target="_blank" href="http://www.actionplan.gc.ca/"><img title="Economic Action Plan" alt="Economic Action Plan" src="186929.gif" width="225"></a></p></div>
+
+
+
+
+<!--
+EDIT_HTMLPAGE_PERMISSION=true<BR>
+STATIC_CONTAINER=true<BR>
+CONTAINER_MAX_CONTENTLETS=10<BR> 
+CONTAINER_NUM_CONTENTLETS=1<BR> 
+EDIT_CONTENT_PERMISSION=true<BR> 
+CONTENT_INODE=186935<BR> 
+IDENTIFIER_INODE=164926<BR> 
+CONTAINER_INODE=79<BR>
+-->
+
+<div class="contentletControls">
+<div id="myId186935">
+
+
+<div style="float:left;margin-left:2px;border:1px solid #9ab2cf;">	
+						<a onmouseover="this.style.color=&#39;#6986ba&#39;;this.style.backgroundColor=&#39;#DDEAFE&#39;;" onmouseout="this.style.color=&#39;#666&#39;;this.style.backgroundColor=&#39;#fff&#39;;" style="background-image:url(/portal/images/preview/edit.gif);background-position:center left;background-repeat:no-repeat;display:block;padding: 1px 5px 2px 25px;background-color:#fff;font-family:Verdana, Arial, Helvetica, sanserif;text-decoration:none;color:#666;font-weight:normal;font-size:9px;" href="javascript:editContentlet('79', '186935');">Edit Content</a>
+			</div>		
+
+
+<div class="moveContent">	
+			<img src="btn_arrow_up_disabled.gif" width="16" height="16" alt="" border="0">
+		<img src="btn_arrow_down_disabled.gif" width="16" height="16" alt="" border="0">
+				<a href="javascript: removeContentlet('79', '186935');">
+			<img src="btn_remove_content.gif" width="16" height="16" alt="Remove Content" border="0">
+		</a>
+	</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="clear"></div></div> 
+
+<!--
+CONTAINER_INODE = 79
+CONTAINER_IDENTIFIER_INODE = 80
+CONTAINER_MAX_CONTENTLETS = 10
+CONTAINER_NUM_CONTENTLETS = 1
+EDIT_HTMLPAGE_PERMISSION = true
+EDIT_CONTAINER_PERMISSION = true
+-->
+<script type="text/javascript" language="javascript">
+
+var css_browser_selector = function() {
+	var 
+		ua = navigator.userAgent.toLowerCase(),
+		is = function(t){ return ua.indexOf(t) != -1; },
+		h = document.getElementsByTagName('html')[0],
+		b = (!(/opera|webtv/i.test(ua)) && /msie (\d)/.test(ua)) ? ((is('mac') ? 'ieMac ' : '') + 'ie ie' + RegExp.$1)
+			: is('gecko/') ? 'gecko' : is('opera') ? 'opera' : is('konqueror') ? 'konqueror' : is('applewebkit/') ? 'webkit safari' : is('mozilla/') ? 'gecko' : '',
+		os = (is('x11') || is('linux')) ? ' linux' : is('mac') ? ' mac' : is('win') ? ' win' : '';
+	var c = b+os+' js';
+	h.className += h.className?' '+c:c;
+}();
+</script>
+
+<div class="containerControls">
+	<script type="text/javascript" language="javascript">
+		function openAddWidget79(){
+			document.getElementById('container').value='79';
+			dotShowHide('79');
+			dotActivate('dotAddWidget');
+		}
+	</script>
+	<div style="float:right;" id="showHide79"><a onmouseover="this.style.color=&#39;#6986ba&#39;;" onmouseout="this.style.color=&#39;#777&#39;;" style="display:block;height:24px;width:90px;padding: 3px 0 0 32px;font-weight:bolder;font-size:12px;text-decoration:none;text-align:left;color:#777;font-family:Arial, Helvetica, sanserif;background-image:url(/portal/images/preview/containerControl.gif);background-repeat:no-repeat;" href="javascript: ;" onclick="javascript:dotShowHide(&#39;79&#39;, event , null, document.getElementById(&#39;offsetLeft79&#39;).value, document.getElementById(&#39;offsetTop79&#39;).value);">Add Content</a></div>
+	<script language="javascript">
+		function getPosition(who){
+   			var T= 0,L= 0;
+    		while(who){
+       			L+= who.offsetLeft;
+       			T+= who.offsetTop;
+        		who= who.offsetParent;
+    			}    		
+    		return [L,T + 25];    
+		}
+
+		var coordinates = getPosition(document.getElementById("showHide79"));
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeft79\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTop79\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeft79" value="349"><input type="hidden" id="offsetTop79" value="618">
+	<div class="containerNotes" id="cnotes79"><a href="javascript: ;" id="containerNotes79" onclick="javascript:dotShowHideContainerNotes(&#39;notes79&#39;, event , null, document.getElementById(&#39;offsetLeftContainerNotes79&#39;).value, document.getElementById(&#39;offsetTopContainerNotes79&#39;).value); "><img src="btn_container_note.gif" alt="Container Notes" width="27" height="24" border="0"></a></div>
+	<script language="javascript">		
+		var coordinates = getPosition(document.getElementById("containerNotes79"));		
+		var screenWidth = document.body.clientWidth;
+		
+		if(coordinates[0] + 290 > screenWidth)
+		{
+		   coordinates[0] = coordinates[0] - 145;
+		}		
+		
+		document.write("<input type=\"hidden\" id=\"offsetLeftContainerNotes79\" value=\"" + coordinates[0] + "\">");
+		document.write("<input type=\"hidden\" id=\"offsetTopContainerNotes79\" value=\"" + coordinates[1] + "\">");		
+	</script><input type="hidden" id="offsetLeftContainerNotes79" value="322"><input type="hidden" id="offsetTopContainerNotes79" value="618">
+</div>
+
+<script type="text/javascript" language="javascript">
+	document.write("<input type=\"hidden\" id=\"counter" + _inodeCounter + "\" value=\"79\">");
+	_inodeCounter++;
+	
+	if(controlsHTML == null)
+	var controlsHTML = '';
+	controlsHTML +=
+	'<div class="controls" id="myId79">\n'+
+														'<span class="newContent"><a href="javascript:addContentlet(\'79\');">New Content</a></span>\n'+
+								'<span class="reuseContent"><a href="javascript:popContentletsBrowser(\'79\');">Reuse Content</a></span>\n'+
+				'<span class="rule"></span>\n'+
+				'<span class="addWidget"><a href="javascript:openAddWidget79();">Add Widget</a></span>\n'+
+						'<span class="controlsClose"><a href="javascript:dotShowHide(\'79\');">Close</a></span>\n'+
+			'</div>\n' + 
+	
+	'<div class="noteBox" id="myIdnotes79">\n' +            
+			'<div class="noteBoxBar"><img src="/portal/images/preview/container.gif" width="27" height="23" align="absmiddle">Container</div>\n'+                   
+          	'<div class="containerInfo">\n' +
+          		'<strong>Name:</strong> Content Box 4<br />\n' +
+          		'<strong>Accepts:</strong> Web Page Content<br />\n' +
+        		          			"<textarea class='noteTextarea'></textarea>\n" +
+          					'</div>\n' +
+			'<div class="noteBoxButtons">\n' +
+				'<a href="javascript:dotShowHide(\'notes79\')" class="noteClose">Close</a>\n' +
+									'<a href="javascript:editContainer(\'79\');" class="noteEdit">Edit</a>\n' +
+							'</div>\n' +
+	'</div>\n'
+
+</script><input type="hidden" id="counter6" value="79">
+
+
+</div>          <div class="clear"></div>
+        </div>
+        <!-- secondaryNav -->
+      </div>
+      <!-- /#contentContainer -->
+    </div>
+    <!-- /#content -->
+    <div id="contentBase"></div>
+    <div id="footer">
+       <div id="footerContent">
+      <div id="footerNav">
+<a href="http://trca.on.ca/home/privacy-policy.dot">Privacy Policy</a> | <a href="http://trca.on.ca/home/accessibility.dot">Accessibility</a> | <a href="http://trca.on.ca/home/terms-of-service.dot">Terms of Service</a>
+<br><br>
+<div class="footerLivingCityLinks">
+<div class="vcard">
+<span style="font-size:10px;">Copyright © 2014, Toronto and Region Conservation.</span>
+<br><br>
+5 Shoreham Drive,<br>
+Downsview, Ontario, M3N 1S4, Canada
+<br><br>
+Phone: <span class="value">(416) 661-6600</span><br>
+Fax: <span class="value">(416) 661-6898</span><br>
+Email: <a href="mailto:info@trca.on.ca" class="email">info@trca.on.ca</a>
+</div><!-- vcard -->
+</div>
+
+
+</div><!--footerNav -->
+<div id="dynamicSitemap">
+  <ul>
+    <li> <span class="title">Services &amp; Resources</span>
+      <ul class="level1">
+        <li class="level1"><a href="http://trca.on.ca/planning-services-permits/permit-applications/index.dot" target="_self" title="Permit Applications"> Permit Applications</a></li>
+        <li class="level1"><a href="http://trca.on.ca/school-programs/online-booking/index.dot" target="_self" title="School Visit Booking"> School Visit Booking</a></li>
+        <li class="level1"><a href="http://trca.on.ca/planning-services-permits/property-inquiries.dot" target="_self" title="Property Inquiries"> Property Inquiries</a></li>
+        <li class="level1"><a href="http://trca.on.ca/events/">Event Calendar</a></li>
+        <li class="level1"><a href="http://trca.on.ca/get-involved/volunteer/index.dot" target="_self" title="Volunteer Program"> Volunteer Program</a></li>
+        <li class="level1"><a href="http://trca.on.ca/news-media/index.dot" target="_self" title="News &amp; Media Resources"> News &amp; Media Resources</a></li>
+        <li class="level1"><a href="http://trca.on.ca/careers/" target="_self" title="Careers"> Careers</a></li>
+      </ul>
+    </li>
+    <li> <span class="title">Plan an Event</span>
+      <ul class="level1">
+        <li class="level1"><a href="http://trca.on.ca/plan-an-event/weddings.dot" target="_self" title="Weddings">Weddings</a></li>
+        <li class="level1"><a href="http://trca.on.ca/plan-an-event/meetings.dot" target="_self" title="Meetings">Corporate Functions</a></li>
+        <li class="level1"><a href="http://trca.on.ca/enjoy/filming.dot" target="_self" title="Filming">Film Shoots</a></li>
+        <li class="level1"><a href="http://trca.on.ca/plan-an-event/our-locations.dot" target="_self" title="Our Locations">Staff Outings</a></li>
+        <li class="level1"><a href="http://trca.on.ca/enjoy/reservations.dot#birthday" target="_self" title="Heart Lake">Birthday Parties</a></li>
+        <li class="level1"><a href="http://trca.on.ca/enjoy/activities/picnics.dot" target="_self" title="Kortright Centre">Picnics</a></li>
+        <li class="level1"><a href="http://www.bathurstglengolf.ca/v2/leagues-and-tournaments/" target="_blank" title="Golf Tournaments">Golf Tournaments</a></li>
+        <li class="level1"><a href="http://blackcreekbrewery.ca/private-functions/" target="_blank" title="Black Creek Brewery">Historic Brewery Tours</a></li>
+      </ul>
+    </li>
+    <li> <span class="title">About TRCA</span>
+      <ul class="level1">
+        <li class="level1"><a href="http://trca.on.ca/about/index.dot" target="_self" title="About The TRCA"> About The TRCA</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/jurisdiction-and-participating-municipalities.dot" target="_self" title="Jurisdiction &amp; Municipalities"> Jurisdiction &amp; Municipalities</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/sustainability-management-system.dot" target="_self" title="Sustainability Management"> Sustainability Management</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/executive-team.dot" target="_self" title="Executive Team"> Executive Team</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/boards-and-committees/index.dot" target="_self" title="Boards &amp; Committees"> Boards &amp; Committees</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/conservation-ontario-other-conservation-authorities.dot" target="_self" title="Conservation Ontario"> Conservation Ontario</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/annual-reports/audited-financial-statements.dot" target="_self" title="Financial Statements"> Financial Statements</a></li>
+        <li class="level1"><a href="http://trca.on.ca/about/annual-reports/index.dot" target="_self" title="Annual Reports"> Annual Reports</a></li>
+      </ul>
+    </li>
+  </ul>
+  <div class="clear"></div>
+</div>
+<!-- end temp dynamicSitemap -->
+<!--<div id="dynamicSitemap">
+
+<ul>
+	<li>
+		<span class="title">Services &amp; Resources</span>
+		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+			<ul class="level1">
+																					
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/memberships.dot' target='_self' title='Memberships'> Memberships</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/planning-services-permits/permit-applications/index.dot' target='_self' title='Permit Applications'> Permit Applications</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/school-programs/online-booking/index.dot' target='_self' title='School Visit Booking'> School Visit Booking</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/plan-an-event/corporate-events.dot' target='_self' title='Corporate Event Booking'> Corporate Event Booking</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/plan-an-event/weddings/index.dot' target='_self' title='Wedding Booking'> Wedding Booking</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/planning-services-permits/planning-services.dot' target='_self' title='Planning Services'> Planning Services</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/planning-services-permits/property-inquiries.dot' target='_self' title='Property Inquiries'> Property Inquiries</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/get-involved/volunteer/index.dot' target='_self' title='Volunteer Program'> Volunteer Program</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/get-involved/stewardship/index.dot' target='_self' title='Stewardship'> Stewardship</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/news-media/index.dot' target='_self' title='News &amp; Media Resources'> News &amp; Media Resources</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/flood-monitoring/index.dot' target='_self' title='Flood Monitoring'> Flood Monitoring</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/filming.dot' target='_self' title='Filming Locations'> Filming Locations</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/get-involved/volunteer/index.dot' target='_self' title='Environmental Volunteer Network'> Environmental Volunteer Network</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/reservations/index.dot' target='_self' title='Reservations'> Reservations</a></li>
+											</ul>
+		</li>
+	<li>
+		<span class="title">Parks &amp; Locations</span>
+		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+			<ul class="level1">
+																					
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/albion-hills.dot' target='_self' title='Albion Hills'> Albion Hills</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/albion-hills-campground.dot' target='_self' title='Albion Hills Campground'> Albion Hills Campground</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/bathurst-glen-golf-course.dot' target='_self' title='Bathurst Glen Golf Course'> Bathurst Glen Golf Course</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/black-creek-pioneer-village.dot' target='_self' title='Black Creek Pioneer Village'> Black Creek Pioneer Village</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/boyd-conservation-area.dot' target='_self' title='Boyd Conservation Area'> Boyd Conservation Area</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/bruces-mill-conservation-area.dot' target='_self' title='Bruces Mill'> Bruce's Mill</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/glen-haffy-conservation-area.dot' target='_self' title='Glen Haffy'> Glen Haffy</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/glen-rouge-campground.dot' target='_self' title='Glen Rouge Campground'> Glen Rouge Campground</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/heart-lake-conservation-area.dot' target='_self' title='Heart Lake'> Heart Lake</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/indian-line-campground.dot' target='_self' title='Indian Line Campground'> Indian Line Campground</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/kortright-centre-for-conservation.dot' target='_self' title='Kortright Centre'> Kortright Centre</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/petticoat-creek-conservation-area.dot' target='_self' title='Petticoat Creek'> Petticoat Creek</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/tommy-thompson-park.dot' target='_self' title='Tommy Thompson Park'> Tommy Thompson Park</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/rouge-park.dot' target='_self' title='Rouge Park'> Rouge Park</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/east-duffins-headwaters.dot' target='_self' title='East Duffins Headwaters'> East Duffins Headwaters</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/altona-forest.dot' target='_self' title='Altona Forest'> Altona Forest</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/claireville-conservation-area.dot' target='_self' title='Claireville Conservation Area'> Claireville Conservation Area</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/enjoy/locations/oak-ridges-moraine.dot' target='_self' title='Oak Ridges Moraine'> Oak Ridges Moraine</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/school-programs/facilities-and-programs/albion-hills-field-centre/index.dot' target='_self' title='Albion Hills Field Centre'> Albion Hills Field Centre</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/school-programs/facilities-and-programs/claremont-field-centre/index.dot' target='_self' title='Claremont Field Centre'> Claremont Field Centre</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/school-programs/facilities-and-programs/lake-st-george-field-centre/index.dot' target='_self' title='Lake St. George Field Centre'> Lake St. George Field Centre</a></li>
+											</ul>
+		</li>
+	<li>
+		<span class="title">About TRCA</span>
+		  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+			<ul class="level1">
+																					
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/index.dot' target='_self' title='About The TRCA'> About The TRCA</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/jurisdiction-and-participating-municipalities.dot' target='_self' title='Jurisdiction &amp; Municipalities'> Jurisdiction &amp; Municipalities</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/sustainability-management-system.dot' target='_self' title='Sustainability Management'> Sustainability Management</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/executive-team.dot' target='_self' title='Executive Team'> Executive Team</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/boards-and-committees/index.dot' target='_self' title='Boards &amp; Committees'> Boards &amp; Committees</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/conservation-ontario-other-conservation-authorities.dot' target='_self' title='Conservation Ontario'> Conservation Ontario</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/protect/conservation-authorities-moraine-coalition.dot' target='_self' title='Conservation Authorities Moraine Coalition'> Conservation Authorities Moraine Coalition</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/annual-reports/audited-financial-statements.dot' target='_self' title='Financial Statements'> Financial Statements</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/contact/staff-directory.dot' target='_self' title='Staff Directory'> Staff Directory</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/annual-reports/index.dot' target='_self' title='Annual Reports'> Annual Reports</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/events/index.dot%3Ftag%3DBoard%2BMeeting%26tagCount%3D2' target='_self' title='Meeting Schedules'> Meeting Schedules</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/boards-and-committees/minutes-and-agendas/index.dot' target='_self' title='Meeting Agendas'> Meeting Agendas</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/about/boards-and-committees/minutes-and-agendas/index.dot' target='_self' title='Meeting Minutes'> Meeting Minutes</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/get-involved/honour-roll.dot' target='_self' title='Honour Roll Awards'> Honour Roll Awards</a></li>
+																												
+								
+								
+																												<li class='level1' ><a   href='http://trca.on.ca/careers/index.dot' target='_self' title='Careers'> Careers</a></li>
+											</ul>
+		</li>
+</ul>
+
+
+	<div class="clear"></div>
+</div>--><!-- dynamicSitemap -->
+<div class="clear"></div>
+<br>
+
+<div id="trcaBug">
+<img src="footerBug_trca.png" alt="Toronto and Region Conservation" width="180" height="105">
+</div>
+<div id="lcfBug">
+<a href="http://conservation-ontario.on.ca/" target="_blank"><img src="conservation_ontario.png" alt="Conservation Ontario" style="padding-bottom:15px;"></a>
+<a href="http://www.thelivingcity.org/" target="_blank"><img src="footerBug_lcf.png" alt="Toronto and Region Conservation" width="110" height="105"></a>
+</div>
+
+
+<div id="translateFooter">
+
+		<script src="jsapi" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+
+		google.load("language", "1");
+
+		function initializeTranslate() {
+			
+			for(var lang in google.language.Languages) {
+				var langCode = google.language.Languages[lang];
+				if(google.language.isTranslatable(langCode) && langCode != '') {
+					$('#languageSelector').append('<option value="'+langCode+'">'+lang+'<\/option>');
+				}
+			}
+		} 
+		google.setOnLoadCallback(initializeTranslate);
+		$(document).ready(function(){
+			$('#translateButton').hide();
+			$('#languageSelector').change(function(){
+				var selected = $('#languageSelector option:selected').attr('value');
+				if(selected!='') {
+					$('#translateForm').submit();
+				}
+			});
+		});
+		</script><script src="saved_resource" type="text/javascript"></script><script src="default+en.I.js" type="text/javascript"></script>
+		
+		<form id="translateForm" method="get" action="http://trca.on.ca/translate">
+        <div id="branding"></div>
+			<select id="languageSelector" name="lang">
+				<option value="">in 54 languages</option>
+			</select> 
+			<input type="submit" id="translateButton" value="Translate Now" style="display: none;">
+		</form>
+
+</div>
+
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!-- footer -->
+  </div>
+  <!-- /#container -->
+</div>
+<!-- /#wrapper -->
+
+<div id="controlsdiv"><div class="controls" id="myId3441" style="position: absolute; top: 189px; left: 1084px;">
+<span class="newContent"><a href="javascript:addContentlet('3441');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('3441');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget3441();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('3441');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes3441" style="position: absolute; top: 189px; left: 1057px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Body Content<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes3441')" class="noteClose">Close</a>
+<a href="javascript:editContainer('3441');" class="noteEdit">Edit</a>
+</div>
+</div>
+<div class="controls" id="myId23" style="position: absolute; top: 649px; left: 849px;">
+<span class="newContent"><a href="javascript:addContentlet('23');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('23');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget23();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('23');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes23" style="position: absolute; top: 649px; left: 822px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Content Box 1<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes23')" class="noteClose">Close</a>
+<a href="javascript:editContainer('23');" class="noteEdit">Edit</a>
+</div>
+</div>
+<div class="controls" id="myId84941" style="position: absolute; top: 663px; left: 1084px;">
+<span class="newContent"><a href="javascript:addContentlet('84941');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('84941');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget84941();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('84941');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes84941" style="position: absolute; top: 663px; left: 1052px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Content Box 6<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes84941')" class="noteClose">Close</a>
+<a href="javascript:editContainer('84941');" class="noteEdit">Edit</a>
+</div>
+</div>
+<div class="controls" id="myId82" style="position: absolute; top: 189px; left: 349px;">
+<span class="newContent"><a href="javascript:addContentlet('82');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('82');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget82();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('82');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes82" style="position: absolute; top: 189px; left: 322px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Content Box 5<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes82')" class="noteClose">Close</a>
+<a href="javascript:editContainer('82');" class="noteEdit">Edit</a>
+</div>
+</div>
+<div class="controls" id="myId76" style="position: absolute; top: 612px; left: 334px;">
+<span class="newContent"><a href="javascript:addContentlet('76');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('76');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget76();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('76');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes76" style="position: absolute; top: 612px; left: 307px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Content Box 3<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes76')" class="noteClose">Close</a>
+<a href="javascript:editContainer('76');" class="noteEdit">Edit</a>
+</div>
+</div>
+<div class="controls" id="myId72" style="position: absolute; top: 695px; left: 334px;">
+<span class="newContent"><a href="javascript:addContentlet('72');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('72');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget72();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('72');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes72" style="position: absolute; top: 695px; left: 307px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Content Box 2<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes72')" class="noteClose">Close</a>
+<a href="javascript:editContainer('72');" class="noteEdit">Edit</a>
+</div>
+</div>
+<div class="controls" id="myId79" style="position: absolute; top: 618px; left: 349px;">
+<span class="newContent"><a href="javascript:addContentlet('79');">New Content</a></span>
+<span class="reuseContent"><a href="javascript:popContentletsBrowser('79');">Reuse Content</a></span>
+<span class="rule"></span>
+<span class="addWidget"><a href="javascript:openAddWidget79();">Add Widget</a></span>
+<span class="controlsClose"><a href="javascript:dotShowHide('79');">Close</a></span>
+</div>
+<div class="noteBox" id="myIdnotes79" style="position: absolute; top: 618px; left: 322px;">
+<div class="noteBoxBar"><img src="container.gif" width="27" height="23" align="absmiddle">Container</div>
+<div class="containerInfo">
+<strong>Name:</strong> Content Box 4<br>
+<strong>Accepts:</strong> Web Page Content<br>
+<textarea class="noteTextarea"></textarea>
+</div>
+<div class="noteBoxButtons">
+<a href="javascript:dotShowHide('notes79')" class="noteClose">Close</a>
+<a href="javascript:editContainer('79');" class="noteEdit">Edit</a>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+	document.getElementById("controlsdiv").innerHTML = controlsHTML;
+</script>
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" style="display: none;"></iframe><script src="357229383020343296" async=""></script></body></html>

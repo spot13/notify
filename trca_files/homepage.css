@@ -1,0 +1,471 @@
+.accordion a.rss {
+	background:transparent url(/global/images/misc/rss.png) no-repeat scroll right top;
+	height:21px;
+	position:absolute;
+	right:7px;
+	text-indent:-9999px;
+	top:7px;
+	outline:none;
+	width:32px;
+}
+#homepage-accordion {
+	height:429px;
+	overflow:auto;
+}
+
+.accordion #floodForecasting .item {
+	padding-top: 80px;
+}
+
+.accordion #floodForecasting .normal {
+	background: #ffffff url('/global/images/floodForecast/normal.png') top center no-repeat;
+}
+.accordion #floodForecasting .bulletin {
+	background: #ffffff url('/global/images/floodForecast/bulletin.png') top center no-repeat;
+}
+#secondaryNav .accordion #floodForecasting .statementSafety {
+	background: #ffffff url('/global/images/floodForecast/statementSafety.png') top center no-repeat;
+}
+#secondaryNav .accordion #floodForecasting .statementFlood {
+	background: #ffffff url('/global/images/floodForecast/statementFlood.png') top center no-repeat;
+}
+.accordion #floodForecasting .advisory {
+	background: #ffffff url('/global/images/floodForecast/watch.png') top center no-repeat;
+}
+.accordion #floodForecasting .warning {
+	background: #ffffff url('/global/images/floodForecast/warning.png') top center no-repeat;
+}
+
+
+.accordion #floodForecasting .item h3 {
+	margin: 0px;
+	font-size:1em;
+	line-height: 1.214em;
+	color: #318bbc;
+	font-family: tahoma, sans-serif;
+	font-weight: bold;
+}
+.accordion #floodForecasting .item p {
+	margin: 0px;
+	font-size:1em;
+	line-height: 1.214em;
+	color: #3c3c3c;
+	font-family: tahoma, sans-serif;
+}
+.accordion #floodForecasting .item p.summary, .accordion #floodForecasting .item p.message {
+	padding-bottom: 10px;
+	margin-bottom:10px;
+	border-bottom: 1px dashed #bfbfbf;
+}
+
+
+.accordion #floodForecasting .item p.summary a.more, .accordion #floodForecasting .item p.message a.less {
+	padding-right: 15px;
+	text-align:right;
+	display: block;
+	font-size:0.857em;
+	line-height: 1.5em;
+	color: #318bbc;
+}
+.accordion #floodForecasting .item p.summary a.more {
+	outline:none;
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll right 5px;
+}
+.accordion #floodForecasting .item p.message a.less {
+	display: none;
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_minus.png) no-repeat scroll right 5px;
+}
+.accordion #floodForecasting .item p.summary a.more:hover, .accordion #floodForecasting .item p.message a.less:hover {
+	color: #1c75a3;	
+}
+
+.accordion #floodForecasting .item a {
+	outline:none;
+	font-size:0.857em;
+	line-height: 1.167em;
+	text-decoration: none;
+	color: #318bbc;
+	font-family: tahoma, sans-serif;
+}
+.accordion #floodForecasting .item a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+.accordion #calendarOfEvents .item{
+	color:#96C2DA;
+}
+
+.accordion #calendarOfEvents .item a {
+	color:#318BBC;
+	text-decoration:none;
+	font-family:tahoma,sans-serif;
+	font-size:1em;
+	font-weight:bold;
+	line-height:1.214em;
+	margin:0;
+	outline:none;
+}
+.accordion #calendarOfEvents .item a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+.accordion #didYouKnow {
+	margin: 0px;
+	border: none;
+}
+
+.accordion #didYouKnow .summary a {
+	margin-left: 3px;
+}
+
+
+.accordion #didYouKnow .summary, #secondaryContent #didYouKnow summary {
+	background: transparent url('/global/images/homeSlider/didyouknow_bg.png') no-repeat left bottom;
+}
+
+.accordion #placesToVisit .item a {
+	outline:none;
+	line-height: 1.167em;
+	text-decoration: none;
+	color: #318bbc;
+	font-family: tahoma, sans-serif;
+}
+.accordion #placesToVisit .item a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+.accordion #placesToVisit .item {
+	font-size: 0.875em;
+	padding: 2px 0px;
+}
+
+.accordion #placesToVisit, #homepage-accordion .accordion-content #placesToVisit {
+	overflow: none;
+}
+
+#bodyContent #recentNews div.title {
+	background: #ffffff url('/global/images/misc/fold.png') no-repeat left bottom;
+	padding-bottom: 7px;
+	margin-bottom: 20px;
+}
+
+#bodyContent #recentNews div.title h2 {
+	font-size:1.429em;
+	line-height: 1.5em;
+	background-color: #e0e1e1;
+	padding-left: 10px;
+	margin: 0px;
+	color: #318bbc;
+}
+#bodyContent #recentTweets div.title {
+	background: #ffffff url('/global/images/misc/fold.png') no-repeat left bottom;
+	padding-bottom: 7px;
+	margin-bottom: 20px;
+}
+
+#bodyContent #recentTweets div.title h2 {
+	font-size:1.429em;
+	line-height: 1.5em;
+	background-color: #e0e1e1;
+	padding-left: 10px;
+	margin: 0px;
+	color: #318bbc;
+}
+
+
+#bodyContent .listing h3 {
+	margin: 0px;
+}
+
+#bodyContent .listing h3 a:hover {
+	color:#1C75A3;
+	text-decoration: underline;
+}
+
+#bodyContent .listing h3 a {
+	text-decoration: none;
+	font-size:1.143em;
+	line-height: 1.125em;
+	color: #318bbc;
+}
+
+
+#bodyContent #recentNews  #viewAllNews {
+	background: #f9eec4 url('/global/images/misc/button_154_22.png') no-repeat left bottom;
+	font-size:1em;
+	line-height: 1.571em;
+	font-weight: bold;
+	color: #3b4141;
+	width: 154px;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #ffffff;
+	text-transform: uppercase;
+	float: right;
+}
+#bodyContent #recentNews  #viewAllNews:hover {
+	text-decoration: underline;
+}
+
+
+/*
+ * HOMEPAGE SLIDESHOW STYLES
+ */
+
+#bodyContent #homepageSlideshow {
+    position:relative;
+	height:294px;
+	padding:0 0 15px;
+	z-index: 0;
+}
+
+#bodyContent #homepageSlideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+/*    z-index:8;
+    opacity:0.0;
+*/    
+}
+
+#bodyContent #homepageSlideshow IMG.active {
+/*    z-index:10;
+    opacity:1.0; */
+}
+
+#bodyContent #homepageSlideshow IMG.last-active {
+/*    z-index:9; */
+}
+
+#homepageSlideshowNav a { 
+	border: none;
+	color: black;
+	text-decoration: none; 
+	margin: 0; 
+	padding: 8px 12px;
+	background:transparent url(/global/images/bodyContent/slideshow_buttons.png) no-repeat scroll 0 -32px;
+}
+#homepageSlideshowNav a.activeSlide { 
+	background:transparent url(/global/images/bodyContent/slideshow_buttons.png) no-repeat scroll 0 0;
+}
+#homepageSlideshowNav a:focus { 
+	outline: none; 
+}
+
+#homepageSlideshowNav {
+	position:relative;
+	top:-45px;
+	z-index:1;
+	margin-right:5px;
+	float: right;
+}
+
+#homepageSlideshow img {
+	cursor: pointer;
+}
+
+
+/*
+ * HOMEPAGE ACCORDION OVER-RIDES
+ */
+
+		#homepage-accordion .accordion-content  {
+			padding:0 7px;
+			background-color:transparent;
+			overflow:hidden;
+			height:320px;
+			border-left:1px solid #cccccc;
+			border-right:1px solid #cccccc;
+        }
+		.accordion h2.accordion-handle {
+            background:#939393 url(/global/images/accordion/accordion-handle.png) repeat-x;
+            text-transform:capitalize;
+            color:#333333;
+            cursor:pointer;
+            font-family:tahoma,sans-serif;
+			font-size:1em;
+			font-weight:bold;
+			height:34px;
+			line-height:34px;
+            margin:0;
+			padding:0;
+            text-indent:15px;
+            width:100%;	
+        }
+		.accordion h2.accordion-handle.open {
+            background:#939393 url(/global/images/accordion/accordion-handle_open.png) repeat-x;
+			color:#FFFFFF;
+			margin:0;
+			padding:0;
+        }
+
+#homepage-accordion .boxcap {
+	top: 388px;
+}
+
+#send-us-your-feedback{
+font-weight:bold;
+}
+
+#send-us-your-feedback a.link {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+background:#F3DC92 url(/global/images/bodyContent/yellow_button.png) no-repeat scroll left bottom;
+color:#3B4141;
+display:block;
+font-size:1.286em;
+line-height:2.111em;
+text-align:center;
+text-decoration:none;
+text-shadow:1px 1px 0 #FFFFFF;
+}
+
+#send-us-your-feedback a.link:hover {
+text-decoration:underline;
+}
+
+
+/*
+
+ * CALLS TO ACTION ON HOME AND CATEGORY PAGES 
+
+ */
+
+
+
+#bodyContent #callsToAction{
+
+	border-bottom: 1px dashed #dbe5ea;
+
+	padding-bottom: 20px;
+
+	margin-bottom: 20px;
+
+	width: 225px;
+
+	float: right;
+
+}
+
+
+
+#bodyContent #callsToAction div.callToAction {
+
+	width: 225px;
+
+	float: left;
+
+	font-weight: bold;
+
+	padding-bottom: 20px;
+
+}
+
+
+
+#bodyContent #callsToAction div.left, #bodyContent #callsToAction div.center{
+
+	padding-right: 20px;
+
+}
+
+
+
+#bodyContent #callsToAction div.summary{
+
+	font-size:0.857em;
+
+	line-height: 1.667em;
+
+	background-position: 0px 38px;
+
+}
+
+
+
+#bodyContent #callsToAction div.summary p{
+
+	margin: 0px; 
+
+	padding-left: 10px;
+
+	padding-right: 20px;
+
+	height: 30px;
+
+	color: #FFFFFF;
+
+}
+
+
+
+#bodyContent #callsToAction div.heading{
+
+	background-color: #096299;
+
+}
+
+
+
+#bodyContent #callsToAction div.heading h3{
+
+	margin: 0px;
+
+	padding: 0px 10px;
+
+	color: #FFFFFF;
+
+	font-size:1.667em;
+
+	line-height: 1.9em;
+
+}
+
+
+
+#bodyContent #callsToAction a.link{
+
+	display:block;
+
+	background: #f3dc92 url(/global/images/bodyContent/yellow_button.png) no-repeat bottom left;
+
+	font-size:1.286em;
+
+	line-height: 2.111em;
+
+	text-align: center;
+
+	color: #3b4141;
+
+	text-decoration:none;
+
+	text-shadow: 1px 1px 0px #ffffff;
+
+}
+
+#bodyContent #callsToAction a.link:hover{
+
+	text-decoration: underline;
+
+}
+
+
+
+#bodyContent #callsToAction a {
+
+	text-decoration: none;
+
+}
+
+
+
+#bodyContent #callsToAction img {
+
+	margin: 0px 0px -10px 5px;
+
+}

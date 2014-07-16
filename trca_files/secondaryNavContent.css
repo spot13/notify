@@ -1,0 +1,326 @@
+#secondaryContent h1 {
+	color:#069fd1;
+	font-size:1.714em;
+	line-height:1em;
+	padding: 5px 0;
+	margin: 0px;
+}
+
+#secondaryContent h2 {
+	color:#069fd1;
+	font-size:1.5em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#secondaryContent h3 {
+	color: #069fd1;
+	font-size:1em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#secondaryContent h4 {
+	color: #069fd1;
+	font-size:0.88em;
+	line-height:1em;
+	margin:5px 0;
+}
+
+#secondaryContent p {
+	padding-bottom: 10px;
+	margin:5px 0;
+}
+
+#secondaryContent a{
+	color:#318BBC;
+	outline:none;
+}
+
+#secondaryContent a:hover{
+	color:#1C75A3;
+	text-decoration: underline;
+}
+#secondaryContent .help {
+	font-size:0.75em;
+	line-height: 1.167em;
+	color: #777777;	
+}
+#secondaryContent p.borderBottom {
+	padding-bottom: 10px;
+	margin: 5px 0px 5px 0px;
+	border-bottom: 1px dotted #e3e3e3;
+}
+
+#secondaryContent p.teaser {
+	border-top: 1px dotted #e3e3e3;
+	font-size:1.286em;
+	line-height: 1.222em;
+	font-family: georgia, serif;
+	color: #5c901c;
+	border-bottom: none;
+	padding: 10px 0px 25px 0px;
+	margin-bottom: 15px;
+	background: transparent url('/global/images/secondaryContent/teaser_divider.png') bottom center no-repeat;
+}
+
+#secondaryContent ul {
+line-height:2.5em;
+list-style-type:none;
+list-style-image:none;
+padding:0px 0px 0px 0px;
+}
+#secondaryContent ul li{
+background-image:url(/global/images/misc/content-bullet.png);
+background-position:5px 15px;
+background-repeat:no-repeat;
+list-style-type:none;
+padding-left:20px;
+}
+
+#secondaryContent a img {
+	border: none;
+}
+
+#secondaryNav ul, #secondaryContent ul {
+	padding:0px;
+	margin: 0px;
+	list-style: none;
+}
+#secondaryNav li h2{
+	color:#4C4C4C;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+#secondaryNav #didYouKnow, #secondaryContent #didYouKnow {
+	border-top: 9px solid #83bc3a;
+	margin: 20px 0px 20px;
+}
+#secondaryContent #didYouKnow {
+	margin-top: 5px;
+	padding-bottom: 20px;
+	border-bottom: 9px solid #83bc3a;
+}
+
+#secondaryNav #didYouKnow h2, #secondaryContent #didYouKnow h2 {
+	color: #3fa1d3;
+	font-size:1em;
+	line-height: 1em;
+	text-transform:uppercase;
+	margin: 20px 0px 20px;
+}
+
+#secondaryNav #didYouKnow .statement, #secondaryContent #didYouKnow .statement {
+background:transparent url(/global/images/secondaryNavContent/didyouknow_plus.png) no-repeat scroll 0 2px;
+border-bottom:1px dotted #E3E3E3;
+color:#1C75A3;
+font-size:0.857em;
+line-height:1.167em;
+margin:0 0;
+padding:0 0 5px 15px;
+}
+
+#secondaryNav #didYouKnow div.active .statement, #secondaryContent #didYouKnow div.active .statement {
+	background: transparent url('/global/images/secondaryNavContent/didyouknow_minus.png') no-repeat 0px 2px;
+	border-bottom: none;
+}
+
+#secondaryNav #didYouKnow .summary, #secondaryContent #didYouKnow .summary {
+	background: transparent url('/global/images/secondaryNavContent/didyouknow_bg.png') no-repeat left bottom;
+	padding: 0px 15px 10px 15px;
+	font-size:0.857em;
+	line-height: 1.167em;
+}
+
+#secondaryNav #didYouKnow .summary a, #secondaryContent #didYouKnow .summary a {
+	background:#3B80DC url(/global/images/secondaryNavContent/didyouknow_button.png) no-repeat scroll left top;
+	color:#FFFFFF;
+	display:block;
+	font-size:1em;
+	line-height:1.8em;
+	margin:10px 0 0 15px;
+	text-align:center;
+	text-decoration:none;
+	width:167px;
+	height:22px;
+}
+
+#secondaryNav ul.banners {
+	padding-top: 25px;
+}
+
+#secondaryNav ul.banners li, #secondaryContent ul.banners li {
+background-image:none;
+list-style-type:none;
+padding:0 0 15px 0;
+}
+#secondaryNav ul.banners li a img, #secondaryContent ul.banners li a img {
+	border: none;
+	width: 225px;
+/*	height: 121px;*/
+	outline:none;
+}
+
+/* secondaryNav menu styles */
+
+#secondaryNav #menu{
+	outline:none;
+}
+#secondaryNav #menu ul li{
+	font-size:1em;
+	line-height:1.25em;
+	text-decoration:none;
+}
+#secondaryNav #menu ul li.level1 a{
+	outline:none;
+	color:#0092C9;
+	text-decoration:none;
+	font-size:1em;
+	line-height:1.25em;
+	display:block;
+	padding:5px 0 5px 15px;
+	margin:0;
+	border-bottom:#e3e3e3 1px dotted;
+}
+#secondaryNav #menu ul li.level1 a:hover{ 
+	color:#FFFFFF;
+	background-color:#0092C9;
+}
+#secondaryNav #menu ul li.level1.active a{
+	background-color:#0092C9;
+	color:#FFFFFF;
+}
+
+/* Level2 */
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 a{
+	background:#E4F4FB;
+	color:#1C75A3;
+	padding:5px 0 5px 25px;
+	border-bottom:1px dotted #FFFFFF;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 a:hover{
+	background:#0092C9 none no-repeat;
+	color:#FFFFFF;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2.active a{
+	background:#0092C9 none no-repeat;
+	color:#FFFFFF;
+}
+
+/* Level3 */
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 a{
+	background:#E4F4FB;
+	color:#1C75A3;
+	padding:5px 0 5px 40px;
+	border-bottom:1px dotted #FFFFFF;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 a:hover{
+	background:#0092C9 none no-repeat;
+	color:#FFFFFF;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3.active a{
+	background:#0092C9 none no-repeat;
+	color:#FFFFFF;
+}
+
+/* Level 4 */
+
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 ul.level4 li.level4 a{
+	color:#0092C9;
+	background:#FFFFFF;
+	padding:5px 0 5px 55px;
+	margin:0;
+	border-bottom:#e3e3e3 1px dotted;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 ul.level4 li.level4 a:hover{ 
+	color:#0092C9;
+	background-color:#E4F4FB;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2 ul.level3 li.level3 ul.level4 li.level4.active a{
+	background-color:#0092C9;
+	color:#FFFFFF;
+}
+
+
+/* Sub menu styles */
+#secondaryNav #menu ul.level1 li.level1.hasSubMenu{
+background:transparent url(/global/images/misc/nav-arrow-bullet.png) no-repeat scroll 3px 9px;
+}
+#secondaryNav #menu ul.level1 li.level1.hasSubMenu a:hover{
+background:#0092C9 url(/global/images/misc/nav-arrow-bullet.png) no-repeat scroll 3px 9px;
+}
+#secondaryNav #menu ul.level1 li.level1.active.hasSubMenu a:hover{
+background:#0092C9 url(/global/images/misc/nav-arrow-bullet-down-blue.png) no-repeat scroll 3px 9px;
+}
+#secondaryNav #menu ul.level1 li.level1.active.hasSubMenu a{
+background:#336699 url(/global/images/misc/nav-arrow-bullet-down.png) no-repeat scroll 3px 9px;
+border:medium none;
+color:#9EDCF9;
+}
+
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2.hasSubMenu a{
+background:#E4F4FB url(/global/images/misc/nav-arrow-bullet.png) no-repeat scroll 13px 9px;
+border-bottom:1px dotted #FFFFFF;
+margin:0;
+padding:5px 0 5px 25px;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2.hasSubMenu a:hover{
+background:#0092C9 url(/global/images/misc/nav-arrow-bullet.png) no-repeat scroll 13px 9px;
+padding:5px 0 5px 25px;
+border-bottom:1px dotted #FFFFFF;
+margin:0 0;
+}
+#secondaryNav #menu ul.level1 li.level1 ul.level2 li.level2.active.hasSubMenu a{
+background:#007AAA url(/global/images/misc/nav-arrow-bullet-down_level2.png) no-repeat scroll 13px 9px;
+border:medium none;
+color:#9EDCF9;
+}
+
+/* Calendar Styles */
+#secondaryNav #calendarNavigation .tableWrap {
+	display: none;
+}
+
+#secondaryContent .featured .item {
+	background:transparent url(/global/images/secondaryNavContent/didyouknow_bg.png) no-repeat scroll left bottom;
+	font-size:0.857em;
+	line-height:1.167em;
+	padding:0 15px 10px;	
+}
+
+#secondaryContent .featured .item h3 {
+	font-size:1.167em;
+	line-height: 1em;	
+}
+
+#secondaryContent .featured .item p {
+	margin-bottom: 0px;
+	padding-bottom: 0px;	
+}
+
+
+#secondaryContent  .userWidget{
+border-left:1px solid #D8DCDF;
+border-right:1px solid #D8DCDF;
+margin:0 0 0 2px;
+padding:5px;
+width:209px;
+background:#FFFFFF url(/global/images/misc/cart-bg.png) repeat-x scroll center bottom;
+}
+#secondaryContent  .userWidget .button{
+	font-weight: bold;
+	width:200px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#secondaryContent  .userWidgetCap{
+background:#FFFFFF url(/global/images/misc/cart-top.png) no-repeat scroll center top;
+height:11px;
+}
+#secondaryContent .userWidgetBottomCap{
+background:#FFFFFF url(/global/images/misc/cart-bottom.png) no-repeat scroll center bottom;
+height:10px;
+}
+
+
